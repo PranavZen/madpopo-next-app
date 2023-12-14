@@ -40,6 +40,7 @@ function PriceCardBox(props) {
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
 
   const [selectedProductIndex, setSelectedProductIndex] = useState(0);
+  console.log(selectedProductIndex)
 
   const [slectPrice, setSelectPrice] = useState(show_price);
 

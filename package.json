@@ -1,10 +1,11 @@
 {
-  "name": "next-madpopo-app",
-  "version": "0.1.0",
+  "name": "next.madpopo.com",
+  "homepage": "https://next.madpopo.com/",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,11 +19,13 @@
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
+    "react-id-swiper": "^4.0.0",
     "react-parallax-mouse": "^2.1.0",
     "react-router-dom": "^6.20.1",
     "react-router-hash-link": "^2.4.3",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.5"
   }
 }

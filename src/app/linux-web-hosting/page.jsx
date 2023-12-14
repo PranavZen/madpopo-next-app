@@ -11,9 +11,11 @@ import LinuxHostingPlans from "@/components/LinuxHostingPageComponent/LinuxHosti
 import LinuxFaq from "@/components/LinuxHostingPageComponent/LinuxFaq";
 
 export const metadata = {
-  title: "Linux Web Hosting",
+  title: "Fast & Reliable Linux Web Hosting Solutions",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "Experience fast, reliable Linux hosting with cutting-edge technology. Our optimized servers ensure hassle-free, secure, and reliable performance for peace of mind.",
+  keywords:
+    "linux hosting, linux web hosting, hosting a website on linux, linux hosting server, linux shared hosting, best linux hosting",
 };
 
 function page() {
@@ -33,6 +35,7 @@ function page() {
         width={349}
         height={343}
         clsName="wp_innerBox linuxrightimgBox"
+        altName="Linux Web Hosting"
       />
       <div
         className="linux_pricingBox container"

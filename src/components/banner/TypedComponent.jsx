@@ -6,12 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 
 function TypedComponent() {
-  const styles = StyleSheet.create({
-    animatedElement: {
-      animationName: fadeIn,
-      animationDuration: "3s",
-    },
-  });
+  const [styles, setStyles] = useState(null);
   const [Show, setShow] = useState(1); 
  
   useEffect(() => {
@@ -23,6 +18,15 @@ function TypedComponent() {
     }, 5000);
     
     return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    setStyles(StyleSheet.create({
+      animatedElement: {
+        animationName: fadeIn,
+        animationDuration: "3s",
+      },
+    }));
   }, []);
 
   return (
@@ -38,7 +42,7 @@ function TypedComponent() {
           <div className="col-md-8 col-lg-6 col-xl-8 animeParaBox">
             <div
               style={{ display: Show === 1 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 MadPopo The Ultimate <br />
@@ -65,7 +69,7 @@ function TypedComponent() {
 
             <div
               style={{ display: Show === 2 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 Power Your Website with MadPopo's <strong>Linux Hosting</strong>
@@ -85,7 +89,7 @@ function TypedComponent() {
             </div>
             <div
               style={{ display: Show === 3 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 Professional <strong>Email Solutions</strong> for Your Business
@@ -106,7 +110,7 @@ function TypedComponent() {
             </div>
             <div
               style={{ display: Show === 4 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 <strong>Dedicated Hosting</strong> Solutions to Empower
@@ -128,7 +132,7 @@ function TypedComponent() {
             </div>
             <div
               style={{ display: Show === 5 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 Unleash the Power of the <br />
@@ -149,7 +153,7 @@ function TypedComponent() {
             </div>
             <div
               style={{ display: Show === 6 ? "block" : "none" }}
-              className={css(styles.animatedElement)}
+              className={styles?.animatedElement && css(styles.animatedElement)}
             >
               <h1 className="typedTextMain">
                 Reliable, Scalable, & Affordable <br />

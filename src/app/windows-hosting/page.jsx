@@ -11,9 +11,11 @@ import WindowsPlansHosting from "@/components/WindowsHostingPageComponent/Window
 import WindowsHostingFaq from "@/components/WindowsHostingPageComponent/WindowsHostingFaq";
 
 export const metadata = {
-  title: "Windows Web Hosting",
+  title: "Top Reasons to Choose Windows Website Hosting for Your Online Store",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "Best Windows hosting for your business. MadPopo offers top-of-the-line Windows hosting, with a range of features that make it the perfect choice for business.",
+  keywords:
+    "web servers host, windows hosting server, windows hosting, windows server hosting,win host, windows server website hosting, windows shared server, windows website hosting,web hosting windows, hosting windows, windows shared hosting, best windows hosting, windows website hosting.",
 };
 
 function page() {
@@ -34,6 +36,7 @@ function page() {
         width={395}
         height={375}
         clsName="wp_innerBox windowsImg"
+        altName="Windows Web Hosting"
       />
       <div
         className="windows_pricingBox container px-0"

@@ -1,5 +1,6 @@
 import DomainSection from "@/components/DomainSection";
 import FAQ from "@/components/FAQs/FAQ";
+import Footer from "@/components/Footer/Footer";
 import Hostareawrap from "@/components/HostingArea/Hostareawrap";
 import MaximizeSection from "@/components/MaximizeSection";
 import Migration from "@/components/Migration";
@@ -13,6 +14,8 @@ export const metadata = {
     "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
   description:
     "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+  keywords:
+    "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
 };
 
 function Home() {
@@ -32,6 +35,7 @@ function Home() {
       >
         <TrustedClientsSlide />
         <FAQ />
+        <Footer />
       </div>
     </div>
   );

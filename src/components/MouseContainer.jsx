@@ -15,7 +15,7 @@ function MouseContainer(props) {
       >
         <Image
           src={props.imgUrl}
-          alt="Wordpress Logo"
+          alt={props.altName}
           width={props.width}
           height={props.height}
         />

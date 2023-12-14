@@ -1,4 +1,3 @@
-
 import React from "react";
 import NavbarInner from "@/components/navbar/NavbarInner";
 
@@ -12,10 +11,11 @@ import Footer from "@/components/Footer/Footer";
 import MouseContainer from "@/components/MouseContainer";
 
 export const metadata = {
-  title:
-    "Wordpress Hosting  ",
+  title: "The Best WordPress Hosting for Your Website",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "Get top-rated WordPress hosting for your website. Experience reliable, secure, and fast services, enhanced with robust features and exceptional customer support.",
+  keywords:
+    "wordpress hosting, best wordpress hosting, wordpress domain, wordpress plans wp hosting, managed wordpress hosting, fastest wordpress hosting, managed wordpress, wordpress website hosting, best web hosting for wordpress, wordpress server, wordpress web hosting, wordpress hosting plans",
 };
 
 function page() {
@@ -33,7 +33,13 @@ function page() {
           WordPress hosting solutions for your website
         </span>
       </div>
-      <MouseContainer imgUrl="/image/wordpress_innerlogo.png" width={684} height={684} clsName="wp_innerBox"/>
+      <MouseContainer
+        imgUrl="/image/wordpress_innerlogo.png"
+        width={684}
+        height={684}
+        clsName="wp_innerBox"
+        altName="Wordpress Hosting"
+      />
       <div
         className="wp_pricingBox"
         data-aos="zoom-in"

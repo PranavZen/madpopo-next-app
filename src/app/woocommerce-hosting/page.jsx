@@ -11,9 +11,11 @@ import WooCommercePlanListing from "@/components/WoocommerceHostingPageComponent
 import WoocomerceFaq from "@/components/WoocommerceHostingPageComponent/WoocomerceFaq";
 
 export const metadata = {
-  title: "Woocommerce Hosting",
+  title: "Get Reliable Woocommerce Hosting Solutions Now!",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "Experience tailored WooCommerce hosting for your business needs, featuring reliability, security, and faster load times for enhanced performance.",
+  keywords:
+    "woocommerce, woocommerce plugin, woocommerce wordpress, woocommerce website, managed woocommerce hosting, wordpress woocommerce hosting, woocommerce website hosting, best woocommerce hosting.",
 };
 
 function page() {
@@ -26,10 +28,16 @@ function page() {
         <span>
           With lightning-fast loading times and reliable uptime, your online
           shop will always be up and running, ensuring that your customers can
-          access your products. 
+          access your products.
         </span>
       </div>
-      <MouseContainer imgUrl="/image/pages/woocomeerce/woocomimg.webp" width={425} height={374} clsName="wp_innerBox woocomimg"/>
+      <MouseContainer
+        imgUrl="/image/pages/woocomeerce/woocomimg.webp"
+        width={425}
+        height={374}
+        clsName="wp_innerBox woocomimg"
+        altName="Woocommerce Hosting"
+      />
       <div
         className="woo_commSection"
         data-aos="zoom-in"

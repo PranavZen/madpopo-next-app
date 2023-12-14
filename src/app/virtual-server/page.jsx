@@ -1,27 +1,26 @@
-
 import React from "react";
 import NavbarInner from "@/components/navbar/NavbarInner";
 
 import Image from "next/image";
 import Footer from "@/components/Footer/Footer";
 import MouseContainer from "@/components/MouseContainer";
-import WindowsTabContent from "@/components/tabs/tabcontentbox/WindowsTabContent";
-import WindowsBestChoice from "@/components/WindowsHostingPageComponent/WindowsBestChoice";
-import WindowsHostingFeatures from "@/components/WindowsHostingPageComponent/WindowsHostingFeatures";
-import WindowsPlansHosting from "@/components/WindowsHostingPageComponent/WindowsPlansHosting";
-import WindowsHostingFaq from "@/components/WindowsHostingPageComponent/WindowsHostingFaq";
 import Tabs from "@/components/servertabsbutton/Tabs";
+import VsBestChoice from "@/components/VsPageComponent/VsBestChoice";
+import VdsFeatures from "@/components/VirtualDedicatedServerPageComponent/VdsFeatures";
+import VdsListing from "@/components/VirtualDedicatedServerPageComponent/VdsListing";
+import VdsFaq from "@/components/VirtualDedicatedServerPageComponent/VdsFaq";
 
 export const metadata = {
-  title: "Cloud Server",
+  title: "High Performance Virtual Dedicated Server Solutions",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "Experience the best performance for your workloads with our reliable and high-performance virtual dedicated server solutions. Various options with 24/7 support.",
+  keywords:
+    "virtual server, vds, virtual hosting, virtual dedicated server, virtualserver, virtual dedicated hosting",
 };
 
 function page() {
- 
   return (
-    <div className="site-wrapper overflow-hidden wp_hostingBgImg windowsBG">
+    <div className="site-wrapper overflow-hidden wp_hostingBgImg vdsBG">
       <NavbarInner />
       <div className="wp_img_overlayContent vdsImgOverlay ">
         <p>Cloud Server</p>
@@ -32,20 +31,21 @@ function page() {
         </span>
       </div>
       <MouseContainer
-        imgUrl="/image/pages/windows/windows-object.webp"
-        width={395}
-        height={375}
-        clsName="wp_innerBox windowsImg"
+        imgUrl="/image/pages/virtualserver/cloud-server.webp"
+        width={349}
+        height={331}
+        clsName="wp_innerBox vdsImg"
+        altName="Cloud Server"
       />
-      <Tabs/>
-      <div className="wpChoiceSection">
-        <WindowsBestChoice />
+      <Tabs />
+      <div className="wpChoiceSection vsBestchoiceSection">
+        <VsBestChoice />
       </div>
-      <div className="wp_features">
-        <WindowsHostingFeatures />
+      <div className="wp_features vdsFeatures">
+        <VdsFeatures />
       </div>
       <div className="wp_plansListing">
-        <WindowsPlansHosting />
+        <VdsListing />
       </div>
       <div className="wp_hostingFaqSection">
         <div className="pose_1">
@@ -69,7 +69,7 @@ function page() {
             d="M0,128L80,138.7C160,149,320,171,480,192C640,213,800,235,960,234.7C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <WindowsHostingFaq />
+        <VdsFaq />
       </div>
       <Footer />
     </div>

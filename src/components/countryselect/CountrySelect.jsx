@@ -1,10 +1,11 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 // import { useLocation } from "react-router-dom";
 
 // console.log(data[0].img + data[0].label);
 export default function CountrySelect() {
-  // let location = useLocation();
+  let location = useRouter();
   // console.log(location);
   const slectOpt = [
     {
@@ -33,7 +34,7 @@ export default function CountrySelect() {
     if (storedCountry) {
       setSelectedCountry(storedCountry);
     }
-  }, []);
+  }, [location]);
 
   const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);

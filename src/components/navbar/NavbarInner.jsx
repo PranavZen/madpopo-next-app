@@ -10,6 +10,39 @@ function NavbarInner() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
   };
+  const handleScroll = () => {
+    setScroll(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    // Check scroll position on page reload
+    handleScroll();
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Class logic on page reload
+    const header = document.querySelector("header");
+    if (scroll) {
+      header.classList.add("top-header-fixed", "white-bg", "light-mode-texts");
+      header.classList.remove("dark-mode-texts");
+    } else {
+      header.classList.remove(
+        "top-header-fixed",
+        "white-bg",
+        "light-mode-texts"
+      );
+      header.classList.add("dark-mode-texts");
+    }
+  }, [scroll]);
+
   var bydefaultCurrency = "₹";
 
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
@@ -30,11 +63,11 @@ function NavbarInner() {
     var dT2 = (11.71 * 0.93).toFixed(2);
     var drT2 = (11.71 * 0.93).toFixed(2);
   }
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 50);
-    });
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY > 50);
+  //   });
+  // }, []);
   const action = "https://my.madpopo.com/cart.php?a=add&domain=register&query=";
   return (
     <header

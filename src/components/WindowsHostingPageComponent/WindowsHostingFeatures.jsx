@@ -24,8 +24,12 @@ function WindowsHostingFeatures() {
               data-aos-duration="1200"
             >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/highly-secure-reliable.png" alt="Highly Secure and Reliable" width={100}
-                  height={75}/>
+                <Image
+                  src="/image/wordpress/highly-secure-reliable.png"
+                  alt="Highly Secure and Reliable"
+                  width={100}
+                  height={75}
+                />
               </div>
               <h4>Highly Secure and Reliable</h4>
               <p>

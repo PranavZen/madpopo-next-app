@@ -28,9 +28,7 @@ function WindowsBestChoice() {
           <div className="col-md-5">
             <div className="wp_choice_leftBox">
               <div className="wp_choice_ContentBox">
-                <h2>
-                Need a powerful Windows Plan solution?
-                </h2>
+                <h2>Need a powerful Windows Plan solution?</h2>
                 <p>
                   Madpopo offers the most cost-effective Windows hosting options
                   that are quick, adaptable, trustworthy, and secure. Whether
@@ -41,9 +39,7 @@ function WindowsBestChoice() {
                 </p>
               </div>
               <div className="wp_choice_ContentBox">
-                <h2>
-                Publish your site with Madpopo today
-                </h2>
+                <h2>Publish your site with Madpopo today</h2>
                 <p>
                   It's essential to ensure that your website is fully optimized
                   and configured to take full advantage of Madpopo's hosting
@@ -57,7 +53,12 @@ function WindowsBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-              <Image src="/image/extremely-fast-performance.webp" alt="Madpopo extremely-fast-performance" width={100} height={100}/>
+                <Image
+                  src="/image/extremely-fast-performance.webp"
+                  alt="Madpopo extremely-fast-performance"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
           </div>
@@ -70,16 +71,19 @@ function WindowsBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-              <Image src="/image/24-7-support.webp" alt="Madpopo 24x7-support" width={100} height={100}/>
+                <Image
+                  src="/image/24-7-support.webp"
+                  alt="Madpopo 24x7-support"
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
           </div>
           <div className="col-md-5">
             <div className="wp_choice_leftBox">
               <div className="wp_choice_ContentBox">
-                <h2>
-                Choose the best Windows Hosting plan for you
-                </h2>
+                <h2>Choose the best Windows Hosting plan for you</h2>
                 <p>
                   When choosing a Windows Hosting package from Madpopo, you can
                   evaluate the needs of your website and make the best decision

@@ -21,6 +21,7 @@ function ResellerHostingFeatures() {
                   alt="Optimized Technology"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Optimized Technology</h4>
@@ -44,6 +45,7 @@ function ResellerHostingFeatures() {
                   alt="WordPress Staging Tool"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>WordPress Staging Tool</h4>
@@ -67,6 +69,7 @@ function ResellerHostingFeatures() {
                   alt="Automatic Updates"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Automatic Updates</h4>
@@ -90,6 +93,7 @@ function ResellerHostingFeatures() {
                   alt="1-Click WordPress Installer"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>1-Click WordPress Installer</h4>
@@ -112,6 +116,7 @@ function ResellerHostingFeatures() {
                   alt="Automated Backups"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Automated Backups</h4>
@@ -134,6 +139,7 @@ function ResellerHostingFeatures() {
                   alt="WordPress Pro Features"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>WordPress Pro Features</h4>

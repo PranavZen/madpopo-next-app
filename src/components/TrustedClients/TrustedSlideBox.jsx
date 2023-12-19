@@ -10,6 +10,7 @@ function TrustedSlideBox(props) {
           alt="Client Pictures"
           width={70}
           height={96}
+          priority
         />
       </div>
       <h3>{props.clientName}</h3>

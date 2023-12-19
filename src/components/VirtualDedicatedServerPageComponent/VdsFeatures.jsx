@@ -22,7 +22,13 @@ function VdsFeatures() {
               data-aos-duration="1200"
             >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/Best-Price-at-Best-Performance.webp" alt="Quickly Provisioning" width={100} height={75}/>
+                <Image
+                  src="/image/Best-Price-at-Best-Performance.webp"
+                  alt="Quickly Provisioning"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Quickly Provisioning</h4>
               <p>
@@ -38,7 +44,13 @@ function VdsFeatures() {
               data-aos-duration="1200"
             >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/High-availability.webp" alt="High availability" width={100} height={75}/>
+                <Image
+                  src="/image/High-availability.webp"
+                  alt="High availability"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>High availability</h4>
               <p>
@@ -58,7 +70,9 @@ function VdsFeatures() {
                 <Image
                   src="/image/Global-Availability.webp"
                   alt="Global Availability"
-                  width={100} height={75}
+                  width={100}
+                  height={75}
+                  priority
                 />
               </div>
               <h4>Global Availability</h4>
@@ -78,7 +92,13 @@ function VdsFeatures() {
               data-aos-duration="1200"
             >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/Best-Price-at-Best-Performance.webp" alt="1-Click WordPress Installer"  width={100} height={75}/>
+                <Image
+                  src="/image/Best-Price-at-Best-Performance.webp"
+                  alt="1-Click WordPress Installer"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Best Price at Best Performance </h4>
               <p>
@@ -99,7 +119,9 @@ function VdsFeatures() {
                   src="/image/Support-Round-The-Clock.webp"
                   alt="Support Round The Clock 
                 "
-                width={100} height={75}
+                  width={100}
+                  height={75}
+                  priority
                 />
               </div>
               <h4>Support Round The Clock</h4>
@@ -119,7 +141,13 @@ function VdsFeatures() {
               data-aos-duration="1200"
             >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/Storage-I-O-load-balancing.webp" alt="WordPress Pro Features" width={100} height={75}/>
+                <Image
+                  src="/image/Storage-I-O-load-balancing.webp"
+                  alt="WordPress Pro Features"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Storage I/O load balancing</h4>
               <p>

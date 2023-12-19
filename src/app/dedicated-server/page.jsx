@@ -4,7 +4,6 @@ import NavbarInner from "@/components/navbar/NavbarInner";
 import Image from "next/image";
 import Footer from "@/components/Footer/Footer";
 import MouseContainer from "@/components/MouseContainer";
-import Tabs from "@/components/servertabsbutton/Tabs";
 import VsBestChoice from "@/components/VsPageComponent/VsBestChoice";
 import VdsFeatures from "@/components/VirtualDedicatedServerPageComponent/VdsFeatures";
 import VdsListing from "@/components/VirtualDedicatedServerPageComponent/VdsListing";
@@ -56,6 +55,7 @@ function page() {
             alt="Footer Imgage"
             width={304}
             height={270}
+            priority
           />
         </div>
         <svg className="bg-wave-box-end-z1" viewBox="0 0 1440 320">

@@ -45,7 +45,13 @@ function LinuxBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-                <Image src="/image/extremely-fast-performance.webp" alt="Madpopo extremely-fast-performance" width={100} height={100}/>
+                <Image
+                  src="/image/extremely-fast-performance.webp"
+                  alt="Madpopo extremely-fast-performance"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -58,7 +64,13 @@ function LinuxBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-                <Image src="/image/24-7-support.webp" alt="Madpopo 24x7-support" width={100} height={100}/>
+                <Image
+                  src="/image/24-7-support.webp"
+                  alt="Madpopo 24x7-support"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
           </div>

@@ -35,20 +35,20 @@ function Migration() {
               </Link>
             </div>
             <Image
-              decoding="async"
               className="main-ddos-attack-charactuer"
               src="/image/migrationmeeting.webp"
               alt="office"
               width={385}
               height={303}
+              priority
             />
             <Image
-              decoding="async"
               className="wp-floting-img"
               src="/image/wordpress/wp-3d-logo.webp"
               alt="wordpress"
               width={195}
               height={195}
+              priority
             />
           </div>
         </div>

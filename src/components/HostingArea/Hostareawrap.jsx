@@ -29,7 +29,14 @@ function Hostareawrap() {
         >
           <AreaButtons />
 
-          <Image className="w-100 mapOpacity" src="/image/world-map/wolrd-map.webp" alt="" width={1110} height={353}/>
+          <Image
+            className="w-100 mapOpacity"
+            src="/image/world-map/wolrd-map.webp"
+            alt=""
+            width={1110}
+            height={353}
+            priority
+          />
         </div>
       </div>
     </div>

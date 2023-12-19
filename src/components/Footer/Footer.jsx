@@ -2,8 +2,8 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
+import { NavHashLink } from "react-router-hash-link";
 
 function Footer() {
   const scrollRef = useRef(null);
@@ -35,6 +35,7 @@ function Footer() {
                           className="dark-version-logo"
                           width={162}
                           height={77}
+                          priority
                         />
                       </Link>
                     </div>
@@ -129,14 +130,14 @@ function Footer() {
                     </h4>
                     <ul className="footer-list list-unstyled">
                       <li className="py-1">
-                        <ScrollLink
+                        <Link
                           className="footer-list-link"
                           href="/domain-registration/#check-free-domain"
                           smooth={true}
                         >
                           {" "}
                           Check Free Domain{" "}
-                        </ScrollLink>
+                        </Link>
                       </li>
                       <li className="py-1">
                         <Link
@@ -228,11 +229,11 @@ function Footer() {
                           Servers Locations
                         </Link>
                       </li>
-                      <li className="py-1">
+                      {/* <li className="py-1">
                         <Link className="footer-list-link" href="/">
                           SLA
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="py-1">
                         <Link
                           className="footer-list-link"
@@ -359,6 +360,7 @@ function Footer() {
                         alt="visa"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                     <li className="ml-1">
@@ -367,6 +369,7 @@ function Footer() {
                         alt="amex"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                     <li className="ml-1">
@@ -375,6 +378,7 @@ function Footer() {
                         alt="discover"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                     <li className="ml-1">
@@ -383,6 +387,7 @@ function Footer() {
                         alt="jcb"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                     <li className="ml-1">
@@ -391,6 +396,7 @@ function Footer() {
                         alt="maestro"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                     <li className="ml-1">
@@ -399,6 +405,7 @@ function Footer() {
                         alt="mastercard"
                         width={40}
                         height={25}
+                        priority
                       />
                     </li>
                   </ul>

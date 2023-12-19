@@ -13,6 +13,7 @@ function MaximizeSection() {
                 alt="Web Speed"
                 width={547}
                 height={386}
+                priority
               />
             </div>
           </div>

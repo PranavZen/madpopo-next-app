@@ -29,6 +29,7 @@ function WindowsHostingFeatures() {
                   alt="Highly Secure and Reliable"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Highly Secure and Reliable</h4>
@@ -54,6 +55,7 @@ function WindowsHostingFeatures() {
                   alt="Powerful control panel- Plesk"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Powerful control panel- Plesk</h4>
@@ -79,6 +81,7 @@ function WindowsHostingFeatures() {
                   className="width100"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Safety and Security</h4>
@@ -101,6 +104,7 @@ function WindowsHostingFeatures() {
                   alt="Free SSL Certificate"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Free SSL Certificate</h4>
@@ -123,6 +127,7 @@ function WindowsHostingFeatures() {
                   alt="Malware Scan and Removal"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Malware Scan and Removal</h4>
@@ -146,6 +151,7 @@ function WindowsHostingFeatures() {
                   className="width100"
                   width={100}
                   height={75}
+                  priority
                 />
               </div>
               <h4>Scalable Hosting</h4>

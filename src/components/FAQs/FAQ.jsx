@@ -20,7 +20,13 @@ function FAQ(props) {
     border-top"
     >
       <div className="pose_1 homeFooImg">
-        <Image src="/image/footer_pose-1.png" alt="Footer Imgage" width={304} height={270}/>
+        <Image
+          src="/image/footer_pose-1.png"
+          alt="Footer Imgage"
+          width={304}
+          height={270}
+          priority
+        />
       </div>
       <svg className="bg-wave-box-end-z1" viewBox="0 0 1440 320">
         <defs>

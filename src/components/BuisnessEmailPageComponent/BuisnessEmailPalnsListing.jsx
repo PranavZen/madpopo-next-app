@@ -25,6 +25,7 @@ function BuisnessEmailPalnsListing() {
                         alt="common img"
                         width={35}
                         height={42}
+                        priority
                       />
                     </span>
                   </div>

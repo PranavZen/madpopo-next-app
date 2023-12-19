@@ -27,10 +27,14 @@ function WpBestChoice() {
               <div className="wp_choice_ContentBox">
                 <h2>Managed WordPress Hosting</h2>
                 <p>
-                  Our <a href="https://blog.madpopo.com/why-choose-madpopo-for-wordpress-managed-hosting/">managed WordPress hosting</a> plans cater to WordPress users'
-                  needs, providing user-friendly features such as Popo Panel, a
-                  1-click installer, and pre-installed performance plugins.
-                  Build a fast website and boost your online presence with ease.
+                  Our{" "}
+                  <a href="https://blog.madpopo.com/why-choose-madpopo-for-wordpress-managed-hosting/">
+                    managed WordPress hosting
+                  </a>{" "}
+                  plans cater to WordPress users' needs, providing user-friendly
+                  features such as Popo Panel, a 1-click installer, and
+                  pre-installed performance plugins. Build a fast website and
+                  boost your online presence with ease.
                 </p>
               </div>
             </div>
@@ -38,7 +42,13 @@ function WpBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-                <Image src="/image/extremely-fast-performance.webp" alt="Madpopo extremely-fast-performance" width={100} height={100}/>
+                <Image
+                  src="/image/extremely-fast-performance.webp"
+                  alt="Madpopo extremely-fast-performance"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -51,7 +61,13 @@ function WpBestChoice() {
           <div className="col-md-6">
             <div className="wp_choice_rightBox">
               <div className="wp_choiceImgWrap">
-                <Image src="/image/24-7-support.webp" alt="Madpopo 24-7-support" width={100} height={100}/>
+                <Image
+                  src="/image/24-7-support.webp"
+                  alt="Madpopo 24-7-support"
+                  width={100}
+                  height={100}
+                  priority
+                />
               </div>
             </div>
           </div>

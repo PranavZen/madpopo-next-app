@@ -29,13 +29,6 @@ function page() {
           their offerings and provide hosting services to their clients
         </span>
       </div>
-      {/* <MouseContainer
-        imgUrl="/image/pages/businessemail/besrightimg.webp"
-        width={562}
-        height={356}
-        clsName="wp_innerBox buis_innerBox"
-        altName="Business Email Hosting"
-      /> */}
       <div
         className="resellerHosting_pricingBox container px-0"
         data-aos="zoom-in"
@@ -59,6 +52,7 @@ function page() {
             alt="Footer Imgage"
             width={304}
             height={270}
+            priority
           />
         </div>
         <svg className="bg-wave-box-end-z1" viewBox="0 0 1440 320">

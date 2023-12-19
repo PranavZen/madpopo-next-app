@@ -18,6 +18,7 @@ function MouseContainer(props) {
           alt={props.altName}
           width={props.width}
           height={props.height}
+          priority
         />
       </MouseParallaxChild>
     </MouseParallaxContainer>

@@ -32,6 +32,7 @@ function TabsTwo() {
                   alt="India"
                   width={21}
                   height={16}
+                  priority
                 />
               </span>{" "}
               ASIA
@@ -51,6 +52,7 @@ function TabsTwo() {
                   alt="USA"
                   width={21}
                   height={16}
+                  priority
                 />
               </span>{" "}
               USA
@@ -70,6 +72,7 @@ function TabsTwo() {
                   alt="EUROPE"
                   width={21}
                   height={16}
+                  priority
                 />
               </span>{" "}
               EUROPE

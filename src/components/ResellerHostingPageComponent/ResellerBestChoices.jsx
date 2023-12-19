@@ -52,6 +52,7 @@ function ResellerBestChoices() {
                   alt="Madpopo extremely-fast-performance"
                   width={100}
                   height={100}
+                  priority
                 />
               </div>
             </div>
@@ -70,6 +71,7 @@ function ResellerBestChoices() {
                   alt="Madpopo 24x7-support"
                   width={100}
                   height={100}
+                  priority
                 />
               </div>
             </div>

@@ -61,6 +61,7 @@ function page() {
             alt="Footer Imgage"
             width={304}
             height={270}
+            priority
           />
         </div>
         <svg className="bg-wave-box-end-z1" viewBox="0 0 1440 320">

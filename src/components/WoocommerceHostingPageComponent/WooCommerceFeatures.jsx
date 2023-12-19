@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 function WooCommerceFeatures() {
-  return ( 
+  return (
     <div className="wp_featuersWrapper">
       <div className="wpSectionTitle">
         <h2>We Provide the Best Hosting for WooCommerce</h2>
@@ -10,9 +10,19 @@ function WooCommerceFeatures() {
       <div className="container">
         <div className="wp_FeatureRow">
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/fast-solid-state-storage.png" alt="Fast Solid State Storage" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/fast-solid-state-storage.png"
+                  alt="Fast Solid State Storage"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Fast Solid State Storage</h4>
               <p>
@@ -24,9 +34,19 @@ function WooCommerceFeatures() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/WordPress-Staging-Tool-new.webp" alt="WooCommerce Pre-Configured" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/WordPress-Staging-Tool-new.webp"
+                  alt="WooCommerce Pre-Configured"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>WooCommerce Pre-Configured</h4>
               <p>
@@ -38,9 +58,19 @@ function WooCommerceFeatures() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/ssls.png" alt="FREE SSL Security" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/ssls.png"
+                  alt="FREE SSL Security"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>FREE SSL Security</h4>
               <p>
@@ -52,9 +82,19 @@ function WooCommerceFeatures() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/Automatic-Updates-new.webp" alt="Automatic Updates" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/Automatic-Updates-new.webp"
+                  alt="Automatic Updates"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Automatic Updates</h4>
               <p>
@@ -65,9 +105,19 @@ function WooCommerceFeatures() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/server-level-caching.png" alt="Server-Level Caching" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/server-level-caching.png"
+                  alt="Server-Level Caching"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>Server-Level Caching</h4>
               <p>
@@ -78,9 +128,19 @@ function WooCommerceFeatures() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="wp_featuresInnerBox" data-aos="fade-up" data-aos-duration='1200'>
+            <div
+              className="wp_featuresInnerBox"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
               <div className="wp_fetureImageWrap">
-                <Image src="/image/wordpress/100-Uptime.png" alt="100% Uptime Guaranteed" width={100} height={75}/>
+                <Image
+                  src="/image/wordpress/100-Uptime.png"
+                  alt="100% Uptime Guaranteed"
+                  width={100}
+                  height={75}
+                  priority
+                />
               </div>
               <h4>100% Uptime Guaranteed</h4>
               <p>

@@ -2401,6 +2401,9 @@ ul.special-helf-box-list li.not-chacked {
 .toggle-domain-s-t:hover {
   background: #f3f5f6;
 }
+.toggle-domain-s-t.active{
+  background: #f3f5f6;
+}
 .domain-search-input-header {
   width: 100%;
   border: 0;
@@ -20903,4 +20906,8 @@ main {
 }
 .copyright-text a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.cursorPointer{
+  cursor: pointer;
 }

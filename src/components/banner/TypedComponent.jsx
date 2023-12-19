@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, css } from "aphrodite";
 import { fadeIn } from "react-animations";
@@ -7,35 +7,48 @@ import Image from "next/image";
 
 function TypedComponent() {
   const [styles, setStyles] = useState(null);
-  const [Show, setShow] = useState(1); 
- 
+  const [Show, setShow] = useState(1);
+
   useEffect(() => {
     const interval = setInterval(() => {
-      const randomNum = Math.floor(Math.random() * 5) + 1; 
+      const randomNum = Math.floor(Math.random() * 5) + 1;
       // console.log(randomNum);
       setShow(randomNum);
-      
     }, 5000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
-    setStyles(StyleSheet.create({
-      animatedElement: {
-        animationName: fadeIn,
-        animationDuration: "3s",
-      },
-    }));
+    setStyles(
+      StyleSheet.create({
+        animatedElement: {
+          animationName: fadeIn,
+          animationDuration: "3s",
+        },
+      })
+    );
   }, []);
 
   return (
     <div className="hero-area-coodiv snow-montagne position-relative">
       <div className="moveingEl homeEl1">
-        <Image src="/image/header/hero-light-2.png" alt="moving element 1" width={24} height={24}/>
+        <Image
+          priority
+          src="/image/header/hero-light-2.png"
+          alt="moving element 1"
+          width={24}
+          height={24}
+        />
       </div>
       <div className="moveingEl homeEl2">
-        <Image src="/image/header/service-3.png" alt="moving element 2" width={80} height={80}/>
+        <Image
+          priority
+          src="/image/header/service-3.png"
+          alt="moving element 2"
+          width={80}
+          height={80}
+        />
       </div>
       <div className="container position-relative coodiv-z-index-2">
         <div className="row justify-content-start">
@@ -177,7 +190,13 @@ function TypedComponent() {
             <div className="pcImageWrap">
               <div className="position-relative">
                 <div className="center-logo">
-                  <Image src="/image/popo-yoga2.webp" alt="Madpopo Mascoght"  width={400} height={400}/>
+                  <Image
+                    priority
+                    src="/image/popo-yoga2.webp"
+                    alt="Madpopo Mascoght"
+                    width={400}
+                    height={400}
+                  />
                 </div>
               </div>
             </div>
@@ -185,10 +204,22 @@ function TypedComponent() {
         </div>
       </div>
       <div className="moveingEl homeEl4">
-        <Image src="/image/header/hero-light-1.png" alt="moving element 4" width={45} height={45}/>
+        <Image
+          priority
+          src="/image/header/hero-light-1.png"
+          alt="moving element 4"
+          width={45}
+          height={45}
+        />
       </div>
       <div className="moveingEl homeEl3">
-        <Image src="/image/header/service-1.png" alt="moving element 3" width={80} height={80}/>
+        <Image
+          priority
+          src="/image/header/service-1.png"
+          alt="moving element 3"
+          width={80}
+          height={80}
+        />
       </div>
     </div>
   );

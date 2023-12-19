@@ -5,7 +5,17 @@ import Image from "next/image";
 import CountrySelect from "../countryselect/CountrySelect";
 function NavbarInner() {
   const [scroll, setScroll] = useState(false);
+  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeToggle, setActiveToggle] = useState(false);
+
   const scrollRef = useRef(null);
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+  const handleToggleClick = () => {
+    setActiveToggle(!activeToggle);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -101,6 +111,7 @@ function NavbarInner() {
           <div className="brand-logo mr-8 newBrandLogo">
             <Link href="/" ref={scrollRef} onClick={scrollToTop}>
               <Image
+                priority
                 src="/image/header/madpopo-dark-logo.svg"
                 alt=""
                 className="light-version-logo"
@@ -108,6 +119,7 @@ function NavbarInner() {
                 height={74}
               />
               <Image
+                priority
                 src="/image/header/madpopo-white-logo.svg"
                 alt=""
                 className="dark-version-logo"
@@ -117,7 +129,7 @@ function NavbarInner() {
             </Link>
           </div>
 
-          <div className="collapse navbar-collapse" id="mobile-menu">
+          <div className={activeToggle ? `collapse navbar-collapse show` : "collapse navbar-collapse"} id="mobile-menu">
             <div className="navbar-nav-wrapper">
               <ul
                 id="header-navbar-links"
@@ -138,6 +150,7 @@ function NavbarInner() {
                     <span className="downArrowMenu whiteArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-white.png"
                         alt="down arrow"
                         width={12}
@@ -147,6 +160,7 @@ function NavbarInner() {
                     <span className="downArrowMenu blackArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
                         width={12}
@@ -206,6 +220,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/wordpressicon.png"
                                     alt="WordPress Hosting"
                                     width={40}
@@ -231,6 +246,7 @@ function NavbarInner() {
                               <div className="widget-icon text-blue mr-5 mr-lg-6 mb-7 mb-md-0">
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/woocomicon.png"
                                     alt=" WooCommerce Hosting"
                                     width={40}
@@ -275,6 +291,7 @@ function NavbarInner() {
                                                                   mb-md-0"
                               >
                                 <Image
+                                  priority
                                   src="/image/header/navbaricon/linuxicon.png"
                                   alt=" Linux Web Hosting"
                                   width={40}
@@ -318,6 +335,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/windowsicon.png"
                                     alt="Windows Web Hosting"
                                     width={40}
@@ -362,6 +380,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/virtual-dedicated-server.png"
                                     alt="Cloud Server"
                                     width={40}
@@ -407,6 +426,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/dedicated-server.png"
                                     alt="Dedicated Server"
                                     width={40}
@@ -451,6 +471,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/Emailicon.png"
                                     alt="Business Email Hosting"
                                     width={40}
@@ -496,6 +517,7 @@ function NavbarInner() {
                               >
                                 <span>
                                   <Image
+                                    priority
                                     src="/image/header/navbaricon/Resellericon.png"
                                     alt="Reseller Hosting"
                                     width={40}
@@ -554,6 +576,7 @@ function NavbarInner() {
                     <span className="downArrowMenu whiteArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-white.png"
                         alt="down arrow"
                         width={12}
@@ -563,6 +586,7 @@ function NavbarInner() {
                     <span className="downArrowMenu blackArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
                         width={12}
@@ -584,18 +608,18 @@ function NavbarInner() {
                       aria-orientation="vertical"
                       id="global-network-tabs"
                     >
-                      <Link
-                        className="toggle-domain-s-t
+                      <a
+                        className={ activeTab === 'tab1' ? `toggle-domain-s-t
                                                     d-inline-block col-md-6
                                                     active-link-border pl-lg-10
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
-                                                    pb-4 rounded-top-left-8 nav-link active"
+                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer` : `toggle-domain-s-t
+                                                    d-inline-block col-md-6
+                                                    active-link-border pl-lg-10
+                                                    pt-lg-8 pb-lg-5 pl-6 pt-4
+                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`}
                         id="global-network-country-001-tab"
-                        data-toggle="pill"
-                        href="#global-network-country-001"
-                        role="tab"
-                        aria-controls="global-network-country-001"
-                        aria-selected="true"
+                        onClick={() => handleTabClick('tab1')}
                       >
                         <h1
                           className="coodiv-text-8
@@ -624,21 +648,19 @@ function NavbarInner() {
                             .
                           </span>
                         </h1>
-                      </Link>
-                      <Link
-                        className="toggle-domain-s-t
-                                                    d-md-inline-block d-none
-                                                    col-md-6
-                                                    active-link-border
-                                                    pl-lg-10 pt-lg-8 pb-lg-5
-                                                    pl-6 pt-4 pb-4
-                                                    rounded-top-right-8 nav-link"
+                      </a>
+                      <a
+                        className={ activeTab === 'tab2' ? `toggle-domain-s-t
+                                                    d-inline-block col-md-6
+                                                    active-link-border pl-lg-10
+                                                    pt-lg-8 pb-lg-5 pl-6 pt-4
+                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer` : `toggle-domain-s-t
+                                                    d-inline-block col-md-6
+                                                    active-link-border pl-lg-10
+                                                    pt-lg-8 pb-lg-5 pl-6 pt-4
+                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`}
                         id="global-network-country-002-tab"
-                        data-toggle="pill"
-                        href="#global-network-country-002"
-                        role="tab"
-                        aria-controls="global-network-country-002"
-                        aria-selected="false"
+                        onClick={() => handleTabClick('tab2')}
                       >
                         <h1
                           className="coodiv-text-8
@@ -668,57 +690,56 @@ function NavbarInner() {
                             .
                           </span>
                         </h1>
-                      </Link>
+                      </a>
                     </div>
                     <div
                       className="pt-10
                                                 mega-menu-body tab-content "
                       id="global-network-tabsContent"
                     >
-                      <div
-                        className="row
-                                                    justify-content-center tab-pane fade show active"
-                        id="global-network-country-001"
-                        role="tabpanel"
-                        aria-labelledby="global-network-country-001-tab"
-                      >
+                     {activeTab === "tab1" && (
                         <div
-                          className="col-xl-12
-                                                        col-lg-7 col-md-8
-                                                        col-sm-11"
+                          className="row
+                                                    justify-content-center tab-pane fade show active"
+                          id="global-network-country-001"
                         >
                           <div
-                            className="domain-search-form
-                                                            mb-8"
+                            className="col-xl-12
+                                                        col-lg-7 col-md-8
+                                                        col-sm-11"
                           >
-                            <form action={domainName} method="post">
-                              <div
-                                className="form-group
+                            <div
+                              className="domain-search-form
+                                                            mb-8"
+                            >
+                              <form action={domainName} method="post">
+                                <div
+                                  className="form-group
                                                                     position-relative
                                                                     text-lg-left
                                                                     text-center dom_mobForm"
-                              >
-                                <input
-                                  className="form-control
+                                >
+                                  <input
+                                    className="form-control
                                                                         coodiv-text-9
                                                                         border-separate
                                                                         mb-lg-6
                                                                         mb-2
                                                                         min-height-px-64"
-                                  type="text"
-                                  id="domain"
-                                  name="domain"
-                                  onChange={(e) =>
-                                    setdomainName(action + e.target.value)
-                                  }
-                                  placeholder="Enter
+                                    type="text"
+                                    id="domain"
+                                    name="domain"
+                                    onChange={(e) =>
+                                      setdomainName(action + e.target.value)
+                                    }
+                                    placeholder="Enter
                                                                         your
                                                                         domain
                                                                         name"
-                                  fdprocessedid="ie3xhm"
-                                />
-                                <button
-                                  className="form-btn
+                                    fdprocessedid="ie3xhm"
+                                  />
+                                  <button
+                                    className="form-btn
                                                                         btn
                                                                         btn-primary
                                                                         mr-5
@@ -726,113 +747,114 @@ function NavbarInner() {
                                                                         min-height-px-50
                                                                         w-100
                                                                         w-md-auto"
-                                  fdprocessedid="6zse4p"
-                                >
-                                  check
-                                </button>
+                                    fdprocessedid="6zse4p"
+                                  >
+                                    check
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div className="col-xl-12 col-lg-12 col-md-12">
+                            <div className="domaulListing d-flex flex-wrap pb-5">
+                              <div className="col-md-6 listTitle">
+                                <Link href="/domain-registration">
+                                  <p>Free with Domain Registration</p>
+                                  <ul className="listFeatureDomain">
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i> 2
+                                        Free Email Accounts
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Privacy Protection
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Domain Theft Protection
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </Link>
                               </div>
-                            </form>
-                          </div>
-                        </div>
-                        <div className="col-xl-12 col-lg-12 col-md-12">
-                          <div className="domaulListing d-flex flex-wrap pb-5">
-                            <div className="col-md-6 listTitle">
-                              <Link href="/domain-registration">
-                                <p>Free with Domain Registration</p>
-                                <ul className="listFeatureDomain">
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i> 2
-                                      Free Email Accounts
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Privacy Protection
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Domain Theft Protection
-                                    </span>
-                                  </li>
-                                </ul>
-                              </Link>
-                            </div>
-                            <div className="col-md-6 listTitle">
-                              <Link href="/domain-registration">
-                                <p>Free DNS Services</p>
-                                <ul className="listFeatureDomain">
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i> DNS
-                                      Management
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Domain Forwarding
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Multiple Mail Forwards
-                                    </span>
-                                  </li>
-                                </ul>
-                              </Link>
+                              <div className="col-md-6 listTitle">
+                                <Link href="/domain-registration">
+                                  <p>Free DNS Services</p>
+                                  <ul className="listFeatureDomain">
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        DNS Management
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Domain Forwarding
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Multiple Mail Forwards
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div
-                        className="row
-                                                    justify-content-center tab-pane fade"
-                        id="global-network-country-002"
-                        role="tabpanel"
-                        aria-labelledby="global-network-country-002-tab"
-                      >
+                      )}
+
+                      {activeTab === "tab2" && (
                         <div
-                          className="col-xl-12
-                                                        col-lg-7 col-md-8
-                                                        col-sm-11"
+                          className="row
+                                                    justify-content-center tab-pane fade show active"
+                          id="global-network-country-002"
                         >
                           <div
-                            className="domain-search-form
-                                                            mb-8"
+                            className="col-xl-12
+                                                        col-lg-7 col-md-8
+                                                        col-sm-11"
                           >
-                            <form action={domainName} method="post">
-                              <div
-                                className="form-group
+                            <div
+                              className="domain-search-form
+                                                            mb-8"
+                            >
+                              <form action={domainName} method="post">
+                                <div
+                                  className="form-group
                                                                   position-relative
                                                                   text-lg-left
                                                                   text-center dom_mobForm"
-                              >
-                                <input
-                                  className="form-control
+                                >
+                                  <input
+                                    className="form-control
                                                                 coodiv-text-9
                                                                 border-separate
                                                                 mb-lg-6
                                                                 mb-2
                                                                 min-height-px-64"
-                                  type="text"
-                                  id="domain"
-                                  name="domain"
-                                  onChange={(e) =>
-                                    setdomainName(action + e.target.value)
-                                  }
-                                  placeholder="Enter
+                                    type="text"
+                                    id="domain"
+                                    name="domain"
+                                    onChange={(e) =>
+                                      setdomainName(action + e.target.value)
+                                    }
+                                    placeholder="Enter
                                                                 your
                                                                 domain
                                                                 name"
-                                  fdprocessedid="ie3xhm"
-                                />
-                                <button
-                                  className="form-btn
+                                    fdprocessedid="ie3xhm"
+                                  />
+                                  <button
+                                    className="form-btn
                                                                       btn
                                                                       btn-primary
                                                                       mr-2
@@ -840,69 +862,70 @@ function NavbarInner() {
                                                                       min-height-px-50
                                                                       w-100
                                                                       w-md-auto"
-                                  fdprocessedid="6zse4p"
-                                >
-                                  check
-                                </button>
+                                    fdprocessedid="6zse4p"
+                                  >
+                                    check
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div className="col-xl-12 col-lg-12 col-md-12">
+                            <div className="domaulListing d-flex flex-wrap pb-5">
+                              <div className="col-md-6 listTitle">
+                                <Link href="/domain-transfer">
+                                  <p>Free with Domain Transfer</p>
+                                  <ul className="listFeatureDomain">
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i> 2
+                                        Free Email Accounts
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Privacy Protection
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Domain Theft Protection
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </Link>
                               </div>
-                            </form>
-                          </div>
-                        </div>
-                        <div className="col-xl-12 col-lg-12 col-md-12">
-                          <div className="domaulListing d-flex flex-wrap pb-5">
-                            <div className="col-md-6 listTitle">
-                              <Link href="/domain-transfer">
-                                <p>Free with Domain Transfer</p>
-                                <ul className="listFeatureDomain">
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i> 2
-                                      Free Email Accounts
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Privacy Protection
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Domain Theft Protection
-                                    </span>
-                                  </li>
-                                </ul>
-                              </Link>
-                            </div>
-                            <div className="col-md-6 listTitle">
-                              <Link href="/domain-transfer">
-                                <p>Free DNS Services</p>
-                                <ul className="listFeatureDomain">
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i> DNS
-                                      Management
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Domain Forwarding
-                                    </span>
-                                  </li>
-                                  <li>
-                                    <span>
-                                      <i className="feather icon-check"></i>{" "}
-                                      Multiple Mail Forwards
-                                    </span>
-                                  </li>
-                                </ul>
-                              </Link>
+                              <div className="col-md-6 listTitle">
+                                <Link href="/domain-transfer">
+                                  <p>Free DNS Services</p>
+                                  <ul className="listFeatureDomain">
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        DNS Management
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Domain Forwarding
+                                      </span>
+                                    </li>
+                                    <li>
+                                      <span>
+                                        <i className="feather icon-check"></i>{" "}
+                                        Multiple Mail Forwards
+                                      </span>
+                                    </li>
+                                  </ul>
+                                </Link>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </li>
@@ -927,6 +950,7 @@ function NavbarInner() {
                     <span className="downArrowMenu whiteArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-white.png"
                         alt="down arrow"
                         width={12}
@@ -936,6 +960,7 @@ function NavbarInner() {
                     <span className="downArrowMenu blackArrow">
                       {" "}
                       <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
                         width={12}
@@ -1019,22 +1044,19 @@ function NavbarInner() {
           </div>
 
           <button
-            className="navbar-toggler btn-close-off-canvas
-                              hamburger-icon border-0 collapsed"
+            className={activeToggle ? `navbar-toggler btn-close-off-canvas
+                              hamburger-icon border-0` : `navbar-toggler btn-close-off-canvas
+                              hamburger-icon border-0 collapsed`}
             type="button"
-            data-toggle="collapse"
-            data-target="#mobile-menu"
-            aria-controls="mobile-menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            onClick={() => handleToggleClick(true)}
           >
             <span
               className="hamburger hamburger--squeeze
                                   js-hamburger"
             >
-              <span className="hamburger-box inner">
-                <i className="feather icon-menu"></i>
-                <i className="feather icon-x"></i>
+              <span className={!activeToggle ? `hamburger-box outer` : `hamburger-box inner`}>
+                <i className="feather icon-menu" style={{ display: activeToggle ? 'none' : 'block' }}></i>
+                <i className="feather icon-x" style={{ display: activeToggle ? 'block' : 'none' }}></i>
               </span>
             </span>
           </button>

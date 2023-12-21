@@ -9,6 +9,13 @@ import CpanelPricingCard from "@/components/pricecard/CpanelPricingCard";
 import Image from "next/image";
 import React from "react";
 
+export const metadata = {
+  title: "CPanel: The Best Web Hosting Control Panel",
+  description:
+    "Select a flexible pricing plan for cPanel, the best web hosting control panel. User-friendly and intuitive, it simplifies website management for domains, files, databases, and more.",
+  keywords: "cpanel, cpanelhosting, cpanelhost, bestcpanelhost",
+};
+
 function page() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg cpanelBG">

@@ -71,7 +71,7 @@ function TypedComponent() {
                   to="myTabslide"
                   className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
                   spy={true}
-                  smooth={true}
+                  smooth="true"
                   offset={-100}
                   duration={500}
                 >
@@ -157,7 +157,7 @@ function TypedComponent() {
               </p>
               <div className="bannerBtnWrap">
                 <a
-                  href="/virtual-dedicated-server"
+                  href="/virtual-server"
                   className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
                 >
                   View Plans

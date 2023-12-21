@@ -147,7 +147,7 @@ function NavbarInner() {
                     aria-expanded="false"
                   >
                     Hosting{" "}
-                    <span className="downArrowMenu whiteArrow">
+                    <span className="downArrowMenu whiteArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -157,7 +157,7 @@ function NavbarInner() {
                         height={8}
                       ></Image>
                     </span>
-                    <span className="downArrowMenu blackArrow">
+                    <span className="downArrowMenu blackArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -573,7 +573,7 @@ function NavbarInner() {
                     aria-expanded="false"
                   >
                     Domains
-                    <span className="downArrowMenu whiteArrow">
+                    <span className="downArrowMenu whiteArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -583,7 +583,7 @@ function NavbarInner() {
                         height={8}
                       ></Image>
                     </span>
-                    <span className="downArrowMenu blackArrow">
+                    <span className="downArrowMenu blackArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -736,7 +736,7 @@ function NavbarInner() {
                                                                         your
                                                                         domain
                                                                         name"
-                                    fdprocessedid="ie3xhm"
+                                 
                                   />
                                   <button
                                     className="form-btn
@@ -747,7 +747,7 @@ function NavbarInner() {
                                                                         min-height-px-50
                                                                         w-100
                                                                         w-md-auto"
-                                    fdprocessedid="6zse4p"
+                                    
                                   >
                                     check
                                   </button>
@@ -851,8 +851,8 @@ function NavbarInner() {
                                                                 your
                                                                 domain
                                                                 name"
-                                    fdprocessedid="ie3xhm"
-                                  />
+                                    
+                                  /> 
                                   <button
                                     className="form-btn
                                                                       btn
@@ -862,7 +862,7 @@ function NavbarInner() {
                                                                       min-height-px-50
                                                                       w-100
                                                                       w-md-auto"
-                                    fdprocessedid="6zse4p"
+                                   
                                   >
                                     check
                                   </button>
@@ -947,7 +947,7 @@ function NavbarInner() {
                     aria-expanded="false"
                   >
                     About Us{" "}
-                    <span className="downArrowMenu whiteArrow">
+                    <span className="downArrowMenu whiteArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -957,7 +957,7 @@ function NavbarInner() {
                         height={8}
                       ></Image>
                     </span>
-                    <span className="downArrowMenu blackArrow">
+                    <span className="downArrowMenu blackArrow innerArrow">
                       {" "}
                       <Image
                         priority
@@ -1021,6 +1021,7 @@ function NavbarInner() {
                     </div>
                   </ul>
                 </li>
+                
                 <li className="nav-item dropdown">
                   <Link href="/help-center" className="nav-link">
                     Help Center

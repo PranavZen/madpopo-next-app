@@ -79,7 +79,7 @@ function HelpCenterBody() {
               }}
               to="generalQns"
               spy={true}
-              smooth={true}
+              smooth="true"
               offset={-140}
               duration={500}
             >
@@ -97,7 +97,7 @@ function HelpCenterBody() {
               }}
               to="mailBoxQuestions"
               spy={true}
-              smooth={true}
+              smooth="true"
               offset={-140}
               duration={500}
             >
@@ -115,7 +115,7 @@ function HelpCenterBody() {
               }}
               to="domainQuestions"
               spy={true}
-              smooth={true}
+              smooth="true"
               offset={-140}
               duration={500}
             >
@@ -133,7 +133,7 @@ function HelpCenterBody() {
               }}
               to="paymentOption"
               spy={true}
-              smooth={true}
+              smooth="true"
               offset={-140}
               duration={500}
             >

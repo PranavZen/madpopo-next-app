@@ -7,6 +7,14 @@ import WhoisCheckerFaq from "@/components/WhoisCheckerPageComponent/WhoisChecker
 import CheckerPlans from "@/components/WhoisCheckerPageComponent/CheckerPlans";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Get Accurate Domain Info with WHOIS Domain Lookup",
+  description:
+    "Get detailed information about any domain name with WHOIS Domain Lookup. Discover website ownership with our WHOIS Domain Lookup tool. Uncover the details of a website's owner quickly and easily.",
+  keywords:
+    "whois, whois lookup, whois domain, whois domain lookup, whois domain tools, whois lookup, whois domain hosting",
+};
+
 function page() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg careerBg">
@@ -30,7 +38,7 @@ function page() {
       <div className="wpChoiceSection ">
         <WhoisCheckerBestChoice />
       </div>
-      <CheckerPlans/>
+      <CheckerPlans />
       <div className="wp_hostingFaqSection">
         <div className="pose_1 whoisPose">
           <Image

@@ -114,12 +114,25 @@ function NavbarOuter() {
                     aria-expanded="false"
                   >
                     Hosting{" "}
-                    <span className="downArrowMenu">
+                    <span className="downArrowMenu whiteArrow">
                       {" "}
-                      <img
+                      <Image
+                        priority
+                        src="/image/header/down-arrow-white.png"
+                        alt="down arrow"
+                        width={12}
+                        height={8}
+                      ></Image>
+                    </span>
+                    <span className="downArrowMenu blackArrow">
+                      {" "}
+                      <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
-                      ></img>
+                        width={12}
+                        height={8}
+                      ></Image>
                     </span>
                   </Link>
                   <div
@@ -527,12 +540,25 @@ function NavbarOuter() {
                     aria-expanded="false"
                   >
                     Domains
-                    <span className="downArrowMenu">
+                    <span className="downArrowMenu whiteArrow">
                       {" "}
-                      <img
+                      <Image
+                        priority
+                        src="/image/header/down-arrow-white.png"
+                        alt="down arrow"
+                        width={12}
+                        height={8}
+                      ></Image>
+                    </span>
+                    <span className="downArrowMenu blackArrow">
+                      {" "}
+                      <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
-                      ></img>
+                        width={12}
+                        height={8}
+                      ></Image>
                     </span>
                   </Link>
                   <div
@@ -678,7 +704,7 @@ function NavbarOuter() {
                                                                         your
                                                                         domain
                                                                         name"
-                                    fdprocessedid="ie3xhm"
+                                    
                                   />
                                   <button
                                     className="form-btn
@@ -689,7 +715,7 @@ function NavbarOuter() {
                                                                         min-height-px-50
                                                                         w-100
                                                                         w-md-auto"
-                                    fdprocessedid="6zse4p"
+                                    
                                   >
                                     check
                                   </button>
@@ -793,7 +819,7 @@ function NavbarOuter() {
                                                                 your
                                                                 domain
                                                                 name"
-                                    fdprocessedid="ie3xhm"
+                                    
                                   />
                                   <button
                                     className="form-btn
@@ -804,7 +830,7 @@ function NavbarOuter() {
                                                                       min-height-px-50
                                                                       w-100
                                                                       w-md-auto"
-                                    fdprocessedid="6zse4p"
+                                    
                                   >
                                     check
                                   </button>
@@ -890,12 +916,25 @@ function NavbarOuter() {
                     aria-expanded="false"
                   >
                     About Us{" "}
-                    <span className="downArrowMenu">
+                    <span className="downArrowMenu whiteArrow">
                       {" "}
-                      <img
+                      <Image
+                        priority
+                        src="/image/header/down-arrow-white.png"
+                        alt="down arrow"
+                        width={12}
+                        height={8}
+                      ></Image>
+                    </span>
+                    <span className="downArrowMenu blackArrow">
+                      {" "}
+                      <Image
+                        priority
                         src="/image/header/down-arrow-black.png"
                         alt="down arrow"
-                      ></img>
+                        width={12}
+                        height={8}
+                      ></Image>
                     </span>
                   </Link>
                   <ul
@@ -951,6 +990,7 @@ function NavbarOuter() {
                     </div>
                   </ul>
                 </li>
+                
                 <li className="nav-item dropdown">
                   <Link href="/help-center" className="nav-link">
                     Help Center
@@ -984,9 +1024,9 @@ function NavbarOuter() {
               className="hamburger hamburger--squeeze
                                   js-hamburger"
             >
-              <span className={!activeToggle ? `hamburger-box outer` : `hamburger-box inner`}>
+              <span className={!activeToggle ? `hamburger-box inner` : `hamburger-box outer`}>
                 <i className="feather icon-menu" style={{ display: activeToggle ? 'none' : 'block' }}></i>
-                <i className="feather icon-x" style={{ display: activeToggle ? 'block' : 'none' }}></i>
+                <i className="feather icon-x crossBtn" style={{ display: activeToggle ? 'block' : 'none' }}></i>
               </span>
             </span>
           </button>

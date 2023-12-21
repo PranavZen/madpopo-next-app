@@ -1389,7 +1389,7 @@ a.btn {
 .site-header.light-mode-texts .coodiv-toggle-arrow {
   color: #252526 !important;
 }
-header.site-header.fixed-header-layout.dark-mode-texts
+/* header.site-header.fixed-header-layout.dark-mode-texts
   .main-menu
   .coodiv-toggle-arrow
   .downArrowMenu.blackArrow {
@@ -1400,7 +1400,8 @@ header.site-header.fixed-header-layout.top-header-fixed.white-bg.light-mode-text
   .coodiv-toggle-arrow
   .downArrowMenu.whiteArrow {
   display: none;
-}
+} */
+
 .main-features-box {
   padding: 20px;
   border-radius: 10px;
@@ -5832,6 +5833,20 @@ a.headerphone-number {
   background: #36364e;
   position: relative;
   z-index: 2;
+}
+@media screen and (min-width: 991px){
+  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow{
+    display: none !important;
+  }
+  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow.innerArrow{
+    display: block !important;
+  }
+  .bgtop.dark-mode-texts .downArrowMenu.blackArrow.innerArrow{
+    display: none !important;
+  }
+  .bgtop.white-bg.light-mode-texts .downArrowMenu.whiteArrow{
+    display: none !important;
+  }
 }
 @media (max-width: 991px) {
   .hero-area-coodiv .header-hero-backgrounds .sunset-main-trees-left,
@@ -19551,6 +19566,12 @@ form .form-group {
   }
 }
 @media screen and (max-width: 834px) {
+  .downArrowMenu.blackArrow{
+    display: none !important;
+  }
+  .dark-mode-texts .hamburger-box.inner .icon-menu{
+    color: #000;
+  }
   .vsTabBtnWrap {
     margin-top: 280px;
   }
@@ -19589,9 +19610,9 @@ form .form-group {
   .topBarStrip .topInner {
     margin-bottom: 10px;
   }
-  .hamburger-icon .hamburger .hamburger-box i:first-child {
+  /* .hamburger-icon .hamburger .hamburger-box i:first-child {
     color: #332333;
-  }
+  } */
   .hamburger-icon {
     margin-left: 15px;
   }
@@ -20164,9 +20185,9 @@ form .form-group {
   .ReactFlagsSelect-module_secondaryLabel__37t1D {
     font-size: 12px !important;
   }
-  .hamburger-icon .hamburger .hamburger-box i:first-child {
+  /* .hamburger-icon .hamburger .hamburger-box i:first-child {
     color: #332333;
-  }
+  } */
   .brand-logo.newBrandLogo a img {
     width: 80px;
   }
@@ -20557,12 +20578,15 @@ form .form-group {
     margin-top: 350px;
     padding-bottom: 20px;
   }
-  .dark-mode-texts .hamburger-box.outer i {
+  .dark-mode-texts .hamburger-box.outer .crossBtn {
+    color: #000;
+  }
+  /* .light-mode-texts .hamburger-box.outer i {
     color: #fff !important;
   }
-  .light-mode-texts .hamburger-box.outer i {
+  .light-mode-texts .hamburger-box.inner i {
     color: #000 !important;
-  }
+  } */
   .wp_hostingBgImg .ddosPriceCardRow .priceCardWrap:nth-child(2) {
     transform: scale(1);
   }
@@ -20638,7 +20662,7 @@ form .form-group {
   }
 
   .offcanvas-active.navbar-expand-lg .navbar-collapse {
-    width: 300px;
+    width: 80%;
   }
   .site-header
     > .container-fluid

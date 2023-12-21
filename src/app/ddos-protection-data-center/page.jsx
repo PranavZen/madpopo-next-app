@@ -5,11 +5,12 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata = {
-    title: "Keep Your Network Safe with Advanced DDOS Protection Solutions",
-    description:
-      "Automatic DDoS protection is included with every server and webspace package—no additional steps needed. Benefit from our in-house DDoS protection provided to all customers.",
-    keywords: "ddoDDoS, DDOS protection, distributed denial of service, DDoS website",
-  };
+  title: "Keep Your Network Safe with Advanced DDOS Protection Solutions",
+  description:
+    "Automatic DDoS protection is included with every server and webspace package—no additional steps needed. Benefit from our in-house DDoS protection provided to all customers.",
+  keywords:
+    "ddoDDoS, DDOS protection, distributed denial of service, DDoS website",
+};
 
 function page() {
   return (

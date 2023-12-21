@@ -104,7 +104,7 @@ function DomainSection(props) {
                       type="Submit"
                       id="btnDomainSearch"
                       aria-label="Search Domain"
-                      fdprocessedid="4xnnn"
+                      
                     >
                       <i className="fa fa-angle-right"></i>
                       <span className="searchText">Search</span>

@@ -37,7 +37,7 @@ function DomainListBox(props) {
       <Link
         to="domSearch"
         spy={true}
-        smooth={true}
+        smooth="true"
         offset={-100}
         duration={500}
         className="btn btn-outline-black coodiv-text-11 px-10 font-weight-bold rounded-0 d-block w-100 d-flex align-items-center justify-content-center btn-with-hide-icon"

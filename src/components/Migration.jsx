@@ -29,7 +29,7 @@ function Migration() {
               </p>
               <Link
                 href="/wordpress-hosting"
-                className="btn get_stardetWindowBtn coodiv-text-9 rounded-20"
+                className="get_stardetWindowBtn coodiv-text-9 rounded-20"
               >
                 Get started
               </Link>

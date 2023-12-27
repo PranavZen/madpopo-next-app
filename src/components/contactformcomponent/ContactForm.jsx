@@ -50,23 +50,27 @@ function ContactForm() {
 
     if (isValid) {
       axios
-        .post("https://madpopo.com/contact-us-form-save-data.php", {
-          name: name,
-          email: email,
-          subject: subject,
-          message: message,
-        })
-        .then((response) => {
-          if (response.data.type == "success") {
+      .post("https://madpopo.com/contact-us-form-save-data.php", {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message,
+      })
+      .then((response) => {
+        if (response && response.data) {
+          if (response.data.type === "success") {
             setResponse(response.data.message);
             setSuccessMessage(response.data.message);
           } else {
             setResponse(response.data.message);
           }
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+        } else {
+          console.error("Invalid response format:", response);
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
     }
   };
   useEffect(() => {

@@ -1281,7 +1281,7 @@ a.btn {
 .btn-primary {
   background-color: #0056ed;
   border-color: #0056ed;
-  color: #fff;
+  color: #fff !important;
 }
 .btn-primary:hover {
   background-color: #0015ff;
@@ -1900,12 +1900,18 @@ ul.special-helf-box-list li.not-chacked {
 }
 
 .btn-red {
-  background-color: #ff8726;
-  border-color: #ff8726;
+  background-color: #ff8726 !important;
+  border-color: #ff8726 !important;
+}
+.btn-red.with-icon.coodiv-text-11{
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .btn-red:hover {
-  background-color: #ff7d13;
-  border-color: #ff7d13;
+  background-color: #ff7d13 !important;
+  border-color: #ff7d13 !important;
 }
 
 /*---------------- Media stylesheets -----------------*/
@@ -1939,7 +1945,7 @@ ul.special-helf-box-list li.not-chacked {
 }
 .btn {
   min-width: 175px;
-  display: inline-flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
 }
@@ -2404,7 +2410,7 @@ ul.special-helf-box-list li.not-chacked {
 .toggle-domain-s-t:hover {
   background: #f3f5f6;
 }
-.toggle-domain-s-t.active{
+.toggle-domain-s-t.active {
   background: #f3f5f6;
 }
 .domain-search-input-header {
@@ -3503,7 +3509,7 @@ a.headerphone-number {
   width: 90%;
   margin: 0 auto;
 }
-.swiper-container .slick-list{
+.swiper-container .slick-list {
   height: 100% !important;
 }
 .swiper-container .swiper-wrapper {
@@ -4081,7 +4087,7 @@ a.headerphone-number {
   width: 28%;
   margin-right: 6%;
   z-index: -3;
-  margin-top: 13%;
+  margin-top: 10%;
 }
 .wp_innerBox.windowsImg img {
   width: 26%;
@@ -4478,7 +4484,7 @@ a.headerphone-number {
   background-position: 100% 100%;
   width: 100%;
   height: 100%;
-  bottom: 0;
+  bottom: -1px;
   position: absolute;
   pointer-events: none;
 }
@@ -5201,6 +5207,10 @@ a.headerphone-number {
   font-size: 14px !important;
   letter-spacing: 0.5px;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .get_stardetWindowBtn:hover {
   color: #fff;
@@ -5505,6 +5515,9 @@ a.headerphone-number {
   justify-content: center;
   align-items: center;
 }
+.headLoginBtn:hover{
+  color: #000 !important;
+}
 /* .iconBlock{
   display: block;
     height: auto;
@@ -5735,6 +5748,12 @@ a.headerphone-number {
   color: rgb(60 59 59);
   font-weight: 500;
 }
+.bannerBtnWrap .btn {
+  display: flex;
+  background: #000;
+  width: fit-content;
+  color: #fff;
+}
 .hero-area-coodiv.snow-montagne .left-montagne-part {
   background: url(/image/header/snow-montagne/left-part.png) no-repeat;
   position: absolute;
@@ -5839,17 +5858,17 @@ a.headerphone-number {
   position: relative;
   z-index: 2;
 }
-@media screen and (min-width: 991px){
-  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow{
+@media screen and (min-width: 991px) {
+  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow {
     display: none !important;
   }
-  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow.innerArrow{
+  .bgtop.dark-mode-texts .downArrowMenu.whiteArrow.innerArrow {
     display: flex !important;
   }
-  .bgtop.dark-mode-texts .downArrowMenu.blackArrow.innerArrow{
+  .bgtop.dark-mode-texts .downArrowMenu.blackArrow.innerArrow {
     display: none !important;
   }
-  .bgtop.white-bg.light-mode-texts .downArrowMenu.whiteArrow{
+  .bgtop.white-bg.light-mode-texts .downArrowMenu.whiteArrow {
     display: none !important;
   }
 }
@@ -6097,20 +6116,26 @@ div.slick-active.slick-current .main-features-box {
 }
 
 .btn-special-home-plan {
-  color: #fff;
-  background-color: #ff912c;
-  border-color: #ff912c;
-  display: block;
+  color: #fff !important;
+  background-color: #ff912c !important;
+  border-color: #ff912c !important;
+  display: flex !important;
   outline: 0 !important;
   position: absolute;
   width: 90%;
   left: 5%;
   bottom: 7%;
+  border-radius: 20px !important;
+  transition: 0.4s !important;
+  color: #fff;
+  padding: 0 !important;
+  height: 45px;
+  font-size: 14px !important;
 }
 .btn-special-home-plan:hover {
-  color: #fff;
-  background-color: #e24f21;
-  border-color: #e24f21;
+  color: #fff !important;
+  background-color: #e24f21 !important;
+  border-color: #e24f21 !important;
 }
 .pricing-box-one-payment a {
   margin: 5px 5px 0;
@@ -8185,7 +8210,10 @@ a.popover-host-features:hover {
   margin-bottom: 0;
 }
 .footer-block .footer-contact-list li span {
-  padding-left: 40px;
+  display: flex;
+  width: fit-content;
+  padding: 0 20px 0 40px;
+  font-weight: 700;
 }
 .footer-block .footer-contact-list li span i {
   top: 50%;
@@ -8389,7 +8417,10 @@ ul.footer-list li:hover a.footer-list-link {
 .coodiv-card-box-shadow {
   box-shadow: 0 42px 44px -10px rgba(1, 23, 48, 0.12);
 }
-
+.dom_viewAllBtnWrap{
+  display: flex;
+  justify-content: center;
+}
 /*---------------- template menu stylesheets -----------------*/
 @media (min-width: 992px) {
   .main-menu {
@@ -15727,7 +15758,7 @@ body.demo-page #toTop {
 .serchResultWrap .serachResultBox:last-child {
   padding-bottom: 0px;
 }
-.serchResultWrap .serachResultBox .search_result a{
+.serchResultWrap .serachResultBox .search_result a {
   cursor: pointer;
 }
 .serchResultWrap .serachResultBox .search_result a h3 {
@@ -19530,7 +19561,7 @@ form .form-group {
 /* Media Queries By Paranv */
 @media screen and (min-width: 1366px) {
   .vsTabBtnWrap {
-    margin-top: 20px;
+    margin-top: -120px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -19574,10 +19605,10 @@ form .form-group {
   }
 }
 @media screen and (max-width: 834px) {
-  .downArrowMenu.blackArrow{
+  .downArrowMenu.blackArrow {
     display: none !important;
   }
-  .dark-mode-texts .hamburger-box.inner .icon-menu{
+  .dark-mode-texts .hamburger-box.inner .icon-menu {
     color: #000;
   }
   .vsTabBtnWrap {
@@ -20233,6 +20264,7 @@ form .form-group {
   .doms_top_para .doms_pageTitle h1 {
     font-size: 20px;
   }
+  
   .dom_viewAllBtnWrap button {
     width: 85% !important;
   }
@@ -20465,13 +20497,14 @@ form .form-group {
   /* .vpsSevtionWrap .vpsRow .swiper-wrapper {
     padding: 0 55px;
   } */
-  .swiper-container .swiper-wrapper .slick-prev{
+  .swiper-container .swiper-wrapper .slick-prev {
     left: 35%;
   }
-  .swiper-container .swiper-wrapper .slick-next{
+  .swiper-container .swiper-wrapper .slick-next {
     right: 20%;
   }
-  .swiper-container .swiper-wrapper .slick-prev, .swiper-container .swiper-wrapper .slick-next{
+  .swiper-container .swiper-wrapper .slick-prev,
+  .swiper-container .swiper-wrapper .slick-next {
     bottom: 25px;
   }
   .faq-section {
@@ -20940,6 +20973,6 @@ main {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.cursorPointer{
+.cursorPointer {
   cursor: pointer;
 }

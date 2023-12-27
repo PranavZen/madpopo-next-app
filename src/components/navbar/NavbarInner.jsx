@@ -749,7 +749,7 @@ function NavbarInner() {
                                   className="form-group
                                                                     position-relative
                                                                     text-lg-left
-                                                                    text-center dom_mobForm"
+                                                                    text-center dom_mobForm px-5"
                                 >
                                   <input
                                     className="form-control
@@ -764,16 +764,13 @@ function NavbarInner() {
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
                                     }
-                                    placeholder="Enter
-                                                                        your
-                                                                        domain
-                                                                        name"
+                                    placeholder="Enter your domain name"
                                   />
                                   <button
                                     className="form-btn d-flex justify-content-center align-items-center
                                                                         btn
                                                                         btn-primary
-                                                                        mr-5
+                                                                        mr-8
                                                                         coodiv-abs-md-cr
                                                                         min-height-px-50
                                                                         w-25
@@ -868,7 +865,7 @@ function NavbarInner() {
                                   className="form-group
                                                                   position-relative
                                                                   text-lg-left
-                                                                  text-center dom_mobForm"
+                                                                  text-center dom_mobForm px-5"
                                 >
                                   <input
                                     className="form-control
@@ -883,16 +880,13 @@ function NavbarInner() {
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
                                     }
-                                    placeholder="Enter
-                                                                your
-                                                                domain
-                                                                name"
+                                    placeholder="Enter your domain name"
                                   />
                                   <button
                                     className="form-btn d-flex justify-content-center align-items-center
                                                                       btn
                                                                       btn-primary
-                                                                      mr-2
+                                                                      mr-8
                                                                       coodiv-abs-md-cr
                                                                       min-height-px-50
                                                                       w-25

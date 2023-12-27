@@ -67,7 +67,7 @@ function SyncRightBox(props) {
         <span
           className="price-bottom-text
                                             dynamic-value coodiv-text-11 mt-2
-                                            text-blackish-blue
+                                            
                                             d-inline-flex priceYear"
         >
           Billed {props.billedCat}

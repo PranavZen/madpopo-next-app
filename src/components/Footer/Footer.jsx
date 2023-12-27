@@ -294,7 +294,7 @@ function Footer() {
                     </p>
                     <Link
                       href="/contact-us"
-                      className="btn btn-red with-icon coodiv-text-11 white-text-btn rounded-25 py-3 coodiv-hover-y"
+                      className="btn-red with-icon coodiv-text-11 white-text-btn rounded-25 py-3 coodiv-hover-y"
                     >
                       Talk to an expert{" "}
                       <i className="feather icon-arrow-right font-weight-bold"></i>

@@ -15,6 +15,24 @@ export const metadata = {
     "Secure your website with MadPopo SSL Certificates. Explore flexible pricing plans for for enhanced customer trust, increased income and peace of mind.",
   keywords:
     "sslcertificate, sslcertificatecost, typesofsslcertificates, sslcertificateprice, buysslcertificate, sslcertificateforwebsite, getsslcertificate, purchasesslcertificate",
+  openGraph: {
+    url: "https://next.madpopo.com/ssl-certificate",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

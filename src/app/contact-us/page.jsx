@@ -12,6 +12,24 @@ export const metadata = {
     "Secure your online identity with our seamless domain registration services. Experience a smooth process, expert support, and competitive pricing at MadPopo.",
   keywords:
     "WordPress hosting, woo commerce, windows web hosting, web hosting, virtual server, dedicated server, business email hosting, reseller hosting, SSL certificate, whois checker, whois domain lookup, e-commerce hosting, co-location server, Cpanel, Plesk, performance, security, reliability, Windows hosting, scalability, .NET Framework, MS SQL Hosting, ASP support, Linux web hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling, contact, contact us",
+  openGraph: {
+    url: "https://next.madpopo.com/contact-us",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

@@ -17,6 +17,24 @@ export const metadata = {
     "Elevate your business with high-performance co-location server hosting. High-Performance Dedicated Server Hosting for Your Business",
   keywords:
     "colocation, colocationserver, colocationservices, colocationhosting",
+  openGraph: {
+    url: "https://next.madpopo.com/colocation-server",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

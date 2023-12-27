@@ -15,6 +15,24 @@ export const metadata = {
   description:
     "Plesk; Leading web hosting control panel for simple and secure website management. Enjoy easy setup, powerful features, reliable performance, and advanced security solutions.",
   keywords: "plesk, pleskpanel, pleskpricing, installingplesk, pleskhosting",
+  openGraph: {
+    url: "https://next.madpopo.com/plesk-hosting-panel",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

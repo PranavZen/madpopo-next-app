@@ -13,7 +13,8 @@ const pricingSEctionData = {
       wpNode:`1`,
       wpWeeklyBckp:`Weekly Backup`,
       wordpressHostingTitle: "POPO - L",
-      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=1'
+      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=1',
+      title: "WordPress Hosting - StarterBoost Plan"
     },
     {
       id: 2,
@@ -28,7 +29,8 @@ const pricingSEctionData = {
       wpNode:`5`,
       wpWeeklyBckp:`Weekly Backup`,
       wordpressHostingTitle: "POPO - XL",
-      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=2'
+      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=2',
+      title: "WordPress Hosting - GeekPro Plan"
     },
     {
       id: 3,
@@ -43,7 +45,8 @@ const pricingSEctionData = {
       cardDDOS: "399",
       wpWeeklyBckp:`Daily Backup`,
       wordpressHostingTitle: "POPO - XXL",
-      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=3'
+      buyBtnLink: 'https://my.madpopo.com/cart.php?a=add&pid=3',
+      title: "WordPress Hosting - GrowBusiness Plan"
     },
   ],
   pricingValues: {

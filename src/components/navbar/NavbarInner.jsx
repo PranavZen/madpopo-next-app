@@ -95,7 +95,9 @@ function NavbarInner() {
                 <i className="fa fa-phone"></i> Need Help ?
               </span>{" "}
               Call Us 24/7 :{" "}
-              <Link href="tel:+91 7039 003 001">+91 7039 003 001</Link>
+              <Link href="tel:+91 7039 003 001" title="tel:+91 7039 003 001">
+                +91 7039 003 001
+              </Link>
             </span>
             <div className="inrSelectWrap">
               <div className="inrSelectBox">
@@ -109,27 +111,39 @@ function NavbarInner() {
                           navbar-expand-lg px-0"
         >
           <div className="brand-logo mr-8 newBrandLogo">
-            <Link href="/" ref={scrollRef} onClick={scrollToTop}>
+            <Link
+              href="/"
+              ref={scrollRef}
+              onClick={scrollToTop}
+              title="MadPopo Logo"
+            >
               <Image
                 priority
                 src="/image/header/madpopo-dark-logo.svg"
                 alt=""
                 className="light-version-logo"
-                width={160}
-                height={74}
+                width={165}
+                height={77}
               />
               <Image
                 priority
                 src="/image/header/madpopo-white-logo.svg"
                 alt=""
                 className="dark-version-logo"
-                width={160}
-                height={74}
+                width={165}
+                height={77}
               />
             </Link>
           </div>
 
-          <div className={activeToggle ? `collapse navbar-collapse show` : "collapse navbar-collapse"} id="mobile-menu">
+          <div
+            className={
+              activeToggle
+                ? `collapse navbar-collapse show`
+                : "collapse navbar-collapse"
+            }
+            id="mobile-menu"
+          >
             <div className="navbar-nav-wrapper">
               <ul
                 id="header-navbar-links"
@@ -210,6 +224,7 @@ function NavbarInner() {
                               href="/wordpress-hosting"
                               className="feature-widget
                                                               d-sm-flex "
+                              title="WordPress Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -242,6 +257,7 @@ function NavbarInner() {
                             <Link
                               href="/woocommerce-hosting"
                               className="feature-widget d-sm-flex"
+                              title=" WooCommerce Hosting"
                             >
                               <div className="widget-icon text-blue mr-5 mr-lg-6 mb-7 mb-md-0">
                                 <span>
@@ -282,6 +298,7 @@ function NavbarInner() {
                               href="/linux-web-hosting"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Linux Web Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -325,6 +342,7 @@ function NavbarInner() {
                               href="/windows-hosting"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Windows Web Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -370,6 +388,7 @@ function NavbarInner() {
                               href="/virtual-server"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Cloud Server"
                             >
                               <div
                                 className="widget-icon
@@ -416,6 +435,7 @@ function NavbarInner() {
                               href="/dedicated-server"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Dedicated Server"
                             >
                               <div
                                 className="widget-icon
@@ -461,6 +481,7 @@ function NavbarInner() {
                               href="/business-email-hosting"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Business Email Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -507,6 +528,7 @@ function NavbarInner() {
                               href="/reseller-hosting"
                               className="feature-widget
                                                               d-sm-flex"
+                              title="Reseller Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -601,7 +623,7 @@ function NavbarInner() {
                     aria-labelledby="domaindropdown"
                   >
                     <div
-                      className="row
+                      className="
                                                 justify-content-start
                                                 mega-menu-header nav"
                       role="tablist"
@@ -609,17 +631,22 @@ function NavbarInner() {
                       id="global-network-tabs"
                     >
                       <a
-                        className={ activeTab === 'tab1' ? `toggle-domain-s-t
+                        className={
+                          activeTab === "tab1"
+                            ? `toggle-domain-s-t
                                                     d-inline-block col-md-6
                                                     active-link-border pl-lg-10
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
-                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer` : `toggle-domain-s-t
+                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer`
+                            : `toggle-domain-s-t
                                                     d-inline-block col-md-6
                                                     active-link-border pl-lg-10
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
-                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`}
+                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`
+                        }
                         id="global-network-country-001-tab"
-                        onClick={() => handleTabClick('tab1')}
+                        onClick={() => handleTabClick("tab1")}
+                        title="Domain Registration"
                       >
                         <h1
                           className="coodiv-text-8
@@ -650,17 +677,22 @@ function NavbarInner() {
                         </h1>
                       </a>
                       <a
-                        className={ activeTab === 'tab2' ? `toggle-domain-s-t
+                        className={
+                          activeTab === "tab2"
+                            ? `toggle-domain-s-t
                                                     d-inline-block col-md-6
                                                     active-link-border pl-lg-10
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
-                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer` : `toggle-domain-s-t
+                                                    pb-4 rounded-top-left-8 nav-link active cursorPointer`
+                            : `toggle-domain-s-t
                                                     d-inline-block col-md-6
                                                     active-link-border pl-lg-10
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
-                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`}
+                                                    pb-4 rounded-top-left-8 nav-link cursorPointer`
+                        }
                         id="global-network-country-002-tab"
-                        onClick={() => handleTabClick('tab2')}
+                        onClick={() => handleTabClick("tab2")}
+                        title="Domain Transfer"
                       >
                         <h1
                           className="coodiv-text-8
@@ -697,7 +729,7 @@ function NavbarInner() {
                                                 mega-menu-body tab-content "
                       id="global-network-tabsContent"
                     >
-                     {activeTab === "tab1" && (
+                      {activeTab === "tab1" && (
                         <div
                           className="row
                                                     justify-content-center tab-pane fade show active"
@@ -736,18 +768,16 @@ function NavbarInner() {
                                                                         your
                                                                         domain
                                                                         name"
-                                 
                                   />
                                   <button
-                                    className="form-btn
+                                    className="form-btn d-flex justify-content-center align-items-center
                                                                         btn
                                                                         btn-primary
                                                                         mr-5
                                                                         coodiv-abs-md-cr
                                                                         min-height-px-50
-                                                                        w-100
+                                                                        w-25
                                                                         w-md-auto"
-                                    
                                   >
                                     check
                                   </button>
@@ -758,7 +788,10 @@ function NavbarInner() {
                           <div className="col-xl-12 col-lg-12 col-md-12">
                             <div className="domaulListing d-flex flex-wrap pb-5">
                               <div className="col-md-6 listTitle">
-                                <Link href="/domain-registration">
+                                <Link
+                                  href="/domain-registration"
+                                  title="Free with Domain Registration"
+                                >
                                   <p>Free with Domain Registration</p>
                                   <ul className="listFeatureDomain">
                                     <li>
@@ -783,7 +816,10 @@ function NavbarInner() {
                                 </Link>
                               </div>
                               <div className="col-md-6 listTitle">
-                                <Link href="/domain-registration">
+                                <Link
+                                  href="/domain-registration"
+                                  title="Free DNS Services"
+                                >
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
@@ -851,18 +887,16 @@ function NavbarInner() {
                                                                 your
                                                                 domain
                                                                 name"
-                                    
-                                  /> 
+                                  />
                                   <button
-                                    className="form-btn
+                                    className="form-btn d-flex justify-content-center align-items-center
                                                                       btn
                                                                       btn-primary
                                                                       mr-2
                                                                       coodiv-abs-md-cr
                                                                       min-height-px-50
-                                                                      w-100
+                                                                      w-25
                                                                       w-md-auto"
-                                   
                                   >
                                     check
                                   </button>
@@ -873,7 +907,10 @@ function NavbarInner() {
                           <div className="col-xl-12 col-lg-12 col-md-12">
                             <div className="domaulListing d-flex flex-wrap pb-5">
                               <div className="col-md-6 listTitle">
-                                <Link href="/domain-transfer">
+                                <Link
+                                  href="/domain-transfer"
+                                  title="Free with Domain Transfer"
+                                >
                                   <p>Free with Domain Transfer</p>
                                   <ul className="listFeatureDomain">
                                     <li>
@@ -898,7 +935,10 @@ function NavbarInner() {
                                 </Link>
                               </div>
                               <div className="col-md-6 listTitle">
-                                <Link href="/domain-transfer">
+                                <Link
+                                  href="/domain-transfer"
+                                  title="Free DNS Services"
+                                >
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
@@ -931,7 +971,11 @@ function NavbarInner() {
                 </li>
 
                 <li className="nav-item dropdown">
-                  <Link href="/affiliates" className="nav-link">
+                  <Link
+                    href="/affiliates"
+                    className="nav-link"
+                    title="Affiliate"
+                  >
                     Affiliate
                   </Link>
                 </li>
@@ -985,16 +1029,18 @@ function NavbarInner() {
                       </h1>
                       <div className="col-md-4 abtMenuList">
                         <li className="drop-menu-item">
-                          <Link href="/global-infrastructure">
+                          <Link
+                            href="/global-infrastructure"
+                            title="Global infrastructure"
+                          >
                             Global infrastructure
                           </Link>
                         </li>
                         <li className="drop-menu-item">
                           <Link
-                            href=""
-                            onClick={() =>
-                              window.open("https://blog.madpopo.com/", "_blank")
-                            }
+                            href="https://blog.madpopo.com/"
+                            target="_blank"
+                            title="Company Blog"
                           >
                             Company Blog
                           </Link>
@@ -1002,28 +1048,41 @@ function NavbarInner() {
                       </div>
                       <div className="col-md-4 abtMenuList">
                         <li className="drop-menu-item">
-                          <Link href="/terms-conditions">
+                          <Link
+                            href="/terms-conditions"
+                            title="Terms & Conditions"
+                          >
                             Terms & Conditions
                           </Link>
                         </li>
                         <li className="drop-menu-item">
-                          <Link href="/career">Careers</Link>
+                          <Link href="/career" title="Careers">
+                            Careers
+                          </Link>
                         </li>
                       </div>
                       <div className="col-md-4 abtMenuList">
                         <li className="drop-menu-item">
-                          <Link href="/happy-customer">Happy Customers</Link>
+                          <Link href="/happy-customer" title="Happy Customers">
+                            Happy Customers
+                          </Link>
                         </li>
                         <li className="drop-menu-item">
-                          <Link href="/contact-us">Contact</Link>
+                          <Link href="/contact-us" title="Contact">
+                            Contact
+                          </Link>
                         </li>
                       </div>
                     </div>
                   </ul>
                 </li>
-                
+
                 <li className="nav-item dropdown">
-                  <Link href="/help-center" className="nav-link">
+                  <Link
+                    href="/help-center"
+                    className="nav-link"
+                    title="Help Center"
+                  >
                     Help Center
                   </Link>
                 </li>
@@ -1037,17 +1096,20 @@ function NavbarInner() {
           >
             <Link
               href="https://my.madpopo.com/login"
-              className="btn
-                                  headLoginBtn coodiv-text-9"
+              className="headLoginBtn coodiv-text-9"
             >
               Login
             </Link>
           </div>
 
           <button
-            className={activeToggle ? `navbar-toggler btn-close-off-canvas
-                              hamburger-icon border-0` : `navbar-toggler btn-close-off-canvas
-                              hamburger-icon border-0 collapsed`}
+            className={
+              activeToggle
+                ? `navbar-toggler btn-close-off-canvas
+                              hamburger-icon border-0`
+                : `navbar-toggler btn-close-off-canvas
+                              hamburger-icon border-0 collapsed`
+            }
             type="button"
             onClick={() => handleToggleClick(true)}
           >
@@ -1055,9 +1117,19 @@ function NavbarInner() {
               className="hamburger hamburger--squeeze
                                   js-hamburger"
             >
-              <span className={!activeToggle ? `hamburger-box outer` : `hamburger-box inner`}>
-                <i className="feather icon-menu" style={{ display: activeToggle ? 'none' : 'block' }}></i>
-                <i className="feather icon-x" style={{ display: activeToggle ? 'block' : 'none' }}></i>
+              <span
+                className={
+                  !activeToggle ? `hamburger-box outer` : `hamburger-box inner`
+                }
+              >
+                <i
+                  className="feather icon-menu"
+                  style={{ display: activeToggle ? "none" : "block" }}
+                ></i>
+                <i
+                  className="feather icon-x"
+                  style={{ display: activeToggle ? "block" : "none" }}
+                ></i>
               </span>
             </span>
           </button>

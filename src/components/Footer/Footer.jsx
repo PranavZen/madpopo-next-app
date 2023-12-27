@@ -68,6 +68,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/wordpress-hosting"
+                          title="WordPress Hosting"
                         >
                           WordPress Hosting
                         </Link>
@@ -76,6 +77,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/windows-hosting"
+                          title="Windows Hosting"
                         >
                           Windows Hosting
                         </Link>
@@ -84,6 +86,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/woocommerce-hosting"
+                          title="E-Commerce Hosting"
                         >
                           E-Commerce Hosting
                         </Link>
@@ -99,6 +102,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/virtual-server"
+                          title="Virtual Server"
                         >
                           Virtual Server
                         </Link>
@@ -107,6 +111,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/dedicated-server"
+                          title="Dedicated Server"
                         >
                           Dedicated Server
                         </Link>
@@ -115,6 +120,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/colocation-server"
+                          title="Co-Location Server"
                         >
                           Co-Location Server
                         </Link>
@@ -134,7 +140,7 @@ function Footer() {
                           className="footer-list-link"
                           href="/domain-registration/#check-free-domain"
                           smooth="true"
-
+                          title="Check Free Domain"
                         >
                           {" "}
                           Check Free Domain{" "}
@@ -144,6 +150,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/ssl-certificate"
+                          title="SSL Certificate"
                         >
                           SSL Certificate
                         </Link>
@@ -152,6 +159,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/whois-checker"
+                          title="WHOIS Checker"
                         >
                           WHOIS Checker
                         </Link>
@@ -167,6 +175,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/cpanel-whm-hosting-panel"
+                          title="cPanel"
                         >
                           cPanel
                         </Link>
@@ -175,6 +184,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/plesk-hosting-panel"
+                          title="Plesk"
                         >
                           Plesk
                         </Link>
@@ -183,6 +193,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/ddos-protection-data-center"
+                          title="DDoS Protection"
                         >
                           DDoS Protection
                         </Link>
@@ -198,7 +209,11 @@ function Footer() {
                     </h4>
                     <ul className="footer-list list-unstyled">
                       <li className="py-1">
-                        <Link className="footer-list-link" href="/affiliates">
+                        <Link
+                          className="footer-list-link"
+                          href="/affiliates"
+                          title="Affiliate Program"
+                        >
                           Affiliate Program
                         </Link>
                       </li>
@@ -207,17 +222,18 @@ function Footer() {
                           className="footer-list-link"
                           href="https://blog.madpopo.com/"
                           target="_blank"
+                          title="Blog"
                         >
                           Blog
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link className="footer-list-link" href="/career">
+                        <Link className="footer-list-link" href="/career" title="Careers">
                           Careers
                         </Link>
                       </li>
                       <li className="py-1">
-                        <Link className="footer-list-link" href="/contact-us">
+                        <Link className="footer-list-link" href="/contact-us" title="Contact Us">
                           Contact Us
                         </Link>
                       </li>
@@ -226,6 +242,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/global-infrastructure"
+                          title="Servers Locations"
                         >
                           Servers Locations
                         </Link>
@@ -239,6 +256,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/terms-conditions"
+                          title="Terms & Conditions"
                         >
                           Terms & Conditions
                         </Link>
@@ -248,6 +266,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/privacy-policy"
+                          title="Privacy"
                         >
                           Privacy
                         </Link>
@@ -285,22 +304,22 @@ function Footer() {
                     <div className="socialMediaWrap">
                       <ul className="socialListIcons">
                         <li>
-                          <Link href="https://www.facebook.com/madpopowp/">
+                          <Link href="https://www.facebook.com/madpopowp/" title="Facbook">
                             <i className="fa fa-facebook-square"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.instagram.com/madpopowp/">
+                          <Link href="https://www.instagram.com/madpopowp/" title="Instagram">
                             <i className="fa fa-instagram"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://www.linkedin.com/company/madpopowp/">
+                          <Link href="https://www.linkedin.com/company/madpopowp/" title="Linkedin">
                             <i className="fa fa-linkedin"></i>
                           </Link>
                         </li>
                         <li>
-                          <Link href="https://twitter.com/madpopowp">
+                          <Link href="https://twitter.com/madpopowp" title="Twitter">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               viewBox="0 0 48 48"

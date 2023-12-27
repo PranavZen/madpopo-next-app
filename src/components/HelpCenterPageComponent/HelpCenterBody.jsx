@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import React from "react";
 import { useRef, useState } from "react";
 import SearchField from "./SearchField";
 // import SearchFullScreen from "./SearchFullScreen";
 import HcAccordion from "./HcAccordion";
-import { Link, animateScroll as scroll } from "react-scroll";
 import SearchHCData from "./SearchHCData";
+import { Link, animateScroll as scroll } from "react-scroll";
 function HelpCenterBody() {
   const [showLargeSearch, setShowLargeSearch] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
@@ -56,10 +56,16 @@ function HelpCenterBody() {
                     {searchResults.map((item) => (
                       <div className="serachResultBox" key={item.id}>
                         <div className="search_result">
-                          <a href={item.ankLink}>
+                          <Link
+                            spy={true}
+                            smooth="true"
+                            offset={-120}
+                            duration={500}
+                            to={item.id}
+                          >
                             <h3>{item.label}</h3>
                             <p>{item.content}</p>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     ))}

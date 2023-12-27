@@ -94,7 +94,7 @@ var bydefaultCurrency = "₹";
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
         <div className="toggleWrap d-flex">
           <h2 className="priceCardTitle mb-2">
-            <Link href={props.winHostAnchor}>{props.winHostTitle}</Link>
+            <Link href={props.winHostAnchor} title={props.title}>{props.winHostTitle}</Link>
           </h2>
         </div>
         <span className="fromText">{props.winHostSubTitle}</span>

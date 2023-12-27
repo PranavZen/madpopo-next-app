@@ -15,6 +15,24 @@ export const metadata = {
     "Maximize profitability with our reseller hosting plans. Enjoy reliable, secure services, backed by 24/7 customer support and a 99.9% uptime guarantee.",
   keywords:
     "hosting for resellers, reseller hosting, domain reseller, best reseller hosting, reseller web hosting, reseller website, reseller web.",
+  openGraph: {
+    url: "https://next.madpopo.com/reseller-hosting",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

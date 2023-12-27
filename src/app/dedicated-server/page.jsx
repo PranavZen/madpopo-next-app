@@ -9,6 +9,7 @@ import VdsFeatures from "@/components/VirtualDedicatedServerPageComponent/VdsFea
 import VdsListing from "@/components/VirtualDedicatedServerPageComponent/VdsListing";
 import VdsFaq from "@/components/VirtualDedicatedServerPageComponent/VdsFaq";
 import TabsTwo from "@/components/servertabsbutton/TabsTwo";
+import DedecatedServerFaq from "@/components/DedecatedServerPageComponent/DedecatedServerFaq";
 
 export const metadata = {
   title: "Reliable Dedicated Server Hosting Solutions for Your Business",
@@ -16,6 +17,24 @@ export const metadata = {
     "Optimize your business with the best dedicated server hosting – fast, reliable, and backed by 24/7 support for smooth and secure operations.",
   keywords:
     "dedicated server, dedicated server hosting, hosted server, server hosting dedicated, server hosting, dedicated hosting, best dedicated server hosting.",
+  openGraph: {
+    url: "https://next.madpopo.com/dedicated-server",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {
@@ -49,7 +68,7 @@ function page() {
         <VdsListing />
       </div>
       <div className="wp_hostingFaqSection">
-        <div className="pose_1">
+        <div className="pose_1 dsPose">
           <Image
             src="/image/footer_pose-1.png"
             alt="Footer Imgage"
@@ -71,7 +90,7 @@ function page() {
             d="M0,128L80,138.7C160,149,320,171,480,192C640,213,800,235,960,234.7C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <VdsFaq />
+        <DedecatedServerFaq />
       </div>
       <Footer />
     </div>

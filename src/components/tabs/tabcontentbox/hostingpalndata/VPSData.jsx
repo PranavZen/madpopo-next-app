@@ -27,6 +27,7 @@ const VpsData = [
     priceYearlyInEUR: 76,
     priceTwoYearlyInEUR: 73,
     priceThreeYearlyInEUR: 68,
+    title: "Virtual Dedicated Server - Starter Plan",
   },
   {
     id: 2,
@@ -56,6 +57,7 @@ const VpsData = [
     priceYearlyInEUR: 133,
     priceTwoYearlyInEUR: 130,
     priceThreeYearlyInEUR: 114,
+    title: "Virtual Dedicated Server - Pro Plan",
   },
   {
     id: 3,
@@ -85,6 +87,7 @@ const VpsData = [
     priceYearlyInEUR: 213,
     priceTwoYearlyInEUR: 209,
     priceThreeYearlyInEUR: 205,
+    title: "Virtual Dedicated Server - Grow Plan",
   },
 ];
 export default VpsData;

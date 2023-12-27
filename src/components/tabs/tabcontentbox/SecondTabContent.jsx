@@ -29,7 +29,8 @@ function SecondTabContent() {
             priceThreeYearlyInUSD,
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
-            priceThreeYearlyInEUR
+            priceThreeYearlyInEUR,
+            title
           }) => (
             <LinuxCardBox
               key={id}
@@ -56,6 +57,7 @@ function SecondTabContent() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              title={title}
             />
           )
         )}

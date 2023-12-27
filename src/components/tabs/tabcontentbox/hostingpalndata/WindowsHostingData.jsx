@@ -25,6 +25,7 @@ const WindowsHostingDatas = [
     priceYearlyInEUR: 6,
     priceTwoYearlyInEUR: 5,
     priceThreeYearlyInEUR: 4,
+    title: "Windows Web Hosting - WinStarter Plan",
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ const WindowsHostingDatas = [
     priceYearlyInEUR: 7.2,
     priceTwoYearlyInEUR: 7,
     priceThreeYearlyInEUR: 6,
+    title: "Windows Web Hosting - WinPro Plan",
   },
   {
     id: 3,
@@ -80,6 +82,7 @@ const WindowsHostingDatas = [
     priceYearlyInEUR: 9.2,
     priceTwoYearlyInEUR: 9,
     priceThreeYearlyInEUR: 8,
+    title: "Windows Web Hosting - WinGrow Plan",
   },
 ];
 export default WindowsHostingDatas;

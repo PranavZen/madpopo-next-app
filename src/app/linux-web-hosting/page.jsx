@@ -16,6 +16,24 @@ export const metadata = {
     "Experience fast, reliable Linux hosting with cutting-edge technology. Our optimized servers ensure hassle-free, secure, and reliable performance for peace of mind.",
   keywords:
     "linux hosting, linux web hosting, hosting a website on linux, linux hosting server, linux shared hosting, best linux hosting",
+  openGraph: {
+    url: "https://next.madpopo.com/linux-web-hosting",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

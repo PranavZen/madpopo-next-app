@@ -16,6 +16,24 @@ export const metadata = {
     "Experience the best performance for your workloads with our reliable and high-performance virtual dedicated server solutions. Various options with 24/7 support.",
   keywords:
     "virtual server, vds, virtual hosting, virtual dedicated server, virtualserver, virtual dedicated hosting",
+  openGraph: {
+    url: "https://next.madpopo.com/virtual-server",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {
@@ -48,7 +66,7 @@ function page() {
         <VdsListing />
       </div>
       <div className="wp_hostingFaqSection">
-        <div className="pose_1">
+        <div className="pose_1 vdsPose">
           <Image
             src="/image/footer_pose-1.png"
             alt="Footer Imgage"

@@ -39,7 +39,8 @@ function WindowsHostingPriceCard(props) {
               priceThreeYearlyInUSD,
               priceYearlyInEUR,
               priceTwoYearlyInEUR,
-              priceThreeYearlyInEUR
+              priceThreeYearlyInEUR,
+              title
               
             }) => (
               <WindowsPricingCardBox
@@ -75,6 +76,7 @@ function WindowsHostingPriceCard(props) {
                 priceYearlyInEUR={priceYearlyInEUR}
                 priceTwoYearlyInEUR={priceTwoYearlyInEUR}
                 priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+                title={title}
               />
             )
           )}

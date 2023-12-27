@@ -16,6 +16,24 @@ export const metadata = {
     "Best Windows hosting for your business. MadPopo offers top-of-the-line Windows hosting, with a range of features that make it the perfect choice for business.",
   keywords:
     "web servers host, windows hosting server, windows hosting, windows server hosting,win host, windows server website hosting, windows shared server, windows website hosting,web hosting windows, hosting windows, windows shared hosting, best windows hosting, windows website hosting.",
+  openGraph: {
+    url: "https://next.madpopo.com/windows-hosting",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

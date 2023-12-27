@@ -139,7 +139,7 @@ function PriceCardBox(props) {
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
         <div className="toggleWrap d-flex">
           <h2 className="priceCardTitle mb-2">
-            <a href={props.cardAnchorLink}>{props.cardTitle}</a>
+            <a href={props.cardAnchorLink} title={props.title}>{props.cardTitle}</a>
           </h2>
         </div>
         <span className="fromText">{props.cardSubTitle}</span>

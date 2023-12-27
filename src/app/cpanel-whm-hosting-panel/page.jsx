@@ -14,6 +14,24 @@ export const metadata = {
   description:
     "Select a flexible pricing plan for cPanel, the best web hosting control panel. User-friendly and intuitive, it simplifies website management for domains, files, databases, and more.",
   keywords: "cpanel, cpanelhosting, cpanelhost, bestcpanelhost",
+  openGraph: {
+    url: "https://next.madpopo.com/cpanel-whm-hosting-panel",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

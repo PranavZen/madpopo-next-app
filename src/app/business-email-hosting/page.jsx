@@ -17,6 +17,24 @@ export const metadata = {
     "Get the best email hosting experience. Enjoy secure, reliable, and fast communication with advanced security, 24/7 support, and unlimited storage.",
   keywords:
     "email hosting, best email provider, emailhosting, businessemail, create business email, professional business email, small business email, email host providers, custom email domain, best email for business, webmail email hosting",
+  openGraph: {
+    url: "https://next.madpopo.com/business-email-hosting",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {
@@ -24,11 +42,11 @@ function page() {
     <div className="site-wrapper overflow-hidden wp_hostingBgImg businessBG">
       <NavbarInner />
       <div className="wp_img_overlayContent businessImgOverlay">
-        <p>Reseller Hosting</p>
-        <h1>The Ideal Solution for Web Designers and Developers </h1>
+        <p>Business Email Hosting</p>
+        <h1>Business-Class Email Hosting for Enhanced Communication </h1>
         <span>
-          An ideal solution for web designers and developers who want to expand
-          their offerings and provide hosting services to their clients
+          We offer a variety of options to fit your specific needs, including
+          GSuite, Office 365, and our own email solution
         </span>
       </div>
       <MouseContainer

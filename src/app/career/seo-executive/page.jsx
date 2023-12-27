@@ -4,13 +4,31 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata = {
-    title:
-      "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
-    description:
-      "Secure your online identity with our seamless domain registration services. Experience a smooth process, expert support, and competitive pricing at MadPopo.",
-    keywords:
-      "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
-  };
+  title:
+    "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
+  description:
+    "Secure your online identity with our seamless domain registration services. Experience a smooth process, expert support, and competitive pricing at MadPopo.",
+  keywords:
+    "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
+  openGraph: {
+    url: "https://next.madpopo.com/career",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
+};
 
 function page() {
   return (

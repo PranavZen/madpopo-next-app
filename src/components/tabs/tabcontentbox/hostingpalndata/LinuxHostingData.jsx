@@ -23,6 +23,7 @@ const LinuxData = [
     priceYearlyInEUR: 6,
     priceTwoYearlyInEUR: 5,
     priceThreeYearlyInEUR: 4,
+    title: "Linux Web Hosting - RockyBoost Plan",
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ const LinuxData = [
     priceYearlyInEUR: 7.2,
     priceTwoYearlyInEUR: 7,
     priceThreeYearlyInEUR: 6,
+    title: "Linux Web Hosting - RockyPro Plan",
   },
   {
     id: 3,
@@ -73,6 +75,7 @@ const LinuxData = [
     priceYearlyInEUR: 9.2,
     priceTwoYearlyInEUR: 9,
     priceThreeYearlyInEUR: 8,
+    title: "Linux Web Hosting - RockyBusiness Plan",
   },
 ];
 export default LinuxData;

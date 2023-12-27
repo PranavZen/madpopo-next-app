@@ -90,7 +90,7 @@ function VPSCard(props) {
           </div>
           <div className="game-title">
             <h3 className="mb-6">
-              <a href={props.cardAnchorLink}>{props.cardVpsTitle}</a>
+              <a href={props.cardAnchorLink} title={props.title}>{props.cardVpsTitle}</a>
             </h3>
             <p className="fromText propsText">{props.cardVpsSubTitle}</p>
             <div className="selectDaysWrap">

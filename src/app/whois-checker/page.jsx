@@ -13,6 +13,24 @@ export const metadata = {
     "Get detailed information about any domain name with WHOIS Domain Lookup. Discover website ownership with our WHOIS Domain Lookup tool. Uncover the details of a website's owner quickly and easily.",
   keywords:
     "whois, whois lookup, whois domain, whois domain lookup, whois domain tools, whois lookup, whois domain hosting",
+  openGraph: {
+    url: "https://next.madpopo.com/whois-checker",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

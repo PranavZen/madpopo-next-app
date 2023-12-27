@@ -98,7 +98,7 @@ function LinuxCardBox(props) {
                 position-relative"
       >
         <span className="linuxCardTitle d-block position-relative">
-          <Link href={props.Linkss}>{props.cardlinuxTitle}</Link>
+          <Link href={props.Linkss} title={props.title}>{props.cardlinuxTitle}</Link>
         </span>
         <span className="fromText d-block mb-8 mt-1">
           {props.cardlinuxSubTitle}

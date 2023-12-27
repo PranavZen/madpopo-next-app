@@ -16,6 +16,24 @@ export const metadata = {
     "Experience tailored WooCommerce hosting for your business needs, featuring reliability, security, and faster load times for enhanced performance.",
   keywords:
     "woocommerce, woocommerce plugin, woocommerce wordpress, woocommerce website, managed woocommerce hosting, wordpress woocommerce hosting, woocommerce website hosting, best woocommerce hosting.",
+  openGraph: {
+    url: "https://next.madpopo.com/woocommerce-hosting",
+    type: "website",
+    images: [
+      {
+        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        width: 1200,
+        height: 675,
+        type: "image/jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@madpopowp",
+    site: "@madpopowp",
+    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+  },
 };
 
 function page() {

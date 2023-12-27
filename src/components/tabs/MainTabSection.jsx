@@ -75,7 +75,7 @@ function MainTabSection() {
             <div className="services-box-tab">
               <i className="fa fa-wordpress"></i>
               <h5 className="coodiv-text-10 mb-0 mt-3 slickSyncBtnText">
-                Wordpress hosting
+                Wordpress Hosting
               </h5>
               <p className="coodiv-text-12 mb-0 slickSyncSubBtnText">
               Hassle-Free Managed WordPress Hosting

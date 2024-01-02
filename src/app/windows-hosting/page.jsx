@@ -17,11 +17,11 @@ export const metadata = {
   keywords:
     "web servers host, windows hosting server, windows hosting, windows server hosting,win host, windows server website hosting, windows shared server, windows website hosting,web hosting windows, hosting windows, windows shared hosting, best windows hosting, windows website hosting.",
   openGraph: {
-    url: "https://next.madpopo.com/windows-hosting",
+    url: "https://madpopo.com/windows-hosting",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -32,11 +32,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function WindowsHosting() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg windowsBG">
       <NavbarInner />
@@ -102,4 +102,4 @@ function page() {
   );
 }
 
-export default page;
+export default WindowsHosting;

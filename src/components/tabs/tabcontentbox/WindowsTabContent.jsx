@@ -1,4 +1,4 @@
-import React from 'react'
+
 import WindowsHostingPriceCard from './WindowsHostingPriceCard'
 
 function WindowsTabContent(props) {

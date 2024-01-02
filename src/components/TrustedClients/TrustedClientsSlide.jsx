@@ -16,6 +16,14 @@ function TrustedClientsSlide() {
     arrows: true,
     responsive: [
       {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          
+        }
+      },
+      {
         breakpoint: 767,
         settings: {
           slidesToShow: 1,
@@ -23,6 +31,7 @@ function TrustedClientsSlide() {
           
         }
       },
+      
     ]
   };
   return (

@@ -16,11 +16,11 @@ export const metadata = {
   keywords:
     "sslcertificate, sslcertificatecost, typesofsslcertificates, sslcertificateprice, buysslcertificate, sslcertificateforwebsite, getsslcertificate, purchasesslcertificate",
   openGraph: {
-    url: "https://next.madpopo.com/ssl-certificate",
+    url: "https://madpopo.com/ssl-certificate",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -31,11 +31,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function SslCertificate() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg windowsBG">
       <NavbarInner />
@@ -94,4 +94,4 @@ function page() {
   );
 }
 
-export default page;
+export default SslCertificate;

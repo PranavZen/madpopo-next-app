@@ -23,13 +23,13 @@ function DomainListBox(props) {
     var calc3 = (domainListData[props.id - 1].dollarPrice * 0.93).toFixed(2);
   }
   return (
-    <div className="col-md-3 aws-domains-ltds-prices-item white-bg" id={`domCard-`+props.id}>
+    <div className="col-md-3 aws-domains-ltds-prices-item white-bg custmd3" id={`domCard-`+props.id}>
       <img src={props.img} alt="domain tld" />
-      <p className="coodiv-text-11 font-weight-light">
+      <p className="coodiv-text-11 font-weight-light domParaText">
         Exhibit and sell your{" "}
         <b className="font-weight-bold">{props.domainName}</b> online
       </p>
-      <span className="aws-domains-ltds-price-item mb-8">
+      <span className="aws-domains-ltds-price-item mb-1">
         {selectedCountry ? selectedCountry : bydefaultCurrency}
         {selectedCountry ? calc || calc2 || calc3 : selectedCountry}
         <small>per year</small>
@@ -42,7 +42,7 @@ function DomainListBox(props) {
         duration={500}
         className="btn btn-outline-black coodiv-text-11 px-10 font-weight-bold rounded-0 d-block w-100 d-flex align-items-center justify-content-center btn-with-hide-icon"
       >
-        Check Availability
+        Register
         <i className="feather icon-arrow-right font-weight-bold"></i>
       </Link>
     </div>

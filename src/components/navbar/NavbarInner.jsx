@@ -95,7 +95,7 @@ function NavbarInner() {
                 <i className="fa fa-phone"></i> Need Help ?
               </span>{" "}
               Call Us 24/7 :{" "}
-              <Link href="tel:+91 7039 003 001" title="tel:+91 7039 003 001">
+              <Link href="tel:+917039003001" title="tel:+91 7039 003 001">
                 +91 7039 003 001
               </Link>
             </span>
@@ -192,10 +192,10 @@ function NavbarInner() {
                     <div
                       className="row
                                               justify-content-center mt-lg-6
-                                              mx-0 w-100"
+                                              mx-0 w-100 "
                     >
                       <div className="col-md-12">
-                        <h1
+                        <h4
                           className="coodiv-text-6
                                                       title
                                                       color-blackish-blue
@@ -210,11 +210,11 @@ function NavbarInner() {
                             guarantee, free SSL certificate, easy WordPress
                             installs, and a free domain for a year.
                           </span>
-                        </h1>
+                        </h4>
                         <div
                           className="row
                                                       justify-content-center
-                                                      mx-0"
+                                                      mx-0 mobMenuList"
                         >
                           <div
                             className="col-md-6
@@ -648,7 +648,7 @@ function NavbarInner() {
                         onClick={() => handleTabClick("tab1")}
                         title="Domain Registration"
                       >
-                        <h1
+                        <h4
                           className="coodiv-text-8
                                                         title
                                                         color-blackish-blue
@@ -674,7 +674,7 @@ function NavbarInner() {
                             </span>
                             .
                           </span>
-                        </h1>
+                        </h4>
                       </a>
                       <a
                         className={
@@ -694,7 +694,7 @@ function NavbarInner() {
                         onClick={() => handleTabClick("tab2")}
                         title="Domain Transfer"
                       >
-                        <h1
+                        <h4
                           className="coodiv-text-8
                                                         title
                                                         color-blackish-blue
@@ -721,7 +721,7 @@ function NavbarInner() {
                             </b>
                             .
                           </span>
-                        </h1>
+                        </h4>
                       </a>
                     </div>
                     <div
@@ -1013,59 +1013,68 @@ function NavbarInner() {
                     aria-labelledby="navbarDropdownHelp"
                   >
                     <div className="d-flex flex-wrap abtMenu">
-                      <h1 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
+                      <h4 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
                         <span className="mainTitleDrop">About us</span>
                         <span className="d-block about-our-storymt-lg-0 mt-5 coodiv-text-11 color-blackish-blue-opacity subTitleDrop">
                           A ton of website hosting options, 99.9% uptime
                           guarantee, free SSL certificate, easy WordPress
                           installs, and a free domain for a year.
                         </span>
-                      </h1>
+                      </h4>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link
-                            href="/global-infrastructure"
-                            title="Global infrastructure"
-                          >
-                            Global infrastructure
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link
-                            href="https://blog.madpopo.com/"
-                            target="_blank"
-                            title="Company Blog"
-                          >
-                            Company Blog
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/global-infrastructure"
+                              title="Global infrastructure"
+                            >
+                              Global infrastructure
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="https://blog.madpopo.com/"
+                              target="_blank"
+                              title="Company Blog"
+                            >
+                              Company Blog
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link
-                            href="/terms-conditions"
-                            title="Terms & Conditions"
-                          >
-                            Terms & Conditions
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link href="/career" title="Careers">
-                            Careers
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/terms-conditions"
+                              title="Terms & Conditions"
+                            >
+                              Terms & Conditions
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link href="/career" title="Careers">
+                              Careers
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link href="/happy-customer" title="Happy Customers">
-                            Happy Customers
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link href="/contact-us" title="Contact">
-                            Contact
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/happy-customer"
+                              title="Happy Customers"
+                            >
+                              Happy Customers
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link href="/contact-us" title="Contact">
+                              Contact
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </ul>

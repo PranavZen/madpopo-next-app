@@ -1,6 +1,6 @@
 {
-  "name": "next.madpopo.com",
-  "homepage": "https://next.madpopo.com/",
+  "name": "madpopo.com",
+  "homepage": "https://madpopo.com",
   "version": "0.1.1",
   "private": true,
   "scripts": {
@@ -19,7 +19,6 @@
     "jquery": "^3.7.1",
     "next": "^14.0.4",
     "next-images": "^1.8.5",
-    "optimize-css-assets-webpack-plugin": "^6.0.1",
     "react": "^18.2.0",
     "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
@@ -32,7 +31,6 @@
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.0.5",
-    "terser-webpack-plugin": "^5.3.9"
+    "swiper": "^11.0.5"
   }
 }

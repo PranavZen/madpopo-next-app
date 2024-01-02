@@ -1,4 +1,4 @@
-import React from 'react'
+
 import WindowsHostingDatas from './hostingpalndata/WindowsHostingData'
 import WindowsPricingCardBox from './WindowsPricingCardBox'
 

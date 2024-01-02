@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PleskVdsPriceCard from '../tabs/tabcontentbox/PleskVdsPriceCard'
 
 function PleskVDSCard(props) {

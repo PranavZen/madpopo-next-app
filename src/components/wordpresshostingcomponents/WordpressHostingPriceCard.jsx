@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PriceCardBox from '../PriceCardBox';
 import pricingSEctionData2 from '../tabs/tabcontentbox/PriceCardDataTwo';
 function WordpressHostingPriceCard() {

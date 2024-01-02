@@ -12,11 +12,11 @@ export const metadata = {
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
-    url: "https://next.madpopo.com/happy-customer",
+    url: "https://madpopo.com/happy-customer",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -27,11 +27,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function HappyCustomer() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg termsConditionBg">
       <NavbarInner />
@@ -39,7 +39,7 @@ function page() {
         <div className="tc_TitleOverlay">
           <h1>Happy Customers</h1>
         </div>
-      </div>
+      </div> 
 
       <div
         className="trusedPlanSection happyCust"
@@ -78,4 +78,4 @@ function page() {
   );
 }
 
-export default page;
+export default HappyCustomer;

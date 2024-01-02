@@ -16,11 +16,11 @@ export const metadata = {
   keywords:
     "hosting for resellers, reseller hosting, domain reseller, best reseller hosting, reseller web hosting, reseller website, reseller web.",
   openGraph: {
-    url: "https://next.madpopo.com/reseller-hosting",
+    url: "https://madpopo.com/reseller-hosting",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -31,11 +31,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function ResellerHosting() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg resellerBG">
       <NavbarInner />
@@ -93,4 +93,4 @@ function page() {
   );
 }
 
-export default page;
+export default ResellerHosting;

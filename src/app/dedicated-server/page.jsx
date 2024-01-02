@@ -18,11 +18,11 @@ export const metadata = {
   keywords:
     "dedicated server, dedicated server hosting, hosted server, server hosting dedicated, server hosting, dedicated hosting, best dedicated server hosting.",
   openGraph: {
-    url: "https://next.madpopo.com/dedicated-server",
+    url: "https://madpopo.com/dedicated-server",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -33,11 +33,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function DedicatedServer() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg dedicatedServerBG">
       <NavbarInner />
@@ -97,4 +97,4 @@ function page() {
   );
 }
 
-export default page;
+export default DedicatedServer;

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import woocomPriceData from './woocomPriceData';
 import PriceCardBoxWoo from '../PriceCardBoxWoo';
 function WooComPriceCard() {

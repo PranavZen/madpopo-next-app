@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PleskVdsData from './hostingpalndata/PleskVdsData'
 import PleskVDSPricingCardBox from '@/components/PleskPageComponent/PleskVDSPricingCardBox'
 

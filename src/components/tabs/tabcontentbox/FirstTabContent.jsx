@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Pricecard from './Pricecard'
 function FirstTabContent() {
   return (

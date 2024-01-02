@@ -876,6 +876,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.orangeBold{
+  color: #ff8726;
+}
 .flgImg img {
   width: 70%;
 }
@@ -883,7 +886,13 @@ a.btn {
   color: #fff;
 }
 .aws-domains-ltds-prices-item a.btn {
-  color: #232323;
+  padding: 0;
+  height: 45px;
+  background: #0056ed;
+  color: #fff;
+  border: 0;
+  border-radius: 8px !important;
+  font-size: 14px;
 }
 .aws-domains-ltds-prices-item a.btn:hover {
   color: #fff !important;
@@ -8560,6 +8569,12 @@ ul.footer-list li:hover a.footer-list-link {
   padding: 15px 30px 15px !important;
   left: 215% !important;
 }
+.abtMenuList ul{
+  padding: 0;
+}
+.abtMenuList ul li{
+list-style: none;
+}
 .abtMenu .abtMenuList .drop-menu-item {
   margin-bottom: 10px;
 }
@@ -14286,6 +14301,9 @@ ul#lang-box-ul {
   top: 215px;
   transform: translate(-50%, -50%);
 }
+.imgAnch{
+  gap: 10px;
+}
 .imgAnch img {
   cursor: pointer;
 }
@@ -14536,7 +14554,7 @@ body.sign-up-page .main-signup-block {
   background: #fff;
   border: 2px solid #1ecd97;
   color: #1ecd97;
-  text-shadow: 0;
+  text-shadow: none;
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
@@ -14839,7 +14857,7 @@ body.sign-up-page .main-signup-block {
   font-size: 11px;
   padding: 6px 15px;
   text-transform: uppercase;
-  rder-radius: 20px;
+  border-radius: 20px;
 }
 
 /*---------------- template fancy animations blocks -----------------*/
@@ -19066,10 +19084,15 @@ body.aws-html-theme .playfair-display-font {
   opacity: 1;
 }
 .aws-domains-ltds-prices .aws-domains-ltds-prices-item {
-  border: 1px solid #d4dbe0;
-  padding: 60px 30px;
-  position: relative;
-  border-right: 0;
+  border: 2px solid #d4dbe0;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border-radius: 8px;
 }
 .aws-domains-ltds-prices.row-2 .aws-domains-ltds-prices-item {
   border-top: 0;
@@ -19078,15 +19101,23 @@ body.aws-html-theme .playfair-display-font {
   border-right: 1px solid #d4dbe0;
 }
 .aws-domains-ltds-prices .aws-domains-ltds-prices-item img {
-  height: 30px;
-  margin-bottom: 20px;
+  height: 25px;
+}
+.domParaText{
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.col-md-3.custmd3{
+  flex: 0 0 23%;
+  max-width: 23%;
 }
 .aws-domains-ltds-price-item {
-  font-weight: 900;
-  font-size: 35px;
-  line-height: 33px;
-  display: block;
   color: #1b1d1e;
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1;
 }
 .aws-domains-ltds-price-item small {
   font-family: "Inter", sans-serif;
@@ -19605,6 +19636,58 @@ form .form-group {
   }
 }
 @media screen and (max-width: 834px) {
+  .white-bg.light-mode-texts .navbar #mobile-menu .navbar-nav-wrapper #header-navbar-links .nav-item .nav-link{
+    color: #fff !important;
+  }
+  .mobMenuList{
+    flex-direction: column;
+    align-items: center;
+  }
+  .listTitle a{
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  #global-network-tabsContent #global-network-country-001 .col-md-8{
+    max-width: 100%;
+  }
+  .btn-red.with-icon.coodiv-text-11{
+    width: 30%;
+    margin: 0 auto;
+  }
+  .mobMenuList .col-md-6.menusHover{
+    max-width: 100%;
+  }
+  .content{
+    text-align: left;
+  }
+  .dom_pt{
+    padding-top: 290px;
+  }
+  .doms_top_para{
+    top: 135px;
+  }
+  .aws-domains-ltds-price-item{
+    font-size: 24px;
+    line-height: 1;
+  }
+  #global-network-tabs {
+    display: none;
+  }
+  /* .offcanvas-active.navbar-expand-lg .main-menu a{
+    flex-direction: column;
+  } */
+  .domaulListing{
+    flex-direction: column;
+  }
+  .domaulListing .listTitle{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .col-md-3.custmd3{
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
   .downArrowMenu.blackArrow {
     display: none !important;
   }
@@ -20562,9 +20645,7 @@ form .form-group {
     width: 100% !important;
   }
   @media screen and (max-width: 767px) {
-    #global-network-tabs {
-      display: none;
-    }
+    
     /* .mobShowHideButtonWrap{
     display: none;
   } */

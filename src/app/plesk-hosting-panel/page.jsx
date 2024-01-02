@@ -16,11 +16,11 @@ export const metadata = {
     "Plesk; Leading web hosting control panel for simple and secure website management. Enjoy easy setup, powerful features, reliable performance, and advanced security solutions.",
   keywords: "plesk, pleskpanel, pleskpricing, installingplesk, pleskhosting",
   openGraph: {
-    url: "https://next.madpopo.com/plesk-hosting-panel",
+    url: "https://madpopo.com/plesk-hosting-panel",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -31,11 +31,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function PleskHosting() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg windowsBG">
       <NavbarInner />
@@ -91,4 +91,4 @@ function page() {
   );
 }
 
-export default page;
+export default PleskHosting;

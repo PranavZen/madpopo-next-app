@@ -21,7 +21,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg"
@@ -32,7 +32,7 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
@@ -41,15 +41,13 @@ function Home() {
     <div className="site-wrapper overflow-hidden">
       <NavbarOuter />
       <Banner />
-      <Migration />
+      <Migration /> 
       <SyncMain />
       <DomainSection />
       <MaximizeSection />
       <Hostareawrap />
       <div
         className="trusedPlanSection"
-        data-aos="fade-right"
-        data-aos-duration="1200"
       >
         <TrustedClientsSlide />
         <FAQ />

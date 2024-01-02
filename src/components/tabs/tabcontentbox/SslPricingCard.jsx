@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import SslPricingCardBox from '@/components/SslCertificatePageContent/SslPricingCardBox'
 import SslData from './hostingpalndata/SslData'
 

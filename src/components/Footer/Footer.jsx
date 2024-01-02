@@ -139,7 +139,7 @@ function Footer() {
                         <Link
                           className="footer-list-link"
                           href="/domain-registration/#check-free-domain"
-                          smooth="true"
+                         
                           title="Check Free Domain"
                         >
                           {" "}

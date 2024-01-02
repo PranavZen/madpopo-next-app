@@ -14,11 +14,11 @@ export const metadata = {
   keywords:
     "whois, whois lookup, whois domain, whois domain lookup, whois domain tools, whois lookup, whois domain hosting",
   openGraph: {
-    url: "https://next.madpopo.com/whois-checker",
+    url: "https://madpopo.com/whois-checker",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -29,11 +29,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function WhoIsChecker() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg careerBg">
       <NavbarInner />
@@ -87,4 +87,4 @@ function page() {
   );
 }
 
-export default page;
+export default WhoIsChecker;

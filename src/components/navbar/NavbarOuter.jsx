@@ -62,7 +62,9 @@ function NavbarOuter() {
                 <i className="fa fa-phone"></i> Need Help ?
               </span>{" "}
               Call Us 24/7 :{" "}
-              <Link href="tel:+91 7039 003 001" title="tel:+91 7039 003 001">+91 7039 003 001</Link>
+              <Link href="tel:+917039003001" title="tel:+91 7039 003 001">
+                +91 7039 003 001
+              </Link>
             </span>
             <div className="inrSelectWrap">
               <div className="inrSelectBox">
@@ -76,7 +78,12 @@ function NavbarOuter() {
                           navbar-expand-lg px-0"
         >
           <div className="brand-logo mr-8 newBrandLogo">
-            <Link href="/" ref={scrollRef} onClick={scrollToTop} title="MadPopo Logo">
+            <Link
+              href="/"
+              ref={scrollRef}
+              onClick={scrollToTop}
+              title="MadPopo Logo"
+            >
               <Image
                 priority
                 src="/image/header/madpopo-dark-logo.svg"
@@ -155,7 +162,7 @@ function NavbarOuter() {
                                               mx-0 w-100"
                     >
                       <div className="col-md-12">
-                        <h1
+                        <h4
                           className="coodiv-text-6
                                                       title
                                                       color-blackish-blue
@@ -170,11 +177,11 @@ function NavbarOuter() {
                             guarantee, free SSL certificate, easy WordPress
                             installs, and a free domain for a year.
                           </span>
-                        </h1>
+                        </h4>
                         <div
                           className="row
                                                       justify-content-center
-                                                      mx-0"
+                                                      mx-0 mobMenuList"
                         >
                           <div
                             className="col-md-6
@@ -293,15 +300,12 @@ function NavbarOuter() {
                               </div>
                             </Link>
                           </div>
-                          <div
-                            className="col-md-6 col-lg-3 mb-10 menusHover"
-                            
-                          >
+                          <div className="col-md-6 col-lg-3 mb-10 menusHover">
                             <Link
                               href="/windows-hosting"
                               className="feature-widget
                                                               d-sm-flex"
-                                                              title="Windows Web Hosting"
+                              title="Windows Web Hosting"
                             >
                               <div
                                 className="widget-icon
@@ -603,11 +607,11 @@ function NavbarOuter() {
                                                     pt-lg-8 pb-lg-5 pl-6 pt-4
                                                     pb-4 rounded-top-left-8 nav-link cursorPointer`
                         }
-                        id="global-network-country-001-tab   "
+                        id="global-network-country-001-tab"
                         onClick={() => handleTabClick("tab1")}
                         title="Domain Registration"
                       >
-                        <h1
+                        <h4
                           className="coodiv-text-8
                                                         title
                                                         color-blackish-blue
@@ -633,7 +637,7 @@ function NavbarOuter() {
                             </span>
                             .
                           </span>
-                        </h1>
+                        </h4>
                       </a>
                       <a
                         className={
@@ -653,7 +657,7 @@ function NavbarOuter() {
                         onClick={() => handleTabClick("tab2")}
                         title="Domain Transfer"
                       >
-                        <h1
+                        <h4
                           className="coodiv-text-8
                                                         title
                                                         color-blackish-blue
@@ -680,7 +684,7 @@ function NavbarOuter() {
                             </b>
                             .
                           </span>
-                        </h1>
+                        </h4>
                       </a>
                     </div>
                     <div
@@ -971,59 +975,68 @@ function NavbarOuter() {
                     aria-labelledby="navbarDropdownHelp"
                   >
                     <div className="d-flex flex-wrap abtMenu">
-                      <h1 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
+                      <h4 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
                         <span className="mainTitleDrop">About us</span>
                         <span className="d-block about-our-storymt-lg-0 mt-5 coodiv-text-11 color-blackish-blue-opacity subTitleDrop">
                           A ton of website hosting options, 99.9% uptime
                           guarantee, free SSL certificate, easy WordPress
                           installs, and a free domain for a year.
                         </span>
-                      </h1>
+                      </h4>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link
-                            href="/global-infrastructure"
-                            title="Global infrastructure"
-                          >
-                            Global infrastructure
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link
-                            href="https://blog.madpopo.com/"
-                            target="_blank"
-                            title="Company Blog"
-                          >
-                            Company Blog
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/global-infrastructure"
+                              title="Global infrastructure"
+                            >
+                              Global infrastructure
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="https://blog.madpopo.com/"
+                              target="_blank"
+                              title="Company Blog"
+                            >
+                              Company Blog
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link
-                            href="/terms-conditions"
-                            title="Terms & Conditions"
-                          >
-                            Terms & Conditions
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link href="/career" title="Careers">
-                            Careers
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/terms-conditions"
+                              title="Terms & Conditions"
+                            >
+                              Terms & Conditions
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link href="/career" title="Careers">
+                              Careers
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                       <div className="col-md-4 abtMenuList">
-                        <li className="drop-menu-item">
-                          <Link href="/happy-customer" title="Happy Customers">
-                            Happy Customers
-                          </Link>
-                        </li>
-                        <li className="drop-menu-item">
-                          <Link href="/contact-us" title="Contact">
-                            Contact
-                          </Link>
-                        </li>
+                        <ul>
+                          <li className="drop-menu-item">
+                            <Link
+                              href="/happy-customer"
+                              title="Happy Customers"
+                            >
+                              Happy Customers
+                            </Link>
+                          </li>
+                          <li className="drop-menu-item">
+                            <Link href="/contact-us" title="Contact">
+                              Contact
+                            </Link>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </ul>

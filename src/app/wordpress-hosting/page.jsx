@@ -17,11 +17,11 @@ export const metadata = {
   keywords:
     "wordpress hosting, best wordpress hosting, wordpress domain, wordpress plans wp hosting, managed wordpress hosting, fastest wordpress hosting, managed wordpress, wordpress website hosting, best web hosting for wordpress, wordpress server, wordpress web hosting, wordpress hosting plans",
   openGraph: {
-    url: "https://next.madpopo.com/wordpress-hosting",
+    url: "https://madpopo.com/wordpress-hosting",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -32,11 +32,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function WordpressHosting() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg">
       <NavbarInner />
@@ -104,4 +104,4 @@ function page() {
   );
 }
 
-export default page;
+export default WordpressHosting;

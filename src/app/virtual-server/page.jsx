@@ -17,11 +17,11 @@ export const metadata = {
   keywords:
     "virtual server, vds, virtual hosting, virtual dedicated server, virtualserver, virtual dedicated hosting",
   openGraph: {
-    url: "https://next.madpopo.com/virtual-server",
+    url: "https://madpopo.com/virtual-server",
     type: "website",
     images: [
       {
-        url: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+        url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
         type: "image/jpg",
@@ -32,11 +32,11 @@ export const metadata = {
     card: "summary_large_image",
     creator: "@madpopowp",
     site: "@madpopowp",
-    image: "https://next.madpopo.com/image/madpopo-hosting.jpg",
+    image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
 
-function page() {
+function VirtualServer() {
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg vdsBG">
       <NavbarInner />
@@ -95,4 +95,4 @@ function page() {
   );
 }
 
-export default page;
+export default VirtualServer;

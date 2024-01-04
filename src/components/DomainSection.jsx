@@ -33,47 +33,47 @@ function DomainSection(props) {
   const [domainName, setdomainName] = useState("");
   const action = "https://my.madpopo.com/cart.php?a=add&domain=register&query=";
   return (
-    <div>
-      <section className="more-services-group-container pt-20 px-lg-15 px-4 position-relative bg-default-2 dom_pt pb-20">
+    <>
+
+      <section className="more-services-group-container bgGrays p-20 dom_pt">
         <div className="container-fluid">
-          <div className="row justify-content-lg-start justify-content-center align-items-center px-lg-0 px-10 domSecRow">
-            <div className="col-xl-4 col-12 text-lg-left text-center">
-              <h2 className="coodiv-text-4 font-weight-bold mb-4">
-                Your Domain, Your Identity: Why Choosing a Featured Domain Name
-                Matters
+          <div className="domainsListingRow">
+            <div className="col-xl-6 col-12 listingMainPara">
+              <h2 className="font-weight-bold mb-4 text-center">
+                All what you need is a featured domain name to start.
               </h2>
-              <p className="coodiv-text-8 font-weight-light mb-20">
-                Choosing a featured domain name is essential for establishing
-                your online identity and creating a successful web presence and
-                why you're awesome. Find the{" "}
-                <b className="font-weight-bold orangeBold">
-                  right domain extension
-                </b>{" "}
-                now to grab more attention and visitors.
+              <p className="text-center font-weight-light">
+                The perfect domain lets people know at a glance why you're
+                online{" "}
+                <span className="font-weight-bold orangeBold">and why you're awesome</span>. Find
+                the right domain extension now to grab more attention and
+                visitors.
               </p>
             </div>
-            <div
-              className="col-xl-8 col-12 row justify-content-center aws-domains-ltds-prices row-1 imgAnch"
-              id="homeDomCard"
-              // eslint-disable-next-line react/jsx-no-comment-textnodes
-            >
-              {domainListData.map((item) => {
-                return (
-                  <DomainListBox
-                    key={item.id}
-                    id={item.id}
-                    img={item.img}
-                    domainName={item.domainName}
-                    dollarPrice={item.dollarPrice}
-                    width={item.width}
-                    height={item.height}
-                  />
-                );
-              })}
-            </div>
+            <div className="col-xl-12 col-12 imgAnch"
+            id="mySearch"
+          >
+            {domainListData.map((item) => {
+              return (
+                <DomainListBox
+                  key={item.id}
+                  id={item.id}
+                  img={item.img}
+                  domainName={item.domainName}
+                  dollarPrice={item.dollarPrice}
+                  width={item.width}
+                  height={item.height}
+                />
+              );
+            })}
           </div>
+          </div>
+          
         </div>
       </section>
+
+
+
       <section
         className="domain-checker-emyui-aws-homepage dark-mode-texts py-12"
         id="domSearch"
@@ -162,7 +162,7 @@ function DomainSection(props) {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

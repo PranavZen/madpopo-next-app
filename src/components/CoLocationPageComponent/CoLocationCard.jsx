@@ -154,41 +154,41 @@ function CoLocationCard(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Snapshot{" "}
+            <i className="fa fa-check-square-o mr-3"></i> Snapshot{" "}
             {props.dsCardSnap}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 32 TB Traffic*
+            <i className="fa fa-check-square-o mr-3"></i> 32 TB Traffic*
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Unlimited
+            <i className="fa fa-check-square-o mr-3"></i> Unlimited
             Incoming
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 1 IPv4 Address
+            <i className="fa fa-check-square-o mr-3"></i> 1 IPv4 Address
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Multiple DC
+            <i className="fa fa-check-square-o mr-3"></i> Multiple DC
             Location
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Power Reboot
+            <i className="fa fa-check-square-o mr-3"></i> Power Reboot
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Unmanaged Server
+            <i className="fa fa-check-square-o mr-3"></i> Unmanaged Server
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Default Linux OS
+            <i className="fa fa-check-square-o mr-3"></i>Default Linux OS
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Free Control Panel
+            <i className="fa fa-check-square-o mr-3"></i>Free Control Panel
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>99,90% Uptime
+            <i className="fa fa-check-square-o mr-3"></i>99,90% Uptime
             Guarantee
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Advanced 24/7
+            <i className="fa fa-check-square-o mr-3"></i>Advanced 24/7
             Expert Support
           </li>
         </ul>

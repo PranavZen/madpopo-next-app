@@ -37,7 +37,7 @@ function TrustedClientsSlide() {
   return (
     <div className="containe-fluid">
     <div className="clientTestSecTitle">
-      <h5>Trusted By Clients And Industry Experts Alike</h5>
+      <h6>Trusted By Clients And Industry Experts Alike</h6>
     </div>
       <div className="clientSlideRow">
         <div className="col-md-12">

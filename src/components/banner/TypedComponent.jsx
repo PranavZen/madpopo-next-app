@@ -69,7 +69,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <Link
                   to="myTabslide"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                   spy={true}
                   smooth="true"
                   offset={-100}
@@ -94,7 +94,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <a
                   href="/linux-web-hosting"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                 >
                   View Plans
                 </a>
@@ -115,7 +115,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <a
                   href="/business-email-hosting"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                 >
                   View Plans
                 </a>
@@ -137,7 +137,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <a
                   href="/dedicated-server"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                 >
                   View Plans
                 </a>
@@ -158,7 +158,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <a
                   href="/virtual-server"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                 >
                   View Plans
                 </a>
@@ -179,7 +179,7 @@ function TypedComponent() {
               <div className="bannerBtnWrap">
                 <a
                   href="/woocommerce-hosting"
-                  className="btn btn-org coodiv-hover-y mt-7 coodiv-text-9"
+                  className="btn mt-7"
                 >
                   View Plans
                 </a>

@@ -157,14 +157,14 @@ function VPSCard(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 32 TB Traffic*
+            <i className="fa fa-check-square-o mr-3"></i> 32 TB Traffic*
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Unlimited
+            <i className="fa fa-check-square-o mr-3"></i> Unlimited
             Incoming
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> One Time Setup:
+            <i className="fa fa-check-square-o mr-3"></i> One Time Setup:
             $39/ Rs. 3500 / EURO 35
           </li>
         </ul>

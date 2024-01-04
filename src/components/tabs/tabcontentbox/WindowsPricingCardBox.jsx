@@ -151,49 +151,49 @@ function WindowsPricingCardBox(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free Domain 1st
+            <i className="fa fa-check-square-o mr-3"></i> Free Domain 1st
             Year*
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> {props.winHOPt1}{" "}
+            <i className="fa fa-check-square-o mr-3"></i> {props.winHOPt1}{" "}
             Email Accounts
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> {props.winHOPt2}{" "}
+            <i className="fa fa-check-square-o mr-3"></i> {props.winHOPt2}{" "}
             Sub Domains
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> FTP Account
+            <i className="fa fa-check-square-o mr-3"></i> FTP Account
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> {props.winHOPt3}{" "}
+            <i className="fa fa-check-square-o mr-3"></i> {props.winHOPt3}{" "}
             MSSQL Database (200MB)
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> PHP Support
+            <i className="fa fa-check-square-o mr-3"></i> PHP Support
             7.4,8.0,8.1,8.2
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free SSL
+            <i className="fa fa-check-square-o mr-3"></i> Free SSL
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>
+            <i className="fa fa-check-square-o mr-3"></i>
             {props.winHOPt6}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Managed WordPress
+            <i className="fa fa-check-square-o mr-3"></i>Managed WordPress
             Toolkit
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Out-of-the-box
+            <i className="fa fa-check-square-o mr-3"></i>Out-of-the-box
             Caching
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Hosting Plesk
+            <i className="fa fa-check-square-o mr-3"></i>Hosting Plesk
             Panel
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>99,90% Uptime
+            <i className="fa fa-check-square-o mr-3"></i>99,90% Uptime
             Guarantee
           </li>
         </ul>

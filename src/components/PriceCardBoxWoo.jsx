@@ -198,46 +198,46 @@ function PriceCardBoxWoo(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free Domain 1st
+            <i className="fa fa-check-square-o mr-3"></i> Free Domain 1st
             Year*
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Premium
+            <i className="fa fa-check-square-o mr-3"></i> Premium
             Theme,Save {selectedCountry ? selectedCountry : bydefaultCurrency}
             {slectSavePrice ? slectSavePrice : save_price || defaultSavePrice}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free WP
+            <i className="fa fa-check-square-o mr-3"></i> Free WP
             Installation
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free Speed
+            <i className="fa fa-check-square-o mr-3"></i> Free Speed
             Enhancing CDN
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> WordPress
+            <i className="fa fa-check-square-o mr-3"></i> WordPress
             Autoupdates
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free SSL
+            <i className="fa fa-check-square-o mr-3"></i> Free SSL
           </li>
 
           <li>
-            <i className="feather icon-check-circle mr-3"></i>{" "}
+            <i className="fa fa-check-square-o mr-3"></i>{" "}
             {props.wpWeeklyBckp}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Ecommerce Enabled
+            <i className="fa fa-check-square-o mr-3"></i>Ecommerce Enabled
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Managed WordPress
+            <i className="fa fa-check-square-o mr-3"></i>Managed WordPress
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>Out-of-the-box
+            <i className="fa fa-check-square-o mr-3"></i>Out-of-the-box
             Caching
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>100% renewable
+            <i className="fa fa-check-square-o mr-3"></i>100% renewable
             energy match
           </li>
         </ul>

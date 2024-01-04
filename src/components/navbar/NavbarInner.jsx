@@ -184,7 +184,7 @@ function NavbarInner() {
                   </Link>
                   <div
                     className="coodiv-megamenu-dropdown
-                                          fullwidth-megamenu center white-bg
+                                          fullwidth-megamenu center
                                           dropdown-menu d-lg-flex px-lg-10
                                           px-5 py-10"
                     aria-labelledby="navbarDropdown90"
@@ -543,7 +543,7 @@ function NavbarInner() {
                                     src="/image/header/navbaricon/Resellericon.png"
                                     alt="Reseller Hosting"
                                     width={40}
-                                    height={40}
+                                    height={39}
                                   />
                                 </span>
                               </div>
@@ -626,8 +626,7 @@ function NavbarInner() {
                       className="
                                                 justify-content-start
                                                 mega-menu-header nav"
-                      role="tablist"
-                      aria-orientation="vertical"
+                      
                       id="global-network-tabs"
                     >
                       <a
@@ -759,7 +758,7 @@ function NavbarInner() {
                                                                         mb-2
                                                                         min-height-px-64"
                                     type="text"
-                                    id="domain"
+                                    id="domains"
                                     name="domain"
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
@@ -875,7 +874,7 @@ function NavbarInner() {
                                                                 mb-2
                                                                 min-height-px-64"
                                     type="text"
-                                    id="domain"
+                                    id="domains"
                                     name="domain"
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
@@ -1012,6 +1011,7 @@ function NavbarInner() {
                     dropdown-menu d-lg-block pt-0"
                     aria-labelledby="navbarDropdownHelp"
                   >
+                    <li>
                     <div className="d-flex flex-wrap abtMenu">
                       <h4 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
                         <span className="mainTitleDrop">About us</span>
@@ -1077,6 +1077,7 @@ function NavbarInner() {
                         </ul>
                       </div>
                     </div>
+                    </li>
                   </ul>
                 </li>
 

@@ -27,7 +27,7 @@ function DomainListBox(props) {
       <img src={props.img} alt="domain tld" />
       <p className="coodiv-text-11 font-weight-light">
         Exhibit and sell your{" "}
-        <b className="font-weight-bold">{props.domainName}</b> online
+        <sapn className="font-weight-bold">{props.domainName}</sapn> online
       </p>
       <span className="aws-domains-ltds-price-item mb-8">
         {selectedCountry ? selectedCountry : bydefaultCurrency}
@@ -40,7 +40,7 @@ function DomainListBox(props) {
         smooth="true"
         offset={-100}
         duration={500}
-        className="btn btn-outline-black coodiv-text-11 px-10 font-weight-bold rounded-0 d-block w-100 d-flex align-items-center justify-content-center btn-with-hide-icon"
+        className="btn btn-with-hide-icon"
       >
         Check Availability
         <i className="feather icon-arrow-right font-weight-bold"></i>

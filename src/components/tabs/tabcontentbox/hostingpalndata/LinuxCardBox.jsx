@@ -166,53 +166,53 @@ function LinuxCardBox(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i>{" "}
+            <i className="fa fa-check-square-o mr-3"></i>{" "}
             {props.cardlinuxOPt1}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>
+            <i className="fa fa-check-square-o mr-3"></i>
             {props.cardlinuxOPT2} Account Domain
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>
+            <i className="fa fa-check-square-o mr-3"></i>
             {props.cardlinuxOPT3} Email Accounts
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>
+            <i className="fa fa-check-square-o mr-3"></i>
             {props.cardlinuxOPT4} Sub Domains
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>
+            <i className="fa fa-check-square-o mr-3"></i>
             {props.cardlinuxOPT5} MySQL Database
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free SSL
+            <i className="fa fa-check-square-o mr-3"></i> Free SSL
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i>{" "}
+            <i className="fa fa-check-square-o mr-3"></i>{" "}
             {props.cardlinuxOPT6}
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Managed WordPress
+            <i className="fa fa-check-square-o mr-3"></i> Managed WordPress
             Toolkit
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Out-of-the-box
+            <i className="fa fa-check-square-o mr-3"></i> Out-of-the-box
             Caching
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Hosting CPanel
+            <i className="fa fa-check-square-o mr-3"></i> Hosting CPanel
           </li>
 
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Free 1-click
+            <i className="fa fa-check-square-o mr-3"></i> Free 1-click
             WordPress install
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 24/7 Support
+            <i className="fa fa-check-square-o mr-3"></i> 24/7 Support
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 99,90% Uptime
+            <i className="fa fa-check-square-o mr-3"></i> 99,90% Uptime
             Guarantee
           </li>
         </ul>

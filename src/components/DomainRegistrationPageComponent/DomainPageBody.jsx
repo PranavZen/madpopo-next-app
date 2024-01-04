@@ -37,22 +37,22 @@ function DomainPageBody() {
   const action = "https://my.madpopo.com/cart.php?a=add&domain=register&query=";
   return (
     <>
-      <section className="more-services-group-container px-lg-15 px-4 position-relative dom_pt">
+      <section className="more-services-group-container dom_pt">
         <div className="container-fluid">
-          <div className="row justify-content-lg-start justify-content-center align-items-center px-lg-0 px-10">
-            <div className="col-xl-4 col-12 text-lg-left text-center">
-              <h2 className="coodiv-text-4 font-weight-bold mb-4">
+          <div className="domainsListingRow">
+            <div className="col-xl-6 col-12 listingMainPara">
+              <h2 className="font-weight-bold mb-4 text-center">
                 All what you need is a featured domain name to start.
               </h2>
-              <p className="coodiv-text-8 font-weight-light">
+              <p className="text-center font-weight-light">
                 The perfect domain lets people know at a glance why you're
                 online{" "}
-                <b className="font-weight-bold orangeBold">and why you're awesome</b>. Find
+                <span className="font-weight-bold orangeBold">and why you're awesome</span>. Find
                 the right domain extension now to grab more attention and
                 visitors.
               </p>
             </div>
-            <div className="col-xl-8 col-12 row justify-content-center aws-domains-ltds-prices row-1 imgAnch"
+            <div className="col-xl-12 col-12 imgAnch"
             id="mySearch"
           >
             {domainListData.map((item) => {

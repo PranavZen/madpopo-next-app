@@ -145,10 +145,10 @@ function DDSCard3(props) {
         </ul>
         <ul className="ddos-second-features border-top">
           <li>
-            <i className="feather icon-check-circle mr-3"></i> 32 TB Traffic*
+            <i className="fa fa-check-square-o mr-3"></i> 32 TB Traffic*
           </li>
           <li>
-            <i className="feather icon-check-circle mr-3"></i> Unlimited
+            <i className="fa fa-check-square-o mr-3"></i> Unlimited
             Incoming
           </li>
         </ul>

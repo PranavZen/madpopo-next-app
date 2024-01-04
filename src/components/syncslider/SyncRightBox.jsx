@@ -13,7 +13,7 @@ function SyncRightBox(props) {
       setSelectedCountry(storedCountry);
     }
   }, [selectedCountry]);
-
+ 
   if (selectedCountry === "₹") {
     // console.log(props.planPiceF);
     var price1 = props.planPiceF;
@@ -93,10 +93,7 @@ function SyncRightBox(props) {
       </div>
       <Link
         href={props.link}
-        className="btn btn-special-home-plan
-                                        with-icon coodiv-hover-y px-xl-8 px-lg-4
-                                        px-sm-8 px-4 rounded-20 coodiv-text-12
-                                        text-uppercase"
+        className="btn btn-special-home-plan text-uppercase"
       >
         Try The Plan Now
       </Link>

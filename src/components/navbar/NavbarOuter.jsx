@@ -506,7 +506,7 @@ function NavbarOuter() {
                                     src="/image/header/navbaricon/Resellericon.png"
                                     alt="Reseller Hosting"
                                     width={40}
-                                    height={40}
+                                    height={39}
                                   />
                                 </span>
                               </div>
@@ -589,8 +589,7 @@ function NavbarOuter() {
                       className="
                                                 justify-content-start
                                                 mega-menu-header nav"
-                      role="tablist"
-                      aria-orientation="vertical"
+                      
                       id="global-network-tabs"
                     >
                       <a
@@ -722,7 +721,7 @@ function NavbarOuter() {
                                                                         mb-2
                                                                         min-height-px-64"
                                     type="text"
-                                    id="domain"
+                                    id="domains"
                                     name="domain"
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
@@ -825,7 +824,7 @@ function NavbarOuter() {
                                                                 mb-2
                                                                 min-height-px-64"
                                     type="text"
-                                    id="domain"
+                                    id="domains"
                                     name="domain"
                                     onChange={(e) =>
                                       setdomainName(action + e.target.value)
@@ -950,71 +949,73 @@ function NavbarOuter() {
                     dropdown-menu d-lg-block pt-0"
                     aria-labelledby="navbarDropdownHelp"
                   >
-                    <div className="d-flex flex-wrap abtMenu">
-                      <h4 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
-                        <span className="mainTitleDrop">About us</span>
-                        <span className="d-block about-our-storymt-lg-0 mt-5 coodiv-text-11 color-blackish-blue-opacity subTitleDrop">
-                          A ton of website hosting options, 99.9% uptime
-                          guarantee, free SSL certificate, easy WordPress
-                          installs, and a free domain for a year.
-                        </span>
-                      </h4>
-                      <div className="col-md-4 abtMenuList">
-                        <ul>
-                          <li className="drop-menu-item">
-                            <Link
-                              href="/global-infrastructure"
-                              title="Global infrastructure"
-                            >
-                              Global infrastructure
-                            </Link>
-                          </li>
-                          <li className="drop-menu-item">
-                            <Link
-                              href="https://blog.madpopo.com/"
-                              target="_blank"
-                              title="Company Blog"
-                            >
-                              Company Blog
-                            </Link>
-                          </li>
-                        </ul>
+                    <li>
+                      <div className="d-flex flex-wrap abtMenu">
+                        <h4 className="coodiv-text-6 title color-blackish-blue text-lg-left text-center w-100 d-block mb-12 dropdownMenuTitle">
+                          <span className="mainTitleDrop">About us</span>
+                          <span className="d-block about-our-storymt-lg-0 mt-5 coodiv-text-11 color-blackish-blue-opacity subTitleDrop">
+                            A ton of website hosting options, 99.9% uptime
+                            guarantee, free SSL certificate, easy WordPress
+                            installs, and a free domain for a year.
+                          </span>
+                        </h4>
+                        <div className="col-md-4 abtMenuList">
+                          <ul>
+                            <li className="drop-menu-item">
+                              <Link
+                                href="/global-infrastructure"
+                                title="Global infrastructure"
+                              >
+                                Global infrastructure
+                              </Link>
+                            </li>
+                            <li className="drop-menu-item">
+                              <Link
+                                href="https://blog.madpopo.com/"
+                                target="_blank"
+                                title="Company Blog"
+                              >
+                                Company Blog
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-md-4 abtMenuList">
+                          <ul>
+                            <li className="drop-menu-item">
+                              <Link
+                                href="/terms-conditions"
+                                title="Terms & Conditions"
+                              >
+                                Terms & Conditions
+                              </Link>
+                            </li>
+                            <li className="drop-menu-item">
+                              <Link href="/career" title="Careers">
+                                Careers
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="col-md-4 abtMenuList">
+                          <ul>
+                            <li className="drop-menu-item">
+                              <Link
+                                href="/happy-customer"
+                                title="Happy Customers"
+                              >
+                                Happy Customers
+                              </Link>
+                            </li>
+                            <li className="drop-menu-item">
+                              <Link href="/contact-us" title="Contact">
+                                Contact
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="col-md-4 abtMenuList">
-                        <ul>
-                          <li className="drop-menu-item">
-                            <Link
-                              href="/terms-conditions"
-                              title="Terms & Conditions"
-                            >
-                              Terms & Conditions
-                            </Link>
-                          </li>
-                          <li className="drop-menu-item">
-                            <Link href="/career" title="Careers">
-                              Careers
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-md-4 abtMenuList">
-                        <ul>
-                          <li className="drop-menu-item">
-                            <Link
-                              href="/happy-customer"
-                              title="Happy Customers"
-                            >
-                              Happy Customers
-                            </Link>
-                          </li>
-                          <li className="drop-menu-item">
-                            <Link href="/contact-us" title="Contact">
-                              Contact
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    </li>
                   </ul>
                 </li>
 

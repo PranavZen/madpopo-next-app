@@ -86,6 +86,11 @@ function LinuxCardBox(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div
       className="col-lg-4 col-md-4 col-sm-8 mb-9 px-8
@@ -98,7 +103,9 @@ function LinuxCardBox(props) {
                 position-relative"
       >
         <span className="linuxCardTitle d-block position-relative">
-          <Link href={props.Linkss} title={props.title}>{props.cardlinuxTitle}</Link>
+          <Link href={props.Linkss} title={props.title}>
+            {props.cardlinuxTitle}
+          </Link>
         </span>
         <span className="fromText d-block mb-8 mt-1">
           {props.cardlinuxSubTitle}
@@ -110,9 +117,11 @@ function LinuxCardBox(props) {
               value={selectedFrequency}
               className="selectDay"
             >
-              <option value="priceThreeYearlyIn">3 Years</option>
-              <option value="priceTwoYearlyIn">2 Years</option>
-              <option value="priceYearlyIn">1 Year</option>
+              {frequencyOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </form>
         </div>

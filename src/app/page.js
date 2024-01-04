@@ -10,10 +10,9 @@ import NavbarOuter from "@/components/navbar/NavbarOuter";
 import SyncMain from "@/components/syncslider/SyncMain";
 
 export const metadata = {
-  title:
-    "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
+  title: "MadPopo Web Hosting Solutions: Secure, Scalable, Affordable",
   description:
-    "Explore MadPopo's high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
+    "MadPopo high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
@@ -24,7 +23,7 @@ export const metadata = {
         url: "https://madpopo.com/image/madpopo-hosting.jpg",
         width: 1200,
         height: 675,
-        type: "image/jpg"
+        type: "image/jpg",
       },
     ],
   },
@@ -41,14 +40,12 @@ function Home() {
     <div className="site-wrapper overflow-hidden">
       <NavbarOuter />
       <Banner />
-      <Migration /> 
+      <Migration />
       <SyncMain />
       <DomainSection />
       <MaximizeSection />
       <Hostareawrap />
-      <div
-        className="trusedPlanSection"
-      >
+      <div className="trusedPlanSection">
         <TrustedClientsSlide />
         <FAQ />
         <Footer />

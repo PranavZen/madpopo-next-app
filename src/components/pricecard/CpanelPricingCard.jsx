@@ -34,10 +34,12 @@ function CpanelPricingCard() {
             priceThreeYearlyInUSD,
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
-            priceThreeYearlyInEUR
+            priceThreeYearlyInEUR,
+            width,
+            height,
           }) => (
             <CpanelCard
-            key={id}
+              key={id}
               id={id}
               cardVpsTitle={cardVpsTitle}
               cardVpsSubTitle={cardVpsSubTitle}
@@ -65,6 +67,8 @@ function CpanelPricingCard() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

@@ -34,7 +34,9 @@ function CoLocationCardPricing() {
             priceThreeYearlyInUSD,
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
-            priceThreeYearlyInEUR
+            priceThreeYearlyInEUR,
+            width,
+            height
           }) => (
             <CoLocationCard
               key={id}
@@ -65,6 +67,8 @@ function CoLocationCardPricing() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

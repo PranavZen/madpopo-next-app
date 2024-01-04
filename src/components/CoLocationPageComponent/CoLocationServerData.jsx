@@ -4,7 +4,7 @@ const CoLocationServerData = [
       dsCardTitle: "Co-Location 1",
       dsCardSubTitle: "Optimal solution for Beginners",
       cardAnchorLink: `/dedicated-server`,
-      dsCardImg: "https://madpopo.com/static/media/PopoStarter.png",
+      dsCardImg: "https://madpopo.com/image/PopoStarter.png",
       dsCardAltName: `PopoStarter`,
       dsCardOgPrice: `$23`,
       dsCardWebSpace: "4",
@@ -27,13 +27,15 @@ const CoLocationServerData = [
       priceYearlyInEUR: 12,
       priceTwoYearlyInEUR: 13,
       priceThreeYearlyInEUR: 16,
+      width: 131,
+      height: 165
     },
     {
       id: 2,
       dsCardTitle: "Co-Location 2 ",
       dsCardSubTitle: "Ideal for personal websites",
       cardAnchorLink: `/dedicated-server`,
-      dsCardImg: `https://madpopo.com/static/media/PopoPro.png`,
+      dsCardImg: `https://madpopo.com/image/PopoPro.png`,
       dsCardAltName: `PopoPro `,
       dsCardOgPrice: `$24`,
       dsCardWebSpace: "6",
@@ -56,13 +58,15 @@ const CoLocationServerData = [
       priceYearlyInEUR: 22,
       priceTwoYearlyInEUR: 23,
       priceThreeYearlyInEUR: 26,
+      width: 131,
+      height: 165
     },
     {
       id: 3,
       dsCardTitle: "Co-Location 3",
       dsCardSubTitle: "Suitable for small business.",
       cardAnchorLink: `/dedicated-server`,
-      dsCardImg: `https://madpopo.com/static/media/PopoGrow.png`,
+      dsCardImg: `https://madpopo.com/image/PopoGrow.png`,
       dsCardAltName: `PopoGrow`,
       dsCardOgPrice: `$25`,
       dsCardWebSpace: "10",
@@ -85,6 +89,8 @@ const CoLocationServerData = [
       priceYearlyInEUR: 32,
       priceTwoYearlyInEUR: 33,
       priceThreeYearlyInEUR: 36,
+      width: 131,
+      height: 165
     },
   ];
   export default CoLocationServerData;

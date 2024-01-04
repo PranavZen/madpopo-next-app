@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import dDSData2 from "../tabs/tabcontentbox/hostingpalndata/DDSData2";
+import Image from "next/image";
 function DDSCard2(props) {
   //  console.log(props);
   var defaultPrice4 = dDSData2[props.id - 1].priceThreeYearlyInINR;
@@ -86,6 +87,10 @@ function DDSCard2(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "Monthly" },
+    { value: "priceTwoYearlyIn", label: "Quarterly" },
+  ];
   return (
     <div className="col-lg-12 mb-9">
       <div
@@ -96,7 +101,12 @@ function DDSCard2(props) {
       >
         <div className="d-flex mb-lg-7 plan-header">
           <div className="game-logo">
-            <img src={props.cardVpsImg} alt={props.cardVpsAltName} />
+            <Image
+              src={props.cardVpsImg}
+              alt={props.cardVpsAltName}
+              width={props.width}
+              height={props.height}
+            />
           </div>
           <div className="game-title">
             <h3 className="mb-6">
@@ -110,8 +120,11 @@ function DDSCard2(props) {
                   value={selectedFrequency}
                   className="selectDay newSelectBox"
                 >
-                  <option value="priceThreeYearlyIn">Monthly</option>
-                  <option value="priceTwoYearlyIn">Quarterly</option>
+                  {frequencyOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </form>
             </div>

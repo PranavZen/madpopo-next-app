@@ -34,7 +34,9 @@ function BusinessEmailComponent() {
             priceThreeYearlyInUSD,
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
-            priceThreeYearlyInEUR
+            priceThreeYearlyInEUR,
+            width,
+            height
           }) => (
             <BusinessEmailCard
               key={id}
@@ -65,6 +67,8 @@ function BusinessEmailComponent() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

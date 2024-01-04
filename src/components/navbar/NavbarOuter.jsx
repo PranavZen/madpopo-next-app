@@ -87,7 +87,7 @@ function NavbarOuter() {
               <Image
                 priority
                 src="/image/header/madpopo-dark-logo.svg"
-                alt=""
+                alt="MadPopo dark logo"
                 className="light-version-logo"
                 width={165}
                 height={77}
@@ -95,7 +95,7 @@ function NavbarOuter() {
               <Image
                 priority
                 src="/image/header/madpopo-dark-logo.svg"
-                alt=""
+                alt="MadPopo dark logo"
                 className="dark-version-logo"
                 width={165}
                 height={77}
@@ -231,7 +231,7 @@ function NavbarOuter() {
                                     priority
                                     src="/image/header/navbaricon/woocomicon.png"
                                     alt=" WooCommerce Hosting"
-                                    width={40}
+                                    width={23}
                                     height={40}
                                   />
                                 </span>
@@ -278,7 +278,7 @@ function NavbarOuter() {
                                   src="/image/header/navbaricon/linuxicon.png"
                                   alt=" Linux Web Hosting"
                                   width={40}
-                                  height={40}
+                                  height={44}
                                 />
                               </div>
                               <div className="content">
@@ -320,7 +320,7 @@ function NavbarOuter() {
                                     src="/image/header/navbaricon/windowsicon.png"
                                     alt="Windows Web Hosting"
                                     width={40}
-                                    height={40}
+                                    height={42}
                                   />
                                 </span>
                               </div>
@@ -366,7 +366,7 @@ function NavbarOuter() {
                                     src="/image/header/navbaricon/virtual-dedicated-server.png"
                                     alt="Cloud Server"
                                     width={40}
-                                    height={40}
+                                    height={29}
                                   />
                                 </span>
                               </div>
@@ -413,7 +413,7 @@ function NavbarOuter() {
                                     src="/image/header/navbaricon/dedicated-server.png"
                                     alt="Dedicated Server"
                                     width={40}
-                                    height={40}
+                                    height={44}
                                   />
                                 </span>
                               </div>
@@ -459,7 +459,7 @@ function NavbarOuter() {
                                     src="/image/header/navbaricon/Emailicon.png"
                                     alt="Business Email Hosting"
                                     width={40}
-                                    height={40}
+                                    height={42}
                                   />
                                 </span>
                               </div>
@@ -754,22 +754,16 @@ function NavbarOuter() {
                                   <p>Free with Domain Registration</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i> 2
-                                        Free Email Accounts
-                                      </span>
+                                      <i className="feather icon-check"></i> 2
+                                      Free Email Accounts
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Privacy Protection
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Privacy Protection
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Domain Theft Protection
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Domain Theft Protection
                                     </li>
                                   </ul>
                                 </Link>
@@ -782,22 +776,16 @@ function NavbarOuter() {
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        DNS Management
-                                      </span>
+                                      <i className="feather icon-check"></i> DNS
+                                      Management
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Domain Forwarding
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Domain Forwarding
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Multiple Mail Forwards
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Multiple Mail Forwards
                                     </li>
                                   </ul>
                                 </Link>
@@ -870,22 +858,16 @@ function NavbarOuter() {
                                   <p>Free with Domain Transfer</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i> 2
-                                        Free Email Accounts
-                                      </span>
+                                      <i className="feather icon-check"></i> 2
+                                      Free Email Accounts
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Privacy Protection
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Privacy Protection
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Domain Theft Protection
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Domain Theft Protection
                                     </li>
                                   </ul>
                                 </Link>
@@ -898,22 +880,16 @@ function NavbarOuter() {
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        DNS Management
-                                      </span>
+                                      <i className="feather icon-check"></i> DNS
+                                      Management
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Domain Forwarding
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Domain Forwarding
                                     </li>
                                     <li>
-                                      <span>
-                                        <i className="feather icon-check"></i>{" "}
-                                        Multiple Mail Forwards
-                                      </span>
+                                      <i className="feather icon-check"></i>{" "}
+                                      Multiple Mail Forwards
                                     </li>
                                   </ul>
                                 </Link>

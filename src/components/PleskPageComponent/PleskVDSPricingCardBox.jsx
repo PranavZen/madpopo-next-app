@@ -72,6 +72,11 @@ function PleskVDSPricingCardBox(props) {
     show_price_1 = PleskVdsData[props.id - 1][show_currency];
     setSelectPrice(show_price_1);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div className="col-lg-4 mb-15 mb-lg-0 priceCardWrap">
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
@@ -88,9 +93,11 @@ function PleskVDSPricingCardBox(props) {
               value={selectedFrequency}
               className="selectDay"
             >
-              <option value="priceThreeYearlyIn">1 Year</option>
-              <option value="priceTwoYearlyIn">3 Months</option>
-              <option value="priceYearlyIn">1 Month</option>
+              {frequencyOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </form>
         </div>

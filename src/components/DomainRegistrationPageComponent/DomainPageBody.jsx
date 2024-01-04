@@ -63,6 +63,8 @@ function DomainPageBody() {
                   img={item.img}
                   domainName={item.domainName}
                   dollarPrice={item.dollarPrice}
+                  width={item.width}
+                  height={item.height}
                 />
               );
             })}

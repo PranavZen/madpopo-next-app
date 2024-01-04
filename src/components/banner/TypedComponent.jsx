@@ -46,8 +46,8 @@ function TypedComponent() {
           priority
           src="/image/header/service-3.png"
           alt="moving element 2"
-          width={80}
-          height={80}
+          width={90}
+          height={82}
         />
       </div>
       <div className="container position-relative coodiv-z-index-2">
@@ -84,9 +84,9 @@ function TypedComponent() {
               style={{ display: Show === 2 ? "block" : "none" }}
               className={styles?.animatedElement && css(styles.animatedElement)}
             >
-              <h1 className="typedTextMain">
+              <h4 className="typedTextMain">
                 Power Your Website with MadPopo's <strong>Linux Hosting</strong>
-              </h1>
+              </h4>
               <p className="mb-0 mb-10 typedSmallText">
                 Reliable uptime, flexible plans, and user-friendly control
                 panel. Experience exceptional performance and technical support.
@@ -104,10 +104,10 @@ function TypedComponent() {
               style={{ display: Show === 3 ? "block" : "none" }}
               className={styles?.animatedElement && css(styles.animatedElement)}
             >
-              <h1 className="typedTextMain">
+              <h4 className="typedTextMain">
                 Professional <strong>Email Solutions</strong> for Your Business
                 with MadPopo
-              </h1>
+              </h4>
               <p className="mb-0 mb-10 typedSmallText">
                 Secure, reliable, and professional communication for businesses.
                 Flexible plans, intuitive interface, and 24/7 expert support.
@@ -125,10 +125,10 @@ function TypedComponent() {
               style={{ display: Show === 4 ? "block" : "none" }}
               className={styles?.animatedElement && css(styles.animatedElement)}
             >
-              <h1 className="typedTextMain">
+              <h4 className="typedTextMain">
                 <strong>Dedicated Hosting</strong> Solutions to Empower
                 Your Business
-              </h1>
+              </h4>
               <p className="mb-0 mb-10 typedSmallText">
                 MadPopo Dedicated Servers offer powerful and customisable
                 solutions. High-performance hardware, advanced security,
@@ -147,10 +147,10 @@ function TypedComponent() {
               style={{ display: Show === 5 ? "block" : "none" }}
               className={styles?.animatedElement && css(styles.animatedElement)}
             >
-              <h1 className="typedTextMain">
+              <h4 className="typedTextMain">
                 Unleash the Power of the <br />
                 <strong>Cloud Server</strong> with MadPopo
-              </h1>
+              </h4>
               <p className="mb-0 mb-10 typedSmallText">
                 Scalable, fast, and reliable cloud hosting solutions. Flexible
                 plans, robust infrastructure, and exceptional support.
@@ -168,10 +168,10 @@ function TypedComponent() {
               style={{ display: Show === 6 ? "block" : "none" }}
               className={styles?.animatedElement && css(styles.animatedElement)}
             >
-              <h1 className="typedTextMain">
+              <h4 className="typedTextMain">
                 Reliable, Scalable, & Affordable <br />
                 <strong>E-commerce Solutions</strong>
-              </h1>
+              </h4>
               <p className="mb-0 mb-10 typedSmallText">
                 Easy-to-use tools to grow your online business. Advanced
                 features, affordable pricing, and reliable support.
@@ -217,8 +217,8 @@ function TypedComponent() {
           priority
           src="/image/header/service-1.png"
           alt="moving element 3"
-          width={80}
-          height={80}
+          width={107}
+          height={99}
         />
       </div>
     </div>

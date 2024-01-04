@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import pricingSEctionData2 from "./tabs/tabcontentbox/PriceCardDataTwo";
 import pricingSEctionData from "./tabs/tabcontentbox/PricingCardData";
@@ -32,9 +32,8 @@ function PriceCardBoxWoo(props) {
   // console.log(pricingValues);
 
   // console.log(pricingValues[1][0]["cardPrice" + props.id]);
-  const [selectedFrequency, setSelectedFrequency] = useState(
-    "priceThreeYearlyIn"
-  );
+  const [selectedFrequency, setSelectedFrequency] =
+    useState("priceThreeYearlyIn");
 
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
 
@@ -127,7 +126,11 @@ function PriceCardBoxWoo(props) {
     // console.log(selectedCountry);
     //console.log(products.woocomeData[props.id - 1]);
   };
-
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div className="col-lg-4 mb-15 mb-lg-0 priceCardWrap">
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
@@ -144,9 +147,11 @@ function PriceCardBoxWoo(props) {
               value={selectedFrequency}
               className="selectDay"
             >
-              <option value="priceThreeYearlyIn">3 Years</option>
-              <option value="priceTwoYearlyIn">2 Years</option>
-              <option value="priceYearlyIn">1 Year</option>
+              {frequencyOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </form>
         </div>

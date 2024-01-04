@@ -120,7 +120,7 @@ function NavbarInner() {
               <Image
                 priority
                 src="/image/header/madpopo-dark-logo.svg"
-                alt=""
+                alt="MadPopo dark logo"
                 className="light-version-logo"
                 width={165}
                 height={77}
@@ -128,7 +128,7 @@ function NavbarInner() {
               <Image
                 priority
                 src="/image/header/madpopo-white-logo.svg"
-                alt=""
+                alt="MadPopo light logo"
                 className="dark-version-logo"
                 width={165}
                 height={77}
@@ -265,7 +265,7 @@ function NavbarInner() {
                                     priority
                                     src="/image/header/navbaricon/woocomicon.png"
                                     alt=" WooCommerce Hosting"
-                                    width={40}
+                                    width={23}
                                     height={40}
                                   />
                                 </span>
@@ -312,7 +312,7 @@ function NavbarInner() {
                                   src="/image/header/navbaricon/linuxicon.png"
                                   alt=" Linux Web Hosting"
                                   width={40}
-                                  height={40}
+                                  height={44}
                                 />
                               </div>
                               <div className="content">
@@ -357,7 +357,7 @@ function NavbarInner() {
                                     src="/image/header/navbaricon/windowsicon.png"
                                     alt="Windows Web Hosting"
                                     width={40}
-                                    height={40}
+                                    height={42}
                                   />
                                 </span>
                               </div>
@@ -403,7 +403,7 @@ function NavbarInner() {
                                     src="/image/header/navbaricon/virtual-dedicated-server.png"
                                     alt="Cloud Server"
                                     width={40}
-                                    height={40}
+                                    height={29}
                                   />
                                 </span>
                               </div>
@@ -450,7 +450,7 @@ function NavbarInner() {
                                     src="/image/header/navbaricon/dedicated-server.png"
                                     alt="Dedicated Server"
                                     width={40}
-                                    height={40}
+                                    height={44}
                                   />
                                 </span>
                               </div>
@@ -496,7 +496,7 @@ function NavbarInner() {
                                     src="/image/header/navbaricon/Emailicon.png"
                                     alt="Business Email Hosting"
                                     width={40}
-                                    height={40}
+                                    height={42}
                                   />
                                 </span>
                               </div>
@@ -792,22 +792,22 @@ function NavbarInner() {
                                   <p>Free with Domain Registration</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
+                                     
                                         <i className="feather icon-check"></i> 2
                                         Free Email Accounts
-                                      </span>
+                                      
                                     </li>
                                     <li>
-                                      <span>
+                                     
                                         <i className="feather icon-check"></i>{" "}
                                         Privacy Protection
-                                      </span>
+                                     
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Domain Theft Protection
-                                      </span>
+                                      
                                     </li>
                                   </ul>
                                 </Link>
@@ -820,22 +820,22 @@ function NavbarInner() {
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         DNS Management
-                                      </span>
+                                      
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Domain Forwarding
-                                      </span>
+                                      
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Multiple Mail Forwards
-                                      </span>
+                                      
                                     </li>
                                   </ul>
                                 </Link>
@@ -908,22 +908,22 @@ function NavbarInner() {
                                   <p>Free with Domain Transfer</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i> 2
                                         Free Email Accounts
-                                      </span>
+                                     
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Privacy Protection
-                                      </span>
+                                     
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Domain Theft Protection
-                                      </span>
+                                      
                                     </li>
                                   </ul>
                                 </Link>
@@ -936,22 +936,22 @@ function NavbarInner() {
                                   <p>Free DNS Services</p>
                                   <ul className="listFeatureDomain">
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         DNS Management
-                                      </span>
+                                      
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Domain Forwarding
-                                      </span>
+                                      
                                     </li>
                                     <li>
-                                      <span>
+                                      
                                         <i className="feather icon-check"></i>{" "}
                                         Multiple Mail Forwards
-                                      </span>
+                                      
                                     </li>
                                   </ul>
                                 </Link>

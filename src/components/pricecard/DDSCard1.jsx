@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Ddsdata1 from "../tabs/tabcontentbox/hostingpalndata/DDSData1";
 import Link from "next/link";
+import Image from "next/image";
 function DDSCard1(props) {
   //  console.log(Ddsdata1);
   var defaultPrice4 = Ddsdata1[props.id - 1].priceThreeYearlyInINR;
@@ -11,9 +12,8 @@ function DDSCard1(props) {
   var show_currency = "";
   var show_price_1 = "";
 
-  const [selectedFrequency, setSelectedFrequency] = useState(
-    "priceThreeYearlyIn"
-  );
+  const [selectedFrequency, setSelectedFrequency] =
+    useState("priceThreeYearlyIn");
 
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
 
@@ -87,6 +87,10 @@ function DDSCard1(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "Monthly" },
+    { value: "priceTwoYearlyIn", label: "Quarterly" },
+  ];
   return (
     <div className="col-lg-12 mb-9">
       <div
@@ -97,7 +101,12 @@ function DDSCard1(props) {
       >
         <div className="d-flex mb-lg-7 plan-header">
           <div className="game-logo">
-            <img src={props.cardVpsImg} alt={props.cardVpsAltName} />
+            <Image
+              src={props.cardVpsImg}
+              alt={props.cardVpsAltName}
+              width={props.width}
+              height={props.height}
+            />
           </div>
           <div className="game-title">
             <h3 className="mb-6">
@@ -111,8 +120,11 @@ function DDSCard1(props) {
                   value={selectedFrequency}
                   className="selectDay newSelectBox"
                 >
-                  <option value="priceThreeYearlyIn">Monthly</option>
-                  <option value="priceTwoYearlyIn">Quarterly</option>
+                  {frequencyOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </form>
             </div>
@@ -132,18 +144,15 @@ function DDSCard1(props) {
           </p>
         </div>
         <ul className="ddos-first-features">
-        <li>
+          <li>
             <span className="capTitle">111CPU TYPE - SINGLE</span>
             <span className="capAmt">{props.cardVpsCapacity}</span>
           </li>
           <li>
             <span className="capTitle">CORES</span>
-            <span className="capAmt">
-              {props.cardVpsWebSpace} Cores
-            </span>
+            <span className="capAmt">{props.cardVpsWebSpace} Cores</span>
           </li>
 
-          
           <li>
             <span className="capTitle">RAM</span>
             <span className="capAmt">{props.cardVpsCapacity2}</span>
@@ -157,7 +166,7 @@ function DDSCard1(props) {
             <span className="capAmt">{props.cardVpsSnap}</span>
           </li>
         </ul>
-        
+
         <Link href="#" className="btn-order">
           <span>Order Now</span>
         </Link>

@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import CpanelData from "./tabcontentbox/hostingpalndata/CpanelData";
+import Image from "next/image";
 function CpanelCard(props) {
   //  console.log(props);
   var defaultPrice4 = CpanelData[props.id - 1].priceThreeYearlyInINR;
@@ -86,6 +87,11 @@ function CpanelCard(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div className="col-lg-4 col-md-6 col-sm-8 mb-9">
       <div
@@ -96,7 +102,12 @@ function CpanelCard(props) {
       >
         <div className="d-flex mb-lg-7 plan-header">
           <div className="game-logo">
-            <img src={props.cardVpsImg} alt={props.cardVpsAltName} />
+            <Image
+              src={props.cardVpsImg}
+              alt={props.cardVpsAltName}
+              width={props.width}
+              height={props.height}
+            />
           </div>
           <div className="game-title">
             <h3 className="mb-6">
@@ -110,9 +121,11 @@ function CpanelCard(props) {
                   value={selectedFrequency}
                   className="selectDay"
                 >
-                  <option value="priceThreeYearlyIn">3 Years</option>
-                  <option value="priceTwoYearlyIn">2 Years</option>
-                  <option value="priceYearlyIn">1 Year</option>
+                  {frequencyOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </form>
             </div>

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import domainListData from "./DomainListingData";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Image from "next/image";
 function DomainListBox(props) { 
   var bydefaultCurrency = "₹";
 
@@ -24,7 +25,7 @@ function DomainListBox(props) {
   }
   return (
     <div className="col-md-3 aws-domains-ltds-prices-item white-bg custmd3" id={`domCard-`+props.id}>
-      <img src={props.img} alt="domain tld" />
+      <Image src={props.img} alt="domain tld" width={props.width} height={props.height}/>
       <p className="coodiv-text-11 font-weight-light domParaText">
         Exhibit and sell your{" "}
         <b className="font-weight-bold">{props.domainName}</b> online

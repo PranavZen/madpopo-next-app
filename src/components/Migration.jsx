@@ -10,11 +10,13 @@ function Migration() {
           <div className="topLeftIco"></div>
           <div className="topRightIco"></div>
           <div className="btnRightIco"></div>
-          <img
+          <Image
             decoding="async"
             className="w-100"
-            src="https://emyui.pdthemes.de/wp-content/themes/emyui/image/svg/safari-browser.svg"
-            alt=""
+            src="image/pages/safari-browser.svg"
+            alt="safari search bar"
+            width={1110}
+            height={833}
           />
           <div className="ddos-attack-mockup">
             <div className="ddos-attack-main-text text-center pt-lg-12 pt-10 px-5 dark-mode-texts position-relative coodiv-z-index-1">

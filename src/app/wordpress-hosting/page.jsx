@@ -11,9 +11,9 @@ import Footer from "@/components/Footer/Footer";
 import MouseContainer from "@/components/MouseContainer";
 
 export const metadata = {
-  title: "The Best WordPress Hosting for Your Website",
+  title: "Reliable, Secure, & Fast: WordPress Hosting Made Easy by MadPopo",
   description:
-    "Get top-rated WordPress hosting for your website. Experience reliable, secure, and fast services, enhanced with robust features and exceptional customer support.",
+    "Get reliable, secure, & lightning-fast WordPress hosting at MadPopo. Scalable plans & exceptional support to power your website. Get Started Today!",
   keywords:
     "wordpress hosting, best wordpress hosting, wordpress domain, wordpress plans wp hosting, managed wordpress hosting, fastest wordpress hosting, managed wordpress, wordpress website hosting, best web hosting for wordpress, wordpress server, wordpress web hosting, wordpress hosting plans",
   openGraph: {

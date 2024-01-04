@@ -1,24 +1,23 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 import SslData from "../tabs/tabcontentbox/hostingpalndata/SslData";
 import Link from "next/link";
 function SslPricingCardBox(props) {
-var defaultPrice2 =  SslData[props.id - 1].priceThreeYearlyInINR;
-var bydefaultCurrency = "₹";
+  var defaultPrice2 = SslData[props.id - 1].priceThreeYearlyInINR;
+  var bydefaultCurrency = "₹";
   var show_price = "";
   var show_currency = "";
-   var show_price_1 =""
+  var show_price_1 = "";
 
-  const [selectedFrequency, setSelectedFrequency] = useState(
-    "priceThreeYearlyIn"
-  );
+  const [selectedFrequency, setSelectedFrequency] =
+    useState("priceThreeYearlyIn");
 
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
 
   const [selectedProductIndex, setSelectedProductIndex] = useState(0);
 
-  const [slectPrice, setSelectPrice ] = useState(show_price);
- 
+  const [slectPrice, setSelectPrice] = useState(show_price);
+
   useEffect(() => {
     const storedCountry = localStorage.getItem("selectedCountry");
     if (storedCountry) {
@@ -28,13 +27,13 @@ var bydefaultCurrency = "₹";
 
   if (selectedCountry == "$") {
     show_currency = "priceThreeYearlyInUSD";
-    show_price = SslData[props.id -1][show_currency];
+    show_price = SslData[props.id - 1][show_currency];
   } else if (selectedCountry == "€") {
     show_currency = "priceThreeYearlyInEUR";
-    show_price = SslData[props.id -1][show_currency];
+    show_price = SslData[props.id - 1][show_currency];
   } else if (selectedCountry == "₹") {
     show_currency = "priceThreeYearlyInINR";
-    show_price = SslData[props.id -1][show_currency];
+    show_price = SslData[props.id - 1][show_currency];
   }
   const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);
@@ -43,7 +42,7 @@ var bydefaultCurrency = "₹";
   const handleFrequencyChange = (e) => {
     var yr = e.target.value;
     setSelectedFrequency(e.target.value);
-    
+
     if (yr == "priceThreeYearlyIn") {
       if (selectedCountry == "$") {
         show_currency = "priceThreeYearlyInUSD";
@@ -72,6 +71,11 @@ var bydefaultCurrency = "₹";
     show_price_1 = SslData[props.id - 1][show_currency];
     setSelectPrice(show_price_1);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div className="col-lg-4 mb-15 mb-lg-0 priceCardWrap">
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
@@ -88,16 +92,18 @@ var bydefaultCurrency = "₹";
               value={selectedFrequency}
               className="selectDay"
             >
-              <option value="priceThreeYearlyIn">3 Years</option>
-              <option value="priceTwoYearlyIn">2 Years</option>
-              <option value="priceYearlyIn">1 Year</option>
+              {frequencyOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </form>
         </div>
         <div className="ddos-attack-price d-flex justify-content-between align-items-center mt-7 py-4">
           <h2 className="priceCardPriceAmt">
-          {selectedCountry ? selectedCountry : bydefaultCurrency}
-        { slectPrice ? slectPrice : show_price || defaultPrice2 }
+            {selectedCountry ? selectedCountry : bydefaultCurrency}
+            {slectPrice ? slectPrice : show_price || defaultPrice2}
             <span className="monthSpan">
               per month <br /> billed annually
             </span>

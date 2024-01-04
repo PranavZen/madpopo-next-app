@@ -35,10 +35,12 @@ function ThirdTabContent() {
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
             priceThreeYearlyInEUR,
-            title
+            title,
+            width,
+            height,
           }) => (
             <VPSCard
-            key={id}
+              key={id}
               id={id}
               cardVpsTitle={cardVpsTitle}
               cardVpsSubTitle={cardVpsSubTitle}
@@ -67,6 +69,8 @@ function ThirdTabContent() {
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
               title={title}
+              width={width}
+              height={height}
             />
           )
         )}

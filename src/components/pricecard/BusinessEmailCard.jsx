@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import BusinessEmailData from "../tabs/tabcontentbox/hostingpalndata/BusinessEmailData";
 import Link from "next/link";
+import Image from "next/image";
 function BusinessEmailCard(props) {
   // console.log(BusinessEmailData);
   var defaultPrice5 = BusinessEmailData[props.id - 1].priceThreeYearlyInINR;
@@ -86,6 +87,11 @@ function BusinessEmailCard(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "1 Year" },
+    { value: "priceTwoYearlyIn", label: "Quarterly" },
+    { value: "priceYearlyIn", label: "Monthly" },
+  ];
   return (
     <div className="col-lg-4 col-md-6 col-sm-8 mb-9">
       <div
@@ -96,7 +102,12 @@ function BusinessEmailCard(props) {
       >
         <div className="d-flex mb-lg-7 plan-header">
           <div className="game-logo">
-            <img src={props.busEmailImg} alt={props.busEmailAltName} />
+            <Image
+              src={props.busEmailImg}
+              alt={props.busEmailAltName}
+              width={props.width}
+              height={props.height}
+            />
           </div>
           <div className="game-title">
             <h3 className="mb-6">
@@ -110,9 +121,11 @@ function BusinessEmailCard(props) {
                   value={selectedFrequency}
                   className="selectDay newSelectBox"
                 >
-                  <option value="priceThreeYearlyIn">1 Year</option>
-                  <option value="priceTwoYearlyIn">Quarterly</option>
-                  <option value="priceYearlyIn">Monthly</option>
+                  {frequencyOptions.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
                 </select>
               </form>
             </div>

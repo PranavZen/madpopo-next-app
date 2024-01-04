@@ -35,6 +35,8 @@ function VssCardPrice() {
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
             priceThreeYearlyInEUR,
+            width,
+            height,
           }) => (
             <VssCard
               key={id}
@@ -65,6 +67,8 @@ function VssCardPrice() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

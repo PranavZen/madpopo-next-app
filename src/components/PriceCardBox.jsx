@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 // import { useLocation } from "react-router-dom";
 import pricingSEctionData2 from "./tabs/tabcontentbox/PriceCardDataTwo";
@@ -6,9 +6,7 @@ import pricingSEctionData from "./tabs/tabcontentbox/PricingCardData";
 import products from "./pricecard/SelectPricingData";
 import { useRouter } from "next/navigation";
 
-
 function PriceCardBox(props) {
-  
   const locationN = useRouter();
   // console.log(locationN.pathname);
   let pricingValues = pricingSEctionData2.pricingValues;
@@ -33,9 +31,8 @@ function PriceCardBox(props) {
   // console.log(pricingValues);
 
   // console.log(pricingValues[1][0]["cardPrice" + props.id]);
-  const [selectedFrequency, setSelectedFrequency] = useState(
-    "priceThreeYearlyIn"
-  );
+  const [selectedFrequency, setSelectedFrequency] =
+    useState("priceThreeYearlyIn");
 
   const [selectedCountry, setSelectedCountry] = useState(bydefaultCurrency);
 
@@ -48,7 +45,7 @@ function PriceCardBox(props) {
 
   useEffect(() => {
     const storedCountry = localStorage.getItem("selectedCountry");
-    
+
     if (storedCountry) {
       setSelectedCountry(storedCountry);
     }
@@ -72,7 +69,6 @@ function PriceCardBox(props) {
     save_price = products.wordpressData[props.id - 1][save_show_currency];
   }
 
- 
   // console.log(show_price);
 
   const handleCountryChange = (e) => {
@@ -133,13 +129,19 @@ function PriceCardBox(props) {
     // console.log(selectedCountry);
     //console.log(products.wordpressData[props.id - 1]);
   };
-
+  const frequencyOptions = [
+    { value: "priceThreeYearlyIn", label: "3 Years" },
+    { value: "priceTwoYearlyIn", label: "2 Years" },
+    { value: "priceYearlyIn", label: "1 Year" },
+  ];
   return (
     <div className="col-lg-4 mb-15 mb-lg-0 priceCardWrap">
       <div className="ddos-attack-package not-feaures-package shadow-2 priceCardDdos">
         <div className="toggleWrap d-flex">
           <h2 className="priceCardTitle mb-2">
-            <a href={props.cardAnchorLink} title={props.title}>{props.cardTitle}</a>
+            <a href={props.cardAnchorLink} title={props.title}>
+              {props.cardTitle}
+            </a>
           </h2>
         </div>
         <span className="fromText">{props.cardSubTitle}</span>
@@ -150,9 +152,11 @@ function PriceCardBox(props) {
               value={selectedFrequency}
               className="selectDay"
             >
-              <option value="priceThreeYearlyIn">3 Years</option>
-              <option value="priceTwoYearlyIn">2 Years</option>
-              <option value="priceYearlyIn">1 Year</option>
+              {frequencyOptions.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
             </select>
           </form>
         </div>
@@ -190,13 +194,11 @@ function PriceCardBox(props) {
           </li>
           <li>
             <span className="capTitle">Premium Theme of Value</span>
-           
-            
-              <span className="capAmt">
+
+            <span className="capAmt">
               Save {selectedCountry ? selectedCountry : bydefaultCurrency}
               {slectSavePrice ? slectSavePrice : save_price || defaultSavePrice}
             </span>
-          
           </li>
         </ul>
         <ul className="ddos-second-features border-top">
@@ -204,13 +206,13 @@ function PriceCardBox(props) {
             <i className="feather icon-check-circle mr-3"></i> Free Domain 1st
             Year*
           </li>
-         
-          
-            <li>
+
+          <li>
             <i className="feather icon-check-circle mr-3"></i> Premium
-            Theme,Save {selectedCountry ? selectedCountry : bydefaultCurrency}{slectSavePrice ? slectSavePrice : save_price || defaultSavePrice}
+            Theme,Save {selectedCountry ? selectedCountry : bydefaultCurrency}
+            {slectSavePrice ? slectSavePrice : save_price || defaultSavePrice}
           </li>
-        
+
           <li>
             <i className="feather icon-check-circle mr-3"></i> Free WP
             Installation

@@ -1556,13 +1556,13 @@ div.slick-active.slick-current .main-features-box {
   list-style: none;
   line-height: 2;
 }
-.listFeatureDomain li span {
+.listFeatureDomain li {
   font-size: 14px !important;
   font-weight: 600;
   color: #161c2db3 !important;
   line-height: 1.4 !important;
 }
-.listFeatureDomain li span i {
+.listFeatureDomain li i {
   color: #00bf6f;
 }
 
@@ -20603,7 +20603,7 @@ form .form-group {
   .buyBtnW100 {
     width: 100% !important;
   }
-  .listFeatureDomain li span {
+  .listFeatureDomain li {
     font-size: 13px !important;
   }
   .main-features-box .title {

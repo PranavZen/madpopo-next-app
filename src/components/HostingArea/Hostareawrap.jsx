@@ -32,7 +32,7 @@ function Hostareawrap() {
           <Image
             className="w-100 mapOpacity"
             src="/image/world-map/wolrd-map.webp"
-            alt=""
+            alt="World Map"
             width={1110}
             height={353}
             priority

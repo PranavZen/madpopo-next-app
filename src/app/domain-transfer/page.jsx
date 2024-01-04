@@ -37,7 +37,7 @@ function DomainTransfers() {
       <div className="container">
         <div className="doms_top_para">
           <div className="doms_pageTitle">
-            <h1>Domain Transfer</h1>
+            <h1>Domain Transfer</h1> 
           </div>
         </div>
       </div>

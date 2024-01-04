@@ -35,6 +35,8 @@ function VPS2CardPrice() {
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
             priceThreeYearlyInEUR,
+            width,
+            height,
           }) => (
             <VPS2Card
               key={id}
@@ -65,6 +67,8 @@ function VPS2CardPrice() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

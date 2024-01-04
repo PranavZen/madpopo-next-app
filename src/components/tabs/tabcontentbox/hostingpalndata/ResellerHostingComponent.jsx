@@ -35,6 +35,8 @@ function ResellerHostingComponent() {
             priceYearlyInEUR,
             priceTwoYearlyInEUR,
             priceThreeYearlyInEUR,
+            width,
+            height,
           }) => (
             <ResellerHostingCard
               key={id}
@@ -65,6 +67,8 @@ function ResellerHostingComponent() {
               priceYearlyInEUR={priceYearlyInEUR}
               priceTwoYearlyInEUR={priceTwoYearlyInEUR}
               priceThreeYearlyInEUR={priceThreeYearlyInEUR}
+              width={width}
+              height={height}
             />
           )
         )}

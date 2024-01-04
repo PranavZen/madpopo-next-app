@@ -34,7 +34,7 @@ function DomainSection(props) {
   const action = "https://my.madpopo.com/cart.php?a=add&domain=register&query=";
   return (
     <div>
-      <section className="more-services-group-container pt-20 px-lg-15 px-4 position-relative bg-default-2 dom_pt">
+      <section className="more-services-group-container pt-20 px-lg-15 px-4 position-relative bg-default-2 dom_pt pb-20">
         <div className="container-fluid">
           <div className="row justify-content-lg-start justify-content-center align-items-center px-lg-0 px-10 domSecRow">
             <div className="col-xl-4 col-12 text-lg-left text-center">
@@ -52,21 +52,23 @@ function DomainSection(props) {
                 now to grab more attention and visitors.
               </p>
             </div>
-            <div className="col-xl-8 col-12 row justify-content-center aws-domains-ltds-prices row-1 imgAnch" id="homeDomCard"
+            <div
+              className="col-xl-8 col-12 row justify-content-center aws-domains-ltds-prices row-1 imgAnch"
+              id="homeDomCard"
               // eslint-disable-next-line react/jsx-no-comment-textnodes
             >
               {domainListData.map((item) => {
-                if (item.id <= 4) {
-                  return (
-                    <DomainListBox
-                      key={item.id}
-                      id={item.id}
-                      img={item.img}
-                      domainName={item.domainName}
-                      dollarPrice={item.dollarPrice}
-                    />
-                  );
-                }
+                return (
+                  <DomainListBox
+                    key={item.id}
+                    id={item.id}
+                    img={item.img}
+                    domainName={item.domainName}
+                    dollarPrice={item.dollarPrice}
+                    width={item.width}
+                    height={item.height}
+                  />
+                );
               })}
             </div>
           </div>

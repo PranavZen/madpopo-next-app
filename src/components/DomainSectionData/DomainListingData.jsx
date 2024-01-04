@@ -6,6 +6,8 @@ const domainListData = [
     domainName: ".com",
     dollarPrice: 11.71,
     linkUrl: "",
+    width: 105,
+    height: 25
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ const domainListData = [
     domainName: ".in",
     dollarPrice: 8.75,
     linkUrl: "",
+    width: 44,
+    height: 25
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ const domainListData = [
     domainName: ".shop",
     dollarPrice: 35.99,
     linkUrl: "",
+    width: 65,
+    height: 25
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ const domainListData = [
     domainName: ".net",
     dollarPrice:16.89,
     linkUrl: "",
+    width: 62,
+    height: 25
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ const domainListData = [
     domainName: ".online",
     dollarPrice:13.09,
     linkUrl: "",
+    width: 104,
+    height: 25
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ const domainListData = [
     domainName: ".info",
     dollarPrice:14.69,
     linkUrl: "",
+    width: 51,
+    height: 25
   },
   {
     id: 7,
@@ -54,6 +66,8 @@ const domainListData = [
     domainName: ".tech",
     dollarPrice:58.39,
     linkUrl: "",
+    width: 69,
+    height: 25
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ const domainListData = [
     domainName: ".name",
     dollarPrice:12.99,
     linkUrl: "",
+    width: 84,
+    height: 25
   },
 ];
 export default domainListData;

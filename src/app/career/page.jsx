@@ -23,6 +23,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/career/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

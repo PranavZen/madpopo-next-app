@@ -18350,6 +18350,12 @@ body.aws-html-theme .playfair-display-font {
 .btn-with-hide-icon:hover i {
   width: 35px;
   opacity: 1;
+  width: 35px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
 }
 
 .aws-domains-ltds-prices.row-2 .aws-domains-ltds-prices-item {

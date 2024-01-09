@@ -25,6 +25,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/whois-checker/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

@@ -28,6 +28,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/linux-web-hosting/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

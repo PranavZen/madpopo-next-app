@@ -11,9 +11,9 @@ import WindowsPlansHosting from "@/components/WindowsHostingPageComponent/Window
 import WindowsHostingFaq from "@/components/WindowsHostingPageComponent/WindowsHostingFaq";
 
 export const metadata = {
-  title: "Top Reasons to Choose Windows Website Hosting for Your Online Store",
+  title: "Power Up Your Windows Apps: Blazing-Fast & Secure Hosting with MadPopo",
   description:
-    "Best Windows hosting for your business. MadPopo offers top-of-the-line Windows hosting, with a range of features that make it the perfect choice for business.",
+    "Run .NET, ASP.NET, & MSSQL flawlessly with MadPopo’s optimized Windows hosting. Dedicated resources, SSD storage, & 99.9% uptime guarantee ensure peak performance. Choose MadPopo & unlock the full potential of your Windows applications!",
   keywords:
     "web servers host, windows hosting server, windows hosting, windows server hosting,win host, windows server website hosting, windows shared server, windows website hosting,web hosting windows, hosting windows, windows shared hosting, best windows hosting, windows website hosting.",
   openGraph: {
@@ -27,6 +27,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/windows-hosting/",
   },
   twitter: {
     card: "summary_large_image",

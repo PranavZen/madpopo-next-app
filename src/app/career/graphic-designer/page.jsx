@@ -22,6 +22,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/graphic-designer/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

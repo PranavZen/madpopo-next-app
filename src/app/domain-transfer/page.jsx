@@ -6,9 +6,9 @@ import DomainPageBody from "@/components/DomainRegistrationPageComponent/DomainP
 
 export const metadata = {
   title:
-    "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
+    "Transfer Your Domain Effortlessly: Hassle-Free Switch to MadPopo’s Reliable Hosting",
   description:
-    "Effortlessly transfer your domain with MadPopo. Simplify the process with expert support and competitive pricing.",
+    "Don’t struggle with domain transfers! Move to MadPopo seamlessly & experience the difference. Secure hosting, fast speeds, & bonus perks await. Transfer your domain & level up your website today!",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
@@ -22,6 +22,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/domain-transfer/",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,7 +40,7 @@ function DomainTransfers() {
       <div className="container">
         <div className="doms_top_para">
           <div className="doms_pageTitle">
-            <h1>Domain Transfer</h1> 
+            <h1>Domain Transfer</h1>
           </div>
         </div>
       </div>

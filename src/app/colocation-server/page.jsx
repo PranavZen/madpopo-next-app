@@ -29,6 +29,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/colocation-server/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

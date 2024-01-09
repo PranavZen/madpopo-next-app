@@ -6,9 +6,9 @@ import DomainPageBody from "@/components/DomainRegistrationPageComponent/DomainP
 
 export const metadata = {
   title:
-    "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
+    "Secure Your Dream Domain: Affordable Registration & Transfer with MadPopo",
   description:
-    "Secure your online identity with our seamless domain registration services. Experience a smooth process, expert support, and competitive pricing at MadPopo.",
+    "Find the perfect domain name for your website! MadPopo offers affordable registration with extensions galore, plus easy transfers & top-notch security. Get started today & build your online presence!",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
@@ -22,6 +22,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/domain-registration/",
   },
   twitter: {
     card: "summary_large_image",

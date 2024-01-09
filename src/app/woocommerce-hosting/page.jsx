@@ -11,9 +11,9 @@ import WooCommercePlanListing from "@/components/WoocommerceHostingPageComponent
 import WoocomerceFaq from "@/components/WoocommerceHostingPageComponent/WoocomerceFaq";
 
 export const metadata = {
-  title: "Get Reliable Woocommerce Hosting Solutions Now!",
+  title: "Build & Grow Your Online Store: Feature-Rich WooCommerce Hosting at MadPopo",
   description:
-    "Experience tailored WooCommerce hosting for your business needs, featuring reliability, security, and faster load times for enhanced performance.",
+    "Experience seamless WooCommerce hosting with MadPopo. Automatic plugin updates, pre-configured caching, & enhanced security boost your sales. Scale your store easily with powerful plans & 24/7 expert support. Start your ecommerce journey with MadPopo!",
   keywords:
     "woocommerce, woocommerce plugin, woocommerce wordpress, woocommerce website, managed woocommerce hosting, wordpress woocommerce hosting, woocommerce website hosting, best woocommerce hosting.",
   openGraph: {
@@ -27,6 +27,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/woocommerce-hosting/",
   },
   twitter: {
     card: "summary_large_image",

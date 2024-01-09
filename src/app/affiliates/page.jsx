@@ -9,9 +9,9 @@ import NavbarInner from "@/components/navbar/NavbarInner";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Fast & Reliable Linux Web Hosting Solutions",
+  title: "Earn Easy Income & Promote Top-Tier Web Hosting: Join MadPopo’s Affiliate Program",
   description:
-    "Join the MadPopo Affiliate Program and turn your network into revenue. Explore lucrative opportunities, competitive commissions, and seamless tracking.",
+    "Turn your passion for technology into profit! MadPopo’s affiliate program offers 20% commission & powerful tools to promote their trusted web hosting solutions. Join now & start earning on every referral!",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
@@ -25,6 +25,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/affiliates/",
   },
   twitter: {
     card: "summary_large_image",

@@ -43,7 +43,7 @@ function DomainListBox(props) {
         className="btn btn-with-hide-icon"
       >
         Check Availability
-        <i className="feather icon-arrow-right font-weight-bold"></i>
+        <i className="fa fa-long-arrow-right font-weight-bold"></i>
       </Link>
     </div>
   );

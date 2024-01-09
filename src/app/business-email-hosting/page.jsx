@@ -12,9 +12,9 @@ import BuisnessFaq from "@/components/BuisnessEmailPageComponent/BuisnessFaq";
 
 export const metadata = {
   title:
-    "Find the Best Email Hosting Provider & Enjoy Seamless Email Experience",
+    "Get More for Less: Affordable Business Email Hosting with MadPopo",
   description:
-    "Get the best email hosting experience. Enjoy secure, reliable, and fast communication with advanced security, 24/7 support, and unlimited storage.",
+    "Ditch shared inboxes & upgrade to MadPopo’s advanced email hosting. Custom domains, robust security, & 24/7 support empower your team & build trust with clients. Choose MadPopo & boost your professionalism!",
   keywords:
     "email hosting, best email provider, emailhosting, businessemail, create business email, professional business email, small business email, email host providers, custom email domain, best email for business, webmail email hosting",
   openGraph: {
@@ -28,6 +28,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/business-email-hosting/",
   },
   twitter: {
     card: "summary_large_image",

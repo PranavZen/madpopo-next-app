@@ -6,9 +6,9 @@ import Videocomponent from "@/components/globalvideocomponent/videocomponent";
 
 export const metadata = {
   title:
-    "MadPopo Best Hosting Solution which is Secure, Scalable, Reliable and Affordable for your Online Business",
+    "Boost Website Performance Globally: Unmatched Speeds with MadPopo’s Infrastructure",
   description:
-    "Discover MadPopo's global infrastructure – the epitome of security, scalability, and reliability for all your applications in the Cloud.",
+    "Experience blazing-fast website speeds worldwide with MadPopo’s strategically placed data centers. Enjoy 99.9% uptime, low latency, & ultimate control. Choose MadPopo & conquer the global market!",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
   openGraph: {
@@ -22,6 +22,9 @@ export const metadata = {
         type: "image/jpg",
       },
     ],
+  },
+  alternates: {
+    canonical: "https://madpopo.com/global-infrastructure/",
   },
   twitter: {
     card: "summary_large_image",

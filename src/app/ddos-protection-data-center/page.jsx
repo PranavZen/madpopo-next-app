@@ -22,6 +22,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/ddos-protection-data-center/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

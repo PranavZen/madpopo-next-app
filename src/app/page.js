@@ -27,6 +27,9 @@ export const metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://madpopo.com/",
+  },
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

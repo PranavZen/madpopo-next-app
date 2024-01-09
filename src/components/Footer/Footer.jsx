@@ -297,7 +297,7 @@ function Footer() {
                       className="btn-red with-icon coodiv-text-11 white-text-btn rounded-25 py-3 coodiv-hover-y"
                     >
                       Talk to an expert{" "}
-                      <i className="feather icon-arrow-right font-weight-bold"></i>
+                      <i className="fa fa-long-arrow-right font-weight-bold"></i>
                     </Link>
                   </div>
                   <div className="footer-block mb-13 mb-lg-4 text-center text-lg-left">

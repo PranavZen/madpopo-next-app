@@ -15,7 +15,10 @@ export const metadata = {
     "MadPopo high-performance web hosting featuring WordPress, Windows, Linux, ASP support, and Cloud servers for top-tier security and reliability.",
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
-  openGraph: {
+    alternates: {
+      canonical: "https://madpopo.com/",
+    },
+    openGraph: {
     url: "https://madpopo.com/",
     type: "website",
     images: [
@@ -27,9 +30,7 @@ export const metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: "https://madpopo.com/",
-  },
+
   twitter: {
     card: "summary_large_image",
     creator: "@madpopowp",

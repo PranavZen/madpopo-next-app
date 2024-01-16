@@ -1127,11 +1127,11 @@ function NavbarInner() {
                 }
               >
                 <i
-                  className="feather icon-menu"
+                  className="fa fa-bars icon-menu"
                   style={{ display: activeToggle ? "none" : "block" }}
                 ></i>
                 <i
-                  className="feather icon-x"
+                  className="fa fa-times"
                   style={{ display: activeToggle ? "block" : "none" }}
                 ></i>
               </span>

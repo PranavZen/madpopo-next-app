@@ -12,7 +12,7 @@ function Migration() {
           <div className="btnRightIco"></div>
           <Image
             decoding="async"
-            className="w-100"
+            className="w-100 mobWinImg"
             src="image/pages/safari-browser.svg"
             alt="safari search bar"
             width={1110}

@@ -2140,7 +2140,7 @@ a.headerphone-number {
   background: #ff8726;
   width: max-content;
   position: absolute !important;
-
+  height: fit-content;
   text-align: center;
   text-transform: uppercase;
   z-index: 1;
@@ -16144,6 +16144,7 @@ body.demo-page #toTop {
   header.site-header nav.navbar {
     flex-flow: row nowrap;
     justify-content: flex-start;
+    margin-top: -25px;
   }
   .offcanvas-active.navbar-expand-lg .navbar-collapse {
     -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.2, 1) 0.1s;
@@ -19035,6 +19036,20 @@ form .form-group {
   }
 }
 @media screen and (max-width: 767px) {
+  .mobWinImg{
+    height: 100%;
+  }
+  .more-services-group-container.bgGrays{
+    padding: 45px 0!important;
+  }
+  .ddos-attack-section.pt-12{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .mapOpacity{
+    object-fit: contain;
+    height: auto;
+  }
   #section1 {
     padding-bottom: 60px;
     padding-top: 35%;
@@ -19487,49 +19502,82 @@ form .form-group {
     padding-top: 290px;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir1 {
-    right: 19.8%;
-    bottom: 17%;
+    bottom: 45%;
+    right: 25%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code1 {
-    right: 10.8%;
-    top: -39%;
+    right: 16.4%;
+    top: -65%;
   }
+  .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir8.active {
+    top: 75%;
+    right: 5.5%;
+}
+  .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir8 {
+    top: 75%;
+    right: 5.5%;
+}
+.mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code8 {
+  top: -30%;
+  right: -7%;
+}
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir1.active {
-    bottom: 18%;
-    right: 20%;
+    bottom: 45%;
+    right: 25%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir2 {
-    right: 11.6%;
-    bottom: 0px;
+    right: 11.7%;
+    bottom: 30%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code2 {
-    right: -1%;
-    top: -20%;
+    right: 1%;
+    top: -50%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir2.active {
-    right: 10.7%;
-    bottom: 0;
+    right: 11.7%;
+    bottom: 30%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code3 {
-    left: 29%;
+    left: 32%;
     bottom: 133%;
+    top: -145px;
   }
+  .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir3.active {
+    left: 49.5%;
+    top: 15%;
+}
+.mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir3 {
+  left: 49.5%;
+  top: 15%;
+}
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code4 {
     left: 36%;
-    top: -72%;
+    top: -87%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code5 {
-    left: 8.7%;
-    top: -39%;
+    left: 12.7%;
+    top: -75%;
   }
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code7 {
-    top: -38%;
-    left: 1%;
+    top: -76%;
+    left: 3%;
   }
+  .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir7.active {
+    top: 29%;
+    left: 12%;
+}
+.mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir5.active {
+  left: 18.5%;
+  top: 30%;
+}
   .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_1.code6 {
-    top: -38%;
-    left: 1.1%;
+    top: -80%;
+    left: -0.9%;
   }
+  .mobShowHideButtonWrap .mobBtnsWrap .mob_btn_circle.cir6.active {
+    top: 28%;
+    left: 6%;
+}
   .gb_infraDataSection .dataCenterTitle {
     margin-bottom: 20px;
   }
@@ -19930,7 +19978,12 @@ form .form-group {
     display: none;
   } */
   }
-
+  header.site-header.fixed-header-layout.top-header-fixed .navbar{
+    margin-top: 0;
+  }
+  .btn-red.with-icon.coodiv-text-11{
+    width: 55%;
+  }
   .domaulListing .listTitle p {
     font-size: 14px;
   }

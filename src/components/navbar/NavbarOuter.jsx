@@ -1065,11 +1065,11 @@ function NavbarOuter() {
                 }
               >
                 <i
-                  className="feather icon-menu"
+                  className="fa fa-bars icon-menu"
                   style={{ display: activeToggle ? "none" : "block" }}
                 ></i>
                 <i
-                  className="feather icon-x crossBtn"
+                  className="fa fa-times crossBtn"
                   style={{ display: activeToggle ? "block" : "none" }}
                 ></i>
               </span>

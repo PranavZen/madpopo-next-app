@@ -5,7 +5,7 @@ import pricingSEctionData from "./tabs/tabcontentbox/PricingCardData";
 import products from "./pricecard/SelectPricingData";
 import { useRouter } from "next/navigation";
 
-function PriceCardBoxWoo(props) {
+function PriceCardBoxWoo(props) { 
   // console.log(props)
   const locationN = useRouter();
   // console.log(locationN.pathname);

@@ -13,7 +13,7 @@
     "@fortawesome/fontawesome-free": "^6.5.1",
     "aos": "^2.3.4",
     "aphrodite": "^2.4.0",
-    "axios": "^1.6.2",
+    "axios": "^1.6.5",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",

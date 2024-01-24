@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AffiliateFaq from "@/components/AffiliatePageComponents/AffiliateFaq";
 import AffiliateFeaturesSection from "@/components/AffiliatePageComponents/AffiliateFeaturesSection";
 import AffiliateSecondSection from "@/components/AffiliatePageComponents/AffiliateSecondSection";
@@ -37,7 +37,20 @@ export const metadata = {
     image: "https://madpopo.com/image/madpopo-hosting.jpg",
   },
 };
-function AffiliatePage() {
+
+function PgComponents() {
+  useEffect(() => {
+    // Add canonical link dynamically
+    const canonicalLink = document.createElement("link");
+    canonicalLink.rel = "canonical";
+    canonicalLink.href = metadata.alternates.canonical;
+    document.head.appendChild(canonicalLink);
+
+    // Cleanup function to remove the added link on component unmount
+    return () => {
+      document.head.removeChild(canonicalLink);
+    };
+  }, []);
   return (
     <div className="site-wrapper overflow-hidden wp_hostingBgImg affiliateBG">
       <NavbarInner />
@@ -134,4 +147,4 @@ function AffiliatePage() {
   );
 }
 
-export default AffiliatePage;
+export default PgComponents;

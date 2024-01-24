@@ -9,7 +9,7 @@ export default function NotFound() {
       <main className="errorPage">
         <h1>
           4
-          <span>
+          <span> 
             <Image
               src="/image/face_1.png"
               alt="age not foung"

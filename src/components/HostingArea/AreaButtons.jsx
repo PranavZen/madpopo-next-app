@@ -1,8 +1,85 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+async function nearestCountry(ip) {
+  try {
+    const request = await fetch(
+      `https://ipinfo.io/${ip}/json?token=793eb20d45d707`
+    );
+    const jsonResponse = await request.json();
+    return jsonResponse.country.toLowerCase();
+  } catch (error) {
+    console.error("Error fetching geolocation data:", error);
+    return null;
+  }
+}
 
 function AreaButtons() {
-  const [state, setstate] = useState("state1");
+  const [countryState, setCountryState] = useState(null);
+  const [ipaddress, setIpAddress] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const request = await fetch(
+          "https://ipinfo.io/json?token=793eb20d45d707"
+        );
+        const jsonResponse = await request.json();
+        setIpAddress(jsonResponse);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const setDefaultCountry = async () => {
+      if (ipaddress && ipaddress.country) {
+        // Check if the country is in the listed countries
+        const listedCountries = ["in", "sg", "de", "gb", "us", "au"];
+        if (listedCountries.includes(ipaddress.country.toLowerCase())) {
+          // Set the corresponding state for listed countries
+          switch (ipaddress.country.toLowerCase()) {
+            case "in":
+              setCountryState("state1");
+              break;
+            case "sg":
+              setCountryState("state2");
+              break;
+            case "de":
+              setCountryState("state3");
+              break;
+            case "gb":
+              setCountryState("state4");
+              break;
+            case "us":
+              setCountryState("state5");
+              break;
+            case "au":
+              setCountryState("state8");
+              break;
+            // Add more cases for other countries as needed
+            default:
+              setCountryState("state1"); // Set a default state if the country is not recognized
+          }
+        } else {
+          // Country is not in the list, set default based on nearest IP
+          const defaultCountry = await nearestCountry(ipaddress.ip);
+          if (defaultCountry) {
+            setCountryState(`state${defaultCountry}`);
+          }
+        }
+      }
+    };
+
+    setDefaultCountry();
+  }, [ipaddress]);
+
+  if (countryState === null) {
+    // Handle the case where the countryState is not determined yet
+    return <div>Loading...</div>;
+  }
   return (
     <>
       {
@@ -10,10 +87,10 @@ function AreaButtons() {
       }
       <div className="mobShowHideButtonWrap">
         <div className="mobBtnsWrap">
-          {state === "state1" ? (
+          {countryState === "state1" ? (
             <div
               className={
-                state === "state1"
+                countryState === "state1"
                   ? "mob_btn_1 code1 active"
                   : "mob_btn_1 code1"
               }
@@ -28,20 +105,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state1"
+              countryState === "state1"
                 ? "mob_btn_circle cir1 active"
                 : "mob_btn_circle cir1"
             }
             onClick={() => {
-              setstate("state1");
+              setCountryState("state1");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state2" ? (
+          {countryState === "state2" ? (
             <div
               className={
-                state === "state2"
+                countryState === "state2"
                   ? "mob_btn_1 code2 active"
                   : "mob_btn_1 code2"
               }
@@ -56,20 +133,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state2"
+              countryState === "state2"
                 ? "mob_btn_circle cir2 active"
                 : "mob_btn_circle cir2"
             }
             onClick={() => {
-              setstate("state2");
+              setCountryState("state2");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state3" ? (
+          {countryState === "state3" ? (
             <div
               className={
-                state === "state3"
+                countryState === "state3"
                   ? "mob_btn_1 code3 active"
                   : "mob_btn_1 code3"
               }
@@ -84,20 +161,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state3"
+              countryState === "state3"
                 ? "mob_btn_circle cir3 active"
                 : "mob_btn_circle cir3"
             }
             onClick={() => {
-              setstate("state3");
+              setCountryState("state3");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state4" ? (
+          {countryState === "state4" ? (
             <div
               className={
-                state === "state4"
+                countryState === "state4"
                   ? "mob_btn_1 code4 active"
                   : "mob_btn_1 code4"
               }
@@ -112,20 +189,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state4"
+              countryState === "state4"
                 ? "mob_btn_circle cir4 active"
                 : "mob_btn_circle cir4"
             }
             onClick={() => {
-              setstate("state4");
+              setCountryState("state4");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state5" ? (
+          {countryState === "state5" ? (
             <div
               className={
-                state === "state5"
+                countryState === "state5"
                   ? "mob_btn_1 code5 active"
                   : "mob_btn_1 code5"
               }
@@ -140,20 +217,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state5"
+              countryState === "state5"
                 ? "mob_btn_circle cir5 active"
                 : "mob_btn_circle cir5"
             }
             onClick={() => {
-              setstate("state5");
+              setCountryState("state5");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state6" ? (
+          {countryState === "state6" ? (
             <div
               className={
-                state === "state6"
+                countryState === "state6"
                   ? "mob_btn_1 code6 active"
                   : "mob_btn_1 code6"
               }
@@ -168,20 +245,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state6"
+              countryState === "state6"
                 ? "mob_btn_circle cir6 active"
                 : "mob_btn_circle cir6"
             }
             onClick={() => {
-              setstate("state6");
+              setCountryState("state6");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state7" ? (
+          {countryState === "state7" ? (
             <div
               className={
-                state === "state7"
+                countryState === "state7"
                   ? "mob_btn_1 code7 active"
                   : "mob_btn_1 code7"
               }
@@ -196,20 +273,20 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state7"
+              countryState === "state7"
                 ? "mob_btn_circle cir7 active"
                 : "mob_btn_circle cir7"
             }
             onClick={() => {
-              setstate("state7");
+              setCountryState("state7");
             }}
           ></span>
         </div>
         <div className="mobBtnsWrap">
-          {state === "state8" ? (
+          {countryState === "state8" ? (
             <div
               className={
-                state === "state8"
+                countryState === "state8"
                   ? "mob_btn_1 code8 active"
                   : "mob_btn_1 code8"
               }
@@ -224,12 +301,12 @@ function AreaButtons() {
           )}
           <span
             className={
-              state === "state8"
+              countryState === "state8"
                 ? "mob_btn_circle cir8 active"
                 : "mob_btn_circle cir8"
             }
             onClick={() => {
-              setstate("state8");
+              setCountryState("state8");
             }}
           ></span>
         </div>

@@ -563,8 +563,8 @@ a.btn {
   margin-bottom: 15px;
 }
 .btn-primary {
-  background-color: #0056ed;
-  border-color: #0056ed;
+  background-color: #0056ed !important;
+  border-color: #0056ed !important;
   color: #fff !important;
 }
 .btn-primary:hover {
@@ -19492,9 +19492,9 @@ form .form-group {
   .jdDataWrap .jdDataBox .jdParaBox .jdList {
     font-size: 14px;
   }
-  .errorPage h1 > span img {
+  /* .errorPage h1 > span img {
     width: 70% !important;
-  }
+  } */
   .errorPage h1 > span {
     width: 35%;
   }
@@ -20252,6 +20252,9 @@ main {
 }
 .errorPage {
   background: linear-gradient(180deg, #f7dfbb5c 41%, #fff 103%);
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .errorPage h1 {
   color: #54575c;
@@ -20272,9 +20275,9 @@ main {
   color: #ff8726;
   display: inline-block;
 }
-.errorPage h1 > span img {
+/* .errorPage h1 > span img {
   width: 80%;
-}
+} */
 .errorPage h2 {
   color: #54575c;
   margin-bottom: 0.4em;

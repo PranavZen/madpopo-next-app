@@ -5,12 +5,14 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 const nextConfig = {
   images: {
+    domains: ['madpopo.com'],
     unoptimized: true,
   },
   output: "export",
   webpack: (config, { isServer }) => {
     if (!isServer) {
       // Optimizing JavaScript
+      
       config.optimization.minimizer.push(
         new TerserPlugin({
           terserOptions: {

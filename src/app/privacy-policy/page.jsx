@@ -24,7 +24,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/privacy-policy/",
+    canonical: "https://madpopo.com/privacy-policy",
   },
   twitter: {
     card: "summary_large_image",

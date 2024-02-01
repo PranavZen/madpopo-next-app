@@ -27,7 +27,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/cpanel-whm-hosting-panel/",
+    canonical: "https://madpopo.com/cpanel-whm-hosting-panel",
   },
   twitter: {
     card: "summary_large_image",

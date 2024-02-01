@@ -23,7 +23,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/ios-developer/",
+    canonical: "https://madpopo.com/ios-developer",
   },
   twitter: {
     card: "summary_large_image",

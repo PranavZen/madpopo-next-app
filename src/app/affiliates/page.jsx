@@ -28,7 +28,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/affiliates/",
+    canonical: "https://madpopo.com/affiliates",
   },
   twitter: {
     card: "summary_large_image",

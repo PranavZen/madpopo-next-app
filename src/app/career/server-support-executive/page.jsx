@@ -23,7 +23,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/server-support-executive/",
+    canonical: "https://madpopo.com/server-support-executive",
   },
   twitter: {
     card: "summary_large_image",

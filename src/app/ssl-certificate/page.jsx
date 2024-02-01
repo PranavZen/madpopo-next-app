@@ -28,7 +28,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/ssl-certificate/",
+    canonical: "https://madpopo.com/ssl-certificate",
   },
   twitter: {
     card: "summary_large_image",

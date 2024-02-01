@@ -23,7 +23,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/terms-conditions/",
+    canonical: "https://madpopo.com/terms-conditions",
   },
   twitter: {
     card: "summary_large_image",

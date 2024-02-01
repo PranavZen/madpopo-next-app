@@ -16,7 +16,7 @@ export const metadata = {
   keywords:
     "WordPress hosting, web hosting, performance, security, reliability, Windows hosting, scalability, .NET framework, MS SQL Hosting, ASP support, Linux hosting, affordability, reliability, Apache, PHP, MySQL, Cloud server hosting, high availability, load balancing, auto-scaling",
     alternates: {
-      canonical: "https://madpopo.com/",
+      canonical: "https://madpopo.com",
     },
     openGraph: {
     url: "https://madpopo.com/",

@@ -24,7 +24,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/domain-registration/",
+    canonical: "https://madpopo.com/domain-registration",
   },
   twitter: {
     card: "summary_large_image",

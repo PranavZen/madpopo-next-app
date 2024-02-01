@@ -29,7 +29,7 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: "https://madpopo.com/windows-hosting/",
+    canonical: "https://madpopo.com/windows-hosting",
   },
   twitter: {
     card: "summary_large_image",
